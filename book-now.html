@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="data:image/svg+xml;base64,PHN2ZyB2aWV3Qm94PSIwIDAgMTAwIDEwMCIgZmlsbD0ibm9uZSIgc3Ryb2tlPSJjdXJyZW50Q29sb3IiIHN0cm9rZS13aWR0aD0iNCIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgogIDxjaXJjbGUgY3g9IjUwIiBjeT0iNTAiIHI9IjQ0IiBzdHJva2U9ImN1cnJlbnRDb2xvciIgc3Ryb2tlLXdpZHRoPSI1IiBmaWxsPSJub25lIiBjbGFzcz0idGV4dC1ibHVlLTgwMCIgLz4KICA8cGF0aCBkPSJNMzUgNTJ2OGMwIDggMTUgMTAgMTUgMTBzMTUtMiAxNS0xMHYtOCIgZmlsbD0iY3VycmVudENvbG9yIiBjbGFzcz0idGV4dC1ibHVlLTYwMCIgLz4KICA8cG9seWdvbiBwb2ludHM9IjUwLDMwIDgwLDQ1IDUwLDYwIDIwLDQ1IiBmaWxsPSJjdXJyZW50Q29sb3IiIGNsYXNzPSJ0ZXh0LWJsdWUtODAwIiBzdHJva2U9ImN1cnJlbnRDb2xvciIgc3Ryb2tlLXdpZHRoPSIyIiAvPgogIDxwYXRoIGQ9Ik01MCw0NSBMMjUsNTIgTDI1LDYyIiBzdHJva2U9ImN1cnJlbnRDb2xvciIgc3Ryb2tlLXdpZHRoPSIzIiAvPgogIDxjaXJjbGUgY3g9IjI1IiBjeT0iNjQiIHI9IjIuNSIgZmlsbD0iY3VycmVudENvbG9yIiAvPgogIDxwYXRoIGQ9Ik01MCw4MCBMNTAsMTgiIHN0cm9rZT0iI0Y1OUUwQiIgc3Ryb2tlLXdpZHRoPSI2IiAvPgogIDxwYXRoIGQ9Ik00MiwyNiBMNTAsMTYgTDU4LDI2IiBzdHJva2U9IiNGNUFFMEIiIHN0cm9rZS13aWR0aD0iNiIgLz4KPC9zdmc+">
+  <title>Book Demo Class Admission | Achieve Academy</title>
+  <meta name="description" content="Register your seats for Achieve Academy's upcoming batch admissions. Book a free 3-day demo class online or at our offline centers.">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          colors: {
+            primary: '#1E40AF',
+            secondary: '#2563EB',
+            accent: '#F59E0B',
+            success: '#10B981',
+            background: '#F8FAFC',
+            dark: '#0F172A',
+            text: '#334155',
+          },
+          fontFamily: {
+            sans: ['Poppins', 'sans-serif'],
+          }
+        }
+      }
+    }
+  </script>
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body class="bg-slate-50 dark:bg-slate-900 text-slate-700 dark:text-slate-300 flex flex-col min-h-screen">
+
+ <!-- Minimal Header -->
+  <header id="global-header" class="w-full transition-all duration-300 glass-nav shadow-sm relative z-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-20">
+        <!-- Logo & Brand Name -->
+        <a href="index.html" class="flex items-center gap-3">
+          <!-- Embedded academic logo SVG (same as main.js) -->
+          <svg class="h-8 w-8 sm:h-10 sm:w-10 flex-shrink-0" viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="50" cy="50" r="44" stroke="currentColor" stroke-width="5" fill="none" class="text-blue-800 dark:text-blue-500" />
+            <path d="M35 52v8c0 8 15 10 15 10s15-2 15-10v-8" fill="currentColor" class="text-blue-600 opacity-20 dark:text-blue-800" />
+            <polygon points="50,30 80,45 50,60 20,45" fill="currentColor" class="text-blue-800 dark:text-blue-500" stroke="currentColor" stroke-width="2" />
+            <path d="M50,45 L25,52 L25,62" stroke="currentColor" stroke-width="3" />
+            <circle cx="25" cy="64" r="2.5" fill="currentColor" />
+            <path d="M50,80 L50,18" stroke="#F59E0B" stroke-width="6" />
+            <path d="M42,26 L50,16 L58,26" stroke="#F59E0B" stroke-width="6" />
+          </svg>
+          <div class="flex flex-col">
+            <span class="text-base sm:text-lg font-bold tracking-tight text-slate-900 dark:text-white leading-none">Achieve Academy</span>
+            <span class="text-[9px] sm:text-[10px] text-slate-500 dark:text-slate-400 font-medium tracking-wider uppercase mt-1">Your Success Begins Here</span>
+          </div>
+        </a>
+
+        <!-- Minimal Controls -->
+        <div class="flex items-center gap-2 sm:gap-3">
+          <!-- Direction Toggle -->
+          <button onclick="toggleDirection()" class="p-2 rounded-lg text-slate-600 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors flex items-center gap-1 text-xs font-semibold" title="Toggle Language Direction">
+            <!-- <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-15 5.25h15" /></svg> -->
+            <span class="dir-toggle-text">LTR</span>
+          </button>
+
+          <!-- Theme Toggle -->
+          <button onclick="toggleTheme()" class="p-2 rounded-lg text-slate-600 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors" title="Toggle Dark/Light Mode">
+            <!-- Sun -->
+            <svg class="w-5 h-5 block dark:hidden" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M12 3v2.25m0 13.5V21M4.22 4.22l1.58 1.58m12.42 12.42l1.58 1.58M3 12h2.25m13.5 0H21M4.22 19.78l1.58-1.58M18.22 5.75l1.58-1.58M12 7.5a4.5 4.5 0 100 9 4.5 4.5 0 000-9z" /></svg>
+            <!-- Moon -->
+            <svg class="w-5 h-5 hidden dark:block" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M21.752 15.002A9.718 9.718 0 0118 15.75c-5.385 0-9.75-4.365-9.75-9.75 0-1.33.266-2.597.748-3.752A9.753 9.753 0 003 11.25C3 16.635 7.365 21 12.75 21a9.753 9.753 0 009.002-5.998z" /></svg>
+          </button>
+
+          <!-- Home Link -->
+          <!-- <a href="index.html" class="hidden sm:inline-flex px-3.5 py-1.5 rounded-lg border border-slate-200 dark:border-slate-700 text-xs font-semibold hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors">Home</a> -->
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Preloader -->
+  <div id="preloader">
+    <div class="animate-spin rounded-full h-12 w-12 border-t-2 border-b-2 border-blue-600"></div>
+  </div>
+
+  <!-- Scroll Progress Bar -->
+  <div id="scroll-progress"></div>
+
+
+  <!-- Admission Booking Section -->
+  <main class="flex-grow py-12 px-4 sm:px-6 lg:px-8 bg-gradient-glow relative overflow-hidden flex items-center justify-center">
+    <div class="max-w-5xl w-full grid grid-cols-1 lg:grid-cols-12 gap-8 items-stretch relative z-10">
+      
+      <!-- Left Column: Registration Form -->
+      <div class="lg:col-span-7 glass-panel p-8 rounded-3xl border border-slate-200/50 dark:border-slate-800/80 shadow-2xl space-y-6 flex flex-col justify-between">
+        <div>
+          <h2 class="text-2xl font-bold text-slate-900 dark:text-white">Book Free Demo Session</h2>
+          <p class="text-xs text-slate-500 dark:text-slate-400 mt-1.5">No payment details required. Reserve your batch seat instantly.</p>
+        </div>
+
+        <form id="admission-booking-form" class="space-y-4" onsubmit="event.preventDefault(); alert('Demo seat booked successfully! Our academic counselor will call you in 1 hour to schedule your batch.'); this.reset();">
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+            <div>
+              <label for="b-sname" class="block text-xs font-semibold text-slate-500 dark:text-slate-400 mb-1">Student Name *</label>
+              <input type="text" id="b-sname" required placeholder="Alex Morgan" class="w-full px-4 py-2.5 text-sm bg-slate-50 dark:bg-slate-950 border border-slate-200 dark:border-slate-800 text-slate-900 dark:text-white rounded-xl focus:outline-none focus:border-blue-500 focus:bg-white dark:focus:bg-slate-900 transition-colors">
+            </div>
+            <div>
+              <label for="b-pname" class="block text-xs font-semibold text-slate-500 dark:text-slate-400 mb-1">Parent/Guardian Name *</label>
+              <input type="text" id="b-pname" required placeholder="John Morgan" class="w-full px-4 py-2.5 text-sm bg-slate-50 dark:bg-slate-950 border border-slate-200 dark:border-slate-800 text-slate-900 dark:text-white rounded-xl focus:outline-none focus:border-blue-500 focus:bg-white dark:focus:bg-slate-900 transition-colors">
+            </div>
+          </div>
+
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+            <div>
+              <label for="b-email" class="block text-xs font-semibold text-slate-500 dark:text-slate-400 mb-1">Email Address *</label>
+              <input type="email" id="b-email" required placeholder="alex@domain.com" class="w-full px-4 py-2.5 text-sm bg-slate-50 dark:bg-slate-950 border border-slate-200 dark:border-slate-800 text-slate-900 dark:text-white rounded-xl focus:outline-none focus:border-blue-500 focus:bg-white dark:focus:bg-slate-900 transition-colors">
+            </div>
+            <div>
+              <label for="b-phone" class="block text-xs font-semibold text-slate-500 dark:text-slate-400 mb-1">Phone Number *</label>
+              <input type="tel" id="b-phone" required placeholder="+1 (555) 000-0000" class="w-full px-4 py-2.5 text-sm bg-slate-50 dark:bg-slate-950 border border-slate-200 dark:border-slate-800 text-slate-900 dark:text-white rounded-xl focus:outline-none focus:border-blue-500 focus:bg-white dark:focus:bg-slate-900 transition-colors">
+            </div>
+          </div>
+
+          <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
+            <div class="sm:col-span-2">
+              <label class="block text-xs font-semibold text-slate-500 dark:text-slate-400 mb-1">Desired Course Program *</label>
+              <select required class="w-full px-4 py-2.5 text-sm bg-slate-50 dark:bg-slate-950 border border-slate-200 dark:border-slate-800 text-slate-900 dark:text-white rounded-xl focus:outline-none focus:border-blue-500 focus:bg-white dark:focus:bg-slate-900 transition-colors">
+                <option value="">Select program</option>
+                <option value="upsc">UPSC GS Foundation Module</option>
+                <option value="jee">IIT-JEE Academic Foundation</option>
+                <option value="neet">NEET Entrance Preparation</option>
+                <option value="ssc">SSC / Bank Master Class</option>
+              </select>
+            </div>
+            <div>
+              <label class="block text-xs font-semibold text-slate-500 dark:text-slate-400 mb-1">Preferred Batch *</label>
+              <select required class="w-full px-4 py-2.5 text-sm bg-slate-50 dark:bg-slate-950 border border-slate-200 dark:border-slate-800 text-slate-900 dark:text-white rounded-xl focus:outline-none focus:border-blue-500 focus:bg-white dark:focus:bg-slate-900 transition-colors">
+                <option value="morning">Morning Shift</option>
+                <option value="evening">Evening Shift</option>
+                <option value="online">Live Online</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+            <div>
+              <label for="b-city" class="block text-xs font-semibold text-slate-500 dark:text-slate-400 mb-1">City / Region *</label>
+              <input type="text" id="b-city" required placeholder="New Delhi" class="w-full px-4 py-2.5 text-sm bg-slate-50 dark:bg-slate-950 border border-slate-200 dark:border-slate-800 text-slate-900 dark:text-white rounded-xl focus:outline-none focus:border-blue-500 focus:bg-white dark:focus:bg-slate-900 transition-colors">
+            </div>
+            <div>
+              <label class="block text-xs font-semibold text-slate-500 dark:text-slate-400 mb-1">Batch Mode *</label>
+              <div class="flex gap-4 py-2.5">
+                <label class="inline-flex items-center text-xs text-slate-650">
+                  <input type="radio" name="b-mode" checked class="w-4 h-4 text-blue-600">
+                  <span class="ml-1">Offline Campus</span>
+                </label>
+                <label class="inline-flex items-center text-xs text-slate-650">
+                  <input type="radio" name="b-mode" class="w-4 h-4 text-blue-600">
+                  <span class="ml-1">Online Stream</span>
+                </label>
+              </div>
+            </div>
+          </div>
+
+          <button type="submit" class="gradient-btn w-full py-3.5 rounded-xl text-sm font-bold text-white shadow-sm mt-4">
+            Register Demo Class Seat
+          </button>
+        </form>
+      </div>
+
+      <!-- Right Column: Admission Benefits -->
+      <div class="lg:col-span-5 bg-gradient-premium rounded-3xl p-8 flex flex-col justify-between text-white shadow-2xl relative overflow-hidden">
+        <div class="absolute inset-0 bg-white/5 backdrop-blur-[2px]"></div>
+        
+        <div class="relative z-10 space-y-6">
+          <div>
+            <h3 class="text-xl font-bold">Academic Seat Benefits</h3>
+            <p class="text-xs text-slate-200 mt-1">Get immediate onboarding resources with your free reservation.</p>
+          </div>
+
+          <ul class="space-y-4 text-xs sm:text-sm text-slate-100">
+            <li class="flex items-start gap-3">
+              <span class="mt-0.5 text-amber-400 font-bold">✓</span>
+              <div>
+                <h4 class="font-bold">3-Day Trial Pass</h4>
+                <p class="text-[11px] text-slate-350 mt-0.5">Attend offline smart auditoriums or view digital stream channels without fees.</p>
+              </div>
+            </li>
+            <li class="flex items-start gap-3">
+              <span class="mt-0.5 text-amber-400 font-bold">✓</span>
+              <div>
+                <h4 class="font-bold">Free Syllabus Guide</h4>
+                <p class="text-[11px] text-slate-350 mt-0.5">Receive print-ready mock schedules and quantitative trick handouts.</p>
+              </div>
+            </li>
+            <li class="flex items-start gap-3">
+              <span class="mt-0.5 text-amber-400 font-bold">✓</span>
+              <div>
+                <h4 class="font-bold">1-on-1 counselor session</h4>
+                <p class="text-[11px] text-slate-350 mt-0.5">A 30-minute diagnostic session with our academic advisors to plot weak areas.</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+
+        <div class="relative z-10 pt-6 border-t border-white/10 text-xs text-slate-300 text-center">
+          For help desk, call: +1 (800) 456-7890
+        </div>
+      </div>
+
+    </div>
+  </main>
+
+  
+
+  <!-- Back to Top Button -->
+  <button id="back-to-top" class="fixed bottom-6 right-6 z-40 bg-blue-600 text-white p-3 rounded-full shadow-lg opacity-0 pointer-events-none translate-y-4 transition-all duration-300 hover:bg-blue-700 hover:scale-110" aria-label="Back to Top">
+    <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M4.5 15.75l7.5-7.5 7.5 7.5" /></svg>
+  </button>
+
+  <!-- Shared JS Modules -->
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

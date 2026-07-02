@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="data:image/svg+xml;base64,PHN2ZyB2aWV3Qm94PSIwIDAgMTAwIDEwMCIgZmlsbD0ibm9uZSIgc3Ryb2tlPSJjdXJyZW50Q29sb3IiIHN0cm9rZS13aWR0aD0iNCIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgogIDxjaXJjbGUgY3g9IjUwIiBjeT0iNTAiIHI9IjQ0IiBzdHJva2U9ImN1cnJlbnRDb2xvciIgc3Ryb2tlLXdpZHRoPSI1IiBmaWxsPSJub25lIiBjbGFzcz0idGV4dC1ibHVlLTgwMCIgLz4KICA8cGF0aCBkPSJNMzUgNTJ2OGMwIDggMTUgMTAgMTUgMTBzMTUtMiAxNS0xMHYtOCIgZmlsbD0iY3VycmVudENvbG9yIiBjbGFzcz0idGV4dC1ibHVlLTYwMCIgLz4KICA8cG9seWdvbiBwb2ludHM9IjUwLDMwIDgwLDQ1IDUwLDYwIDIwLDQ1IiBmaWxsPSJjdXJyZW50Q29sb3IiIGNsYXNzPSJ0ZXh0LWJsdWUtODAwIiBzdHJva2U9ImN1cnJlbnRDb2xvciIgc3Ryb2tlLXdpZHRoPSIyIiAvPgogIDxwYXRoIGQ9Ik01MCw0NSBMMjUsNTIgTDI1LDYyIiBzdHJva2U9ImN1cnJlbnRDb2xvciIgc3Ryb2tlLXdpZHRoPSIzIiAvPgogIDxjaXJjbGUgY3g9IjI1IiBjeT0iNjQiIHI9IjIuNSIgZmlsbD0iY3VycmVudENvbG9yIiAvPgogIDxwYXRoIGQ9Ik01MCw4MCBMNTAsMTgiIHN0cm9rZT0iI0Y1OUUwQiIgc3Ryb2tlLXdpZHRoPSI2IiAvPgogIDxwYXRoIGQ9Ik00MiwyNiBMNTAsMTYgTDU4LDI2IiBzdHJva2U9IiNGNUFFMEIiIHN0cm9rZS13aWR0aD0iNiIgLz4KPC9zdmc+">
+  <title>Institute Gallery | Achieve Academy</title>
+  <meta name="description" content="Take a virtual tour of Achieve Academy's modern hybrid classrooms, libraries, seminar halls, and campus infrastructure.">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          colors: {
+            primary: '#1E40AF',
+            secondary: '#2563EB',
+            accent: '#F59E0B',
+            success: '#10B981',
+            background: '#F8FAFC',
+            dark: '#0F172A',
+            text: '#334155',
+          },
+          fontFamily: {
+            sans: ['Poppins', 'sans-serif'],
+          }
+        }
+      }
+    }
+  </script>
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body class="bg-slate-50 dark:bg-slate-900 text-slate-700 dark:text-slate-300 pt-20">
+
+  <!-- Preloader -->
+  <div id="preloader">
+    <div class="animate-spin rounded-full h-12 w-12 border-t-2 border-b-2 border-blue-600"></div>
+  </div>
+
+  <!-- Scroll Progress Bar -->
+  <div id="scroll-progress"></div>
+
+  <!-- Shared Header Hydration -->
+  <header id="global-header"></header>
+
+  <!-- Gallery Hero -->
+  <section class="py-16 sm:py-24 bg-gradient-glow relative overflow-hidden">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+        <div class="space-y-6 reveal fade-left text-left">
+          <span class="text-xs font-bold text-blue-600 dark:text-blue-400 uppercase tracking-widest">Campus Tour</span>
+          <h1 class="text-4xl sm:text-5xl font-bold tracking-tight text-slate-900 dark:text-white leading-tight">
+            Achieve Campus <span class="text-blue-600 dark:text-blue-400">Photo Gallery</span>
+          </h1>
+          <p class="text-sm sm:text-base text-slate-500 dark:text-slate-400 leading-relaxed">
+            Explore our state-of-the-art study infrastructure, interactive auditoriums, reference libraries, and celebrated rank award events. Peek inside the premium environment tailored to turn ambitions into rankings.
+          </p>
+
+          <!-- Stats Row -->
+          <div class="flex flex-wrap items-center gap-6 pt-2">
+            <div class="text-center sm:text-left">
+              <p class="text-xl font-extrabold text-blue-600 dark:text-blue-400">5+</p>
+              <p class="text-[10px] text-slate-500 dark:text-slate-400 font-semibold uppercase tracking-wider">Campuses</p>
+            </div>
+            <div class="w-px h-8 bg-slate-200 dark:bg-slate-800 hidden sm:block"></div>
+            <div class="text-center sm:text-left">
+              <p class="text-xl font-extrabold text-amber-500">100+</p>
+              <p class="text-[10px] text-slate-500 dark:text-slate-400 font-semibold uppercase tracking-wider">Classrooms</p>
+            </div>
+            <div class="w-px h-8 bg-slate-200 dark:bg-slate-800 hidden sm:block"></div>
+            <div class="text-center sm:text-left">
+              <p class="text-xl font-extrabold text-emerald-600 dark:text-emerald-400">50K+</p>
+              <p class="text-[10px] text-slate-500 dark:text-slate-400 font-semibold uppercase tracking-wider">Resources</p>
+            </div>
+          </div>
+        </div>
+        
+        <div class="reveal fade-right flex justify-center">
+          <div class="relative w-full max-w-[500px]">
+            <div class="absolute -inset-4 bg-blue-600/15 dark:bg-blue-500/10 rounded-3xl blur-2xl pointer-events-none"></div>
+            <div class="relative rounded-3xl overflow-hidden shadow-2xl border border-white/30 dark:border-slate-700/50 animate-float">
+              <img src="assets/galleryhero" alt="Achieve Campus Infrastructure" class="w-full h-64 sm:h-80 object-cover">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Gallery Filter Section -->
+  <section class="py-12 bg-white dark:bg-slate-950">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <!-- Filter Button Bar -->
+      <div class="flex flex-wrap items-center justify-center gap-3 mb-12">
+        <button class="gallery-filter-btn px-5 py-2.5 rounded-full text-xs font-semibold bg-blue-600 text-white shadow-md transition-all" data-filter="all">All Photos</button>
+        <button class="gallery-filter-btn px-5 py-2.5 rounded-full text-xs font-semibold bg-white dark:bg-slate-900 text-slate-600 dark:text-slate-400 border border-slate-200 dark:border-slate-800 transition-all hover:bg-slate-50 dark:hover:bg-slate-800" data-filter="campus">Campus</button>
+        <button class="gallery-filter-btn px-5 py-2.5 rounded-full text-xs font-semibold bg-white dark:bg-slate-900 text-slate-600 dark:text-slate-400 border border-slate-200 dark:border-slate-800 transition-all hover:bg-slate-50 dark:hover:bg-slate-800" data-filter="classroom">Classrooms</button>
+        <button class="gallery-filter-btn px-5 py-2.5 rounded-full text-xs font-semibold bg-white dark:bg-slate-900 text-slate-600 dark:text-slate-400 border border-slate-200 dark:border-slate-800 transition-all hover:bg-slate-50 dark:hover:bg-slate-800" data-filter="library">Library</button>
+        <button class="gallery-filter-btn px-5 py-2.5 rounded-full text-xs font-semibold bg-white dark:bg-slate-900 text-slate-600 dark:text-slate-400 border border-slate-200 dark:border-slate-800 transition-all hover:bg-slate-50 dark:hover:bg-slate-800" data-filter="seminar">Seminars</button>
+        <button class="gallery-filter-btn px-5 py-2.5 rounded-full text-xs font-semibold bg-white dark:bg-slate-900 text-slate-600 dark:text-slate-400 border border-slate-200 dark:border-slate-800 transition-all hover:bg-slate-50 dark:hover:bg-slate-800" data-filter="events">Events</button>
+      </div>
+
+      <!-- Image Grid -->
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+  
+  <div class="gallery-item group relative overflow-hidden rounded-3xl border border-slate-200 dark:border-slate-800 shadow-sm transition-all duration-300 hover:shadow-xl hover:-translate-y-1" data-category="campus">
+    <div class="aspect-[4/3] w-full relative overflow-hidden">
+      <img src="assets/g1" alt="Main Campus" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">
+      <div class="absolute inset-0 bg-slate-950/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+    </div>
+    <div class="p-6 bg-white dark:bg-slate-900 border-t border-slate-100 dark:border-slate-800/80">
+      <span class="text-[9px] uppercase tracking-wider font-bold text-blue-600">Campus Exterior</span>
+      <h4 class="text-sm font-semibold text-slate-900 dark:text-white mt-1">Main Administrative Block</h4>
+      <p class="text-[11px] text-slate-400 mt-1">Our flagship campus at Knowledge Park with modern architecture.</p>
+    </div>
+  </div>
+
+  <div class="gallery-item group relative overflow-hidden rounded-3xl border border-slate-200 dark:border-slate-800 shadow-sm transition-all duration-300 hover:shadow-xl hover:-translate-y-1" data-category="classroom">
+    <div class="aspect-[4/3] w-full relative overflow-hidden">
+      <img src="assets/g2" alt="Smart Classroom" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">
+      <div class="absolute inset-0 bg-slate-950/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+    </div>
+    <div class="p-6 bg-white dark:bg-slate-900 border-t border-slate-100 dark:border-slate-800/80">
+      <span class="text-[9px] uppercase tracking-wider font-bold text-blue-600">Smart Classroom</span>
+      <h4 class="text-sm font-semibold text-slate-900 dark:text-white mt-1">Physics Conceptual Laboratory</h4>
+      <p class="text-[11px] text-slate-400 mt-1">4K display smart boards and state-of-the-art AV systems.</p>
+    </div>
+  </div>
+
+  <div class="gallery-item group relative overflow-hidden rounded-3xl border border-slate-200 dark:border-slate-800 shadow-sm transition-all duration-300 hover:shadow-xl hover:-translate-y-1" data-category="library">
+    <div class="aspect-[4/3] w-full relative overflow-hidden">
+      <img src="assets/g3" alt="Library" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">
+      <div class="absolute inset-0 bg-slate-950/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+    </div>
+    <div class="p-6 bg-white dark:bg-slate-900 border-t border-slate-100 dark:border-slate-800/80">
+      <span class="text-[9px] uppercase tracking-wider font-bold text-blue-600">Silent Library</span>
+      <h4 class="text-sm font-semibold text-slate-900 dark:text-white mt-1">Reference Reading Cabinets</h4>
+      <p class="text-[11px] text-slate-400 mt-1">50,000+ books and digital references available.</p>
+    </div>
+  </div>
+
+  <div class="gallery-item group relative overflow-hidden rounded-3xl border border-slate-200 dark:border-slate-800 shadow-sm transition-all duration-300 hover:shadow-xl hover:-translate-y-1" data-category="seminar">
+    <div class="aspect-[4/3] w-full relative overflow-hidden">
+      <img src="assets/g4" alt="Seminar Hall" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">
+      <div class="absolute inset-0 bg-slate-950/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+    </div>
+    <div class="p-6 bg-white dark:bg-slate-900 border-t border-slate-100 dark:border-slate-800/80">
+      <span class="text-[9px] uppercase tracking-wider font-bold text-blue-600">Auditorium</span>
+      <h4 class="text-sm font-semibold text-slate-900 dark:text-white mt-1">Syllabus Orientation Seminars</h4>
+      <p class="text-[11px] text-slate-400 mt-1">800-seat air-conditioned auditorium for expert talks.</p>
+    </div>
+  </div>
+
+  <div class="gallery-item group relative overflow-hidden rounded-3xl border border-slate-200 dark:border-slate-800 shadow-sm transition-all duration-300 hover:shadow-xl hover:-translate-y-1" data-category="events">
+    <div class="aspect-[4/3] w-full relative overflow-hidden">
+      <img src="assets/g5" alt="Award Ceremony" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">
+      <div class="absolute inset-0 bg-slate-950/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+    </div>
+    <div class="p-6 bg-white dark:bg-slate-900 border-t border-slate-100 dark:border-slate-800/80">
+      <span class="text-[9px] uppercase tracking-wider font-bold text-blue-600">Annual Events</span>
+      <h4 class="text-sm font-semibold text-slate-900 dark:text-white mt-1">UPSC Top Rankers Felicitation</h4>
+      <p class="text-[11px] text-slate-400 mt-1">Celebrate our students' achievements with medals.</p>
+    </div>
+  </div>
+
+  <div class="gallery-item group relative overflow-hidden rounded-3xl border border-slate-200 dark:border-slate-800 shadow-sm transition-all duration-300 hover:shadow-xl hover:-translate-y-1" data-category="classroom">
+    <div class="aspect-[4/3] w-full relative overflow-hidden">
+      <img src="assets/g6" alt="Exam Center" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">
+      <div class="absolute inset-0 bg-slate-950/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+    </div>
+    <div class="p-6 bg-white dark:bg-slate-900 border-t border-slate-100 dark:border-slate-800/80">
+      <span class="text-[9px] uppercase tracking-wider font-bold text-blue-600">Exam Hall</span>
+      <h4 class="text-sm font-semibold text-slate-900 dark:text-white mt-1">Computer-Based Test Center</h4>
+      <p class="text-[11px] text-slate-400 mt-1">200-seat CBT center with biometric authentication.</p>
+    </div>
+  </div>
+
+</div>
+  </section>
+
+  <!-- Campus Infrastructure Features Grid -->
+  <section class="py-16 bg-white dark:bg-slate-950 border-t border-slate-100 dark:border-slate-800">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center max-w-2xl mx-auto mb-12 reveal fade-up">
+        <span class="text-xs font-bold text-blue-600 dark:text-blue-400 uppercase tracking-widest">Our Environment</span>
+        <h2 class="text-3xl font-bold tracking-tight text-slate-900 dark:text-white mt-1">Virtual Infrastructure Tour</h2>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div class="glass-panel p-6 rounded-3xl border border-slate-100 dark:border-slate-850 shadow-sm space-y-4 reveal fade-up">
+          <div class="w-12 h-12 bg-blue-100 dark:bg-blue-950/30 text-blue-600 dark:text-blue-400 rounded-xl flex items-center justify-center">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M12 21v-8.25M15.75 21v-8.25M8.25 21v-8.25M3 9l9-6 9 6m-1.5 12V10.5M3 10.5V21" /></svg>
+          </div>
+          <h3 class="text-base font-bold text-slate-900 dark:text-white">Smart Classrooms</h3>
+          <p class="text-xs text-slate-500 dark:text-slate-400 leading-relaxed">
+            Equipped with ultra-short throw laser projectors, dual-mic audio channels, and digital screen capture engines.
+          </p>
+        </div>
+        <div class="glass-panel p-6 rounded-3xl border border-slate-100 dark:border-slate-850 shadow-sm space-y-4 reveal fade-up">
+          <div class="w-12 h-12 bg-amber-100 dark:bg-amber-950/30 text-amber-600 dark:text-amber-400 rounded-xl flex items-center justify-center">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M12 6.042A8.967 8.967 0 006 3.75c-1.052 0-2.062.18-3 .512v14.25A8.987 8.987 0 016 18c2.305 0 4.408.867 6 2.292m0-14.25a8.966 8.966 0 016-2.292c1.052 0 2.062.18 3 .512v14.25A8.987 8.987 0 0018 18a8.967 8.967 0 00-6 2.292m0-14.25v14.25" /></svg>
+          </div>
+          <h3 class="text-base font-bold text-slate-900 dark:text-white">Research Library</h3>
+          <p class="text-xs text-slate-500 dark:text-slate-400 leading-relaxed">
+            Contains 25,000+ reference volumes, IAS/NEET test archives, research digests, and private reading rooms.
+          </p>
+        </div>
+        <div class="glass-panel p-6 rounded-3xl border border-slate-100 dark:border-slate-850 shadow-sm space-y-4 reveal fade-up">
+          <div class="w-12 h-12 bg-emerald-100 dark:bg-emerald-950/30 text-emerald-600 dark:text-emerald-400 rounded-xl flex items-center justify-center">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9 17.25v1.007a3 3 0 01-.879 2.122L7.5 21h9l-.621-.621A3 3 0 0115 18.257V17.25m6-12V15a2.25 2.25 0 01-2.25 2.25H5.25A2.25 2.25 0 013 15V5.25m18 0A2.25 2.25 0 0018.75 3H5.25A2.25 2.25 0 003 5.25m18 0V12a2.25 2.25 0 01-2.25 2.25H5.25A2.25 2.25 0 013 12V5.25" /></svg>
+          </div>
+          <h3 class="text-base font-bold text-slate-900 dark:text-white">Computer Lab</h3>
+          <p class="text-xs text-slate-500 dark:text-slate-400 leading-relaxed">
+            Host to our live mock simulator exams. High-speed terminals designed to replicate JEE/SSC.
+          </p>
+        </div>
+        <div class="glass-panel p-6 rounded-3xl border border-slate-100 dark:border-slate-850 shadow-sm space-y-4 reveal fade-up">
+          <div class="w-12 h-12 bg-purple-100 dark:bg-purple-950/30 text-purple-600 dark:text-purple-400 rounded-xl flex items-center justify-center">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M15.3 16.2L12 18.2l-3.3-2c-.5-.3-1.1-.3-1.6 0L3.8 18.1c-.6.3-1 .9-1 1.6V21c0 .6.4 1 1 1h16.4c.6 0 1-.4 1-1v-1.3c0-.7-.4-1.3-1-1.6l-3.3-1.9c-.5-.3-1.1-.3-1.6 0zM12 2a5 5 0 100 10 5 5 0 000-10z" /></svg>
+          </div>
+          <h3 class="text-base font-bold text-slate-900 dark:text-white">Seminar Halls</h3>
+          <p class="text-xs text-slate-500 dark:text-slate-400 leading-relaxed">
+            Host to guest lectures from ex-IAS/IPS officers, top doctors, and alumni motivational rank workshops.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Alumni Rank Award Events Section -->
+  <section class="py-16 bg-slate-50 dark:bg-slate-900 border-t border-slate-100 dark:border-slate-800">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+        <div class="reveal fade-left">
+          <img src="assets/Alumni Felicitation Ceremony" alt="Alumni Felicitation Ceremony" class="w-full h-80 object-cover rounded-3xl shadow-xl">
+        </div>
+        <div class="reveal fade-right space-y-6">
+          <span class="text-xs font-bold text-blue-600 dark:text-blue-400 uppercase tracking-widest">Achievements</span>
+          <h2 class="text-3xl font-bold text-slate-900 dark:text-white">Annual Felicitation Events</h2>
+          <p class="text-xs text-slate-500 dark:text-slate-400 leading-relaxed">
+            Every year, Achieve Academy honors its toppers who secured ranks in UPSC CSE, JEE Advanced, and NEET. These ceremonies inspire the next batch of students and build a life-long network of elite professionals.
+          </p>
+          <div class="grid grid-cols-2 gap-4">
+            <div class="p-4 bg-white dark:bg-slate-950 rounded-2xl border border-slate-100 dark:border-slate-850 shadow-sm text-center">
+              <p class="text-2xl font-extrabold text-blue-600 dark:text-blue-400">100%</p>
+              <p class="text-[10px] text-slate-400 font-semibold uppercase mt-0.5">Felicitation Support</p>
+            </div>
+            <div class="p-4 bg-white dark:bg-slate-950 rounded-2xl border border-slate-100 dark:border-slate-850 shadow-sm text-center">
+              <p class="text-2xl font-extrabold text-amber-500">Gold</p>
+              <p class="text-[10px] text-slate-400 font-semibold uppercase mt-0.5">Medal Honor</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Bottom CTA Section -->
+  <section class="py-16 bg-slate-100/50 dark:bg-slate-950 border-t border-slate-150 dark:border-slate-800">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="relative rounded-3xl overflow-hidden bg-gradient-premium shadow-2xl">
+        <div class="absolute inset-0 bg-[radial-gradient(#ffffff08_1px,transparent_1px)] [background-size:16px_16px]"></div>
+        <div class="relative z-10 grid grid-cols-1 lg:grid-cols-2 gap-8 items-center p-10 sm:p-16">
+          <div class="text-white space-y-6">
+            <span class="text-xs font-bold text-amber-400 uppercase tracking-widest">Campus Visits Open</span>
+            <h2 class="text-3xl sm:text-4xl font-bold">Experience Achieve Academy Live</h2>
+            <p class="text-sm text-blue-200 leading-relaxed">Book a guided campus tour, interact with our counseling staff, and review test classrooms first-hand before joining.</p>
+            <div class="flex flex-wrap gap-4">
+              <a href="book-now.html" class="px-8 py-3.5 rounded-xl bg-white text-blue-700 font-semibold text-sm shadow-lg hover:bg-blue-50 transition-colors">Book Campus Tour</a>
+              <a href="contact.html" class="px-8 py-3.5 rounded-xl border border-white/40 text-white font-semibold text-sm hover:bg-white/10 transition-colors">Find Locations</a>
+            </div>
+          </div>
+          <div class="hidden lg:flex justify-end">
+            <img src="assets/gallerycta" alt="Students in library" class="w-full max-w-sm rounded-2xl opacity-90 object-cover h-64 shadow-lg border border-white/20">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Shared Footer Hydration -->
+  <footer id="global-footer"></footer>
+
+  <!-- Back to Top Button -->
+  <button id="back-to-top" class="fixed bottom-6 right-6 z-40 bg-blue-600 text-white p-3 rounded-full shadow-lg opacity-0 pointer-events-none translate-y-4 transition-all duration-300 hover:bg-blue-700 hover:scale-110" aria-label="Back to Top">
+    <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M4.5 15.75l7.5-7.5 7.5 7.5" /></svg>
+  </button>
+
+  <!-- Shared JS Modules -->
+  <script src="assets/js/main.js"></script>
+  <script src="assets/js/gallery.js"></script>
+</body>
+</html>

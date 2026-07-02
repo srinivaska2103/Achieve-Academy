@@ -1,0 +1,618 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="data:image/svg+xml;base64,PHN2ZyB2aWV3Qm94PSIwIDAgMTAwIDEwMCIgZmlsbD0ibm9uZSIgc3Ryb2tlPSJjdXJyZW50Q29sb3IiIHN0cm9rZS13aWR0aD0iNCIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgogIDxjaXJjbGUgY3g9IjUwIiBjeT0iNTAiIHI9IjQ0IiBzdHJva2U9ImN1cnJlbnRDb2xvciIgc3Ryb2tlLXdpZHRoPSI1IiBmaWxsPSJub25lIiBjbGFzcz0idGV4dC1ibHVlLTgwMCIgLz4KICA8cGF0aCBkPSJNMzUgNTJ2OGMwIDggMTUgMTAgMTUgMTBzMTUtMiAxNS0xMHYtOCIgZmlsbD0iY3VycmVudENvbG9yIiBjbGFzcz0idGV4dC1ibHVlLTYwMCIgLz4KICA8cG9seWdvbiBwb2ludHM9IjUwLDMwIDgwLDQ1IDUwLDYwIDIwLDQ1IiBmaWxsPSJjdXJyZW50Q29sb3IiIGNsYXNzPSJ0ZXh0LWJsdWUtODAwIiBzdHJva2U9ImN1cnJlbnRDb2xvciIgc3Ryb2tlLXdpZHRoPSIyIiAvPgogIDxwYXRoIGQ9Ik01MCw0NSBMMjUsNTIgTDI1LDYyIiBzdHJva2U9ImN1cnJlbnRDb2xvciIgc3Ryb2tlLXdpZHRoPSIzIiAvPgogIDxjaXJjbGUgY3g9IjI1IiBjeT0iNjQiIHI9IjIuNSIgZmlsbD0iY3VycmVudENvbG9yIiAvPgogIDxwYXRoIGQ9Ik01MCw4MCBMNTAsMTgiIHN0cm9rZT0iI0Y1OUUwQiIgc3Ryb2tlLXdpZHRoPSI2IiAvPgogIDxwYXRoIGQ9Ik00MiwyNiBMNTAsMTYgTDU4LDI2IiBzdHJva2U9IiNGNUFFMEIiIHN0cm9rZS13aWR0aD0iNiIgLz4KPC9zdmc+">
+  <title>Achieve Academy | Home 2 alternative layout</title>
+  <meta name="description" content="Explore Achieve Academy's unique roadmap and timeline for competitive examinations. Achieve your potential with our modular course pathway.">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          colors: {
+            primary: '#1E40AF',
+            secondary: '#2563EB',
+            accent: '#F59E0B',
+            success: '#10B981',
+            background: '#F8FAFC',
+            dark: '#0F172A',
+            text: '#334155',
+          },
+          fontFamily: {
+            sans: ['Poppins', 'sans-serif'],
+          }
+        }
+      }
+    }
+  </script>
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body class="bg-slate-50 dark:bg-slate-900 text-slate-700 dark:text-slate-300 pt-20">
+
+  <!-- Preloader -->
+  <div id="preloader">
+    <div class="animate-spin rounded-full h-12 w-12 border-t-2 border-b-2 border-blue-600"></div>
+  </div>
+
+  <!-- Scroll Progress Bar -->
+  <div id="scroll-progress"></div>
+
+  <!-- Shared Header Hydration -->
+  <header id="global-header"></header>
+
+  <!-- Two-Column Right-Side Image Hero -->
+  <section class="relative bg-slate-900 dark:bg-slate-950 text-white py-20 sm:py-24 overflow-hidden">
+    <!-- background grid overlays -->
+    <div class="absolute inset-0 bg-[radial-gradient(#ffffff08_1px,transparent_1px)] [background-size:16px_16px] opacity-60"></div>
+    <div class="absolute top-0 right-0 w-[500px] h-[500px] bg-blue-600/10 rounded-full blur-3xl pointer-events-none"></div>
+
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+        <!-- Hero Text Content -->
+        <div class="lg:col-span-7 space-y-6 text-left reveal fade-left">
+          <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-semibold bg-blue-500/10 text-blue-400 border border-blue-500/20">
+            Roadmap to Success
+          </span>
+          <h1 class="text-4xl sm:text-5xl lg:text-6xl font-bold tracking-tight leading-tight">
+            A Structured Journey from <br>
+            <span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 via-amber-400 to-emerald-450">Prep to Selection</span>
+          </h1>
+          <p class="text-sm sm:text-base text-slate-350 leading-relaxed font-normal max-w-xl">
+            Stop studying randomly. Follow a scientific roadmap curated by senior academics to guarantee complete concept mastery and high-speed test solving.
+          </p>
+
+        </div>
+
+        <!-- Hero Image - Right Side -->
+        <div class="lg:col-span-5 flex justify-center reveal fade-right">
+          <div class="relative w-full max-w-[420px]">
+            <div class="absolute -inset-4 bg-blue-500/10 rounded-3xl blur-2xl pointer-events-none"></div>
+            <div class="relative rounded-3xl overflow-hidden shadow-2xl border border-slate-800 animate-float">
+              <img src="assets/hero2" alt="Achieve Academy Lecture hall" class="w-full h-auto object-cover" loading="eager">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Hero Visual / Feature Preview Strip -->
+  <section class="py-10 bg-slate-900 dark:bg-slate-950 overflow-hidden">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="relative rounded-3xl overflow-hidden shadow-2xl border border-slate-800">
+        <img src="assets/homeimg1" alt="Achieve Academy Modern Classrooms" class="w-full h-64 sm:h-80 lg:h-96 object-cover opacity-90">
+        <div class="absolute inset-0 bg-gradient-to-r from-slate-900/90 via-slate-900/50 to-transparent flex items-center">
+          <div class="p-8 sm:p-12 space-y-4 max-w-xl">
+            <span class="text-xs font-bold text-blue-400 uppercase tracking-widest">Inside Achieve</span>
+            <h2 class="text-2xl sm:text-3xl font-bold text-white">World-Class Study Environment</h2>
+            <p class="text-sm text-slate-300 leading-relaxed">Our hybrid classrooms combine the best of offline rigor and digital flexibility for unmatched learning outcomes.</p>
+            <a href="gallery.html" class="inline-flex items-center gap-2 text-sm font-semibold text-blue-400 hover:text-blue-300 transition-colors">
+              Take a Virtual Tour
+              <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" /></svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Floating Stats Card Row (overlaps the Hero boundary) -->
+  <section class="relative z-20 -mt-16 sm:-mt-20">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <!-- Card 1 -->
+        <div class="glass-panel p-8 rounded-3xl shadow-xl border border-slate-200/50 dark:border-slate-800/80 flex items-center gap-6">
+          <div class="w-14 h-14 bg-blue-100 dark:bg-blue-950/40 text-blue-600 dark:text-blue-400 rounded-2xl flex items-center justify-center flex-shrink-0">
+            <svg class="w-7 h-7" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M12 6.042A8.967 8.967 0 006 3.75c-1.052 0-2.062.18-3 .512v14.25A8.987 8.987 0 016 18c2.305 0 4.408.867 6 2.292m0-14.25a8.966 8.966 0 016-2.292c1.052 0 2.062.18 3 .512v14.25A8.987 8.987 0 0018 18a8.967 8.967 0 00-6 2.292m0-14.25v14.25" /></svg>
+          </div>
+          <div>
+            <h3 class="text-2xl font-extrabold text-slate-900 dark:text-white counter-val" data-target="180" data-suffix="+">0</h3>
+            <p class="text-xs text-slate-500 dark:text-slate-400 font-medium">Standard Printed Books</p>
+          </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="glass-panel p-8 rounded-3xl shadow-xl border border-slate-200/50 dark:border-slate-800/80 flex items-center gap-6">
+          <div class="w-14 h-14 bg-blue-100 dark:bg-blue-950/40 text-blue-600 dark:text-blue-400 rounded-2xl flex items-center justify-center flex-shrink-0">
+            <svg class="w-7 h-7" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M4.263 15.918a9 9 0 1012.825 0M13.5 10.5a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0z" /></svg>
+          </div>
+          <div>
+            <h3 class="text-2xl font-extrabold text-slate-900 dark:text-white counter-val" data-target="4500" data-suffix="+">0</h3>
+            <p class="text-xs text-slate-500 dark:text-slate-400 font-medium">Interactive Practice Questions</p>
+          </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="glass-panel p-8 rounded-3xl shadow-xl border border-slate-200/50 dark:border-slate-800/80 flex items-center gap-6">
+          <div class="w-14 h-14 bg-blue-100 dark:bg-blue-950/40 text-blue-600 dark:text-blue-400 rounded-2xl flex items-center justify-center flex-shrink-0">
+            <svg class="w-7 h-7" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75M21 12c0 1.268-.63 2.39-1.593 3.068a3.745 3.745 0 01-1.043 3.296" /></svg>
+          </div>
+          <div>
+            <h3 class="text-2xl font-extrabold text-slate-900 dark:text-white counter-val" data-target="98" data-suffix="%">0</h3>
+            <p class="text-xs text-slate-500 dark:text-slate-400 font-medium">Student Selection Index</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Interactive Timeline Section -->
+  <section id="timeline" class="py-20 lg:py-28 bg-white dark:bg-slate-950">
+    <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center max-w-2xl mx-auto mb-20 reveal fade-up">
+        <span class="text-xs font-bold text-blue-600 dark:text-blue-400 uppercase tracking-widest">Milestones</span>
+        <h2 class="text-3xl sm:text-4xl font-bold tracking-tight text-slate-900 dark:text-white mt-1">Our Course roadmap Process</h2>
+        <p class="text-sm text-slate-500 dark:text-slate-400 mt-2">Every student goes through 4 vital phases of structured learning.</p>
+      </div>
+
+      <!-- Vertical Timeline line -->
+      <div class="relative border-l-2 border-slate-200 dark:border-slate-800 ml-4 sm:ml-32 space-y-12">
+        
+        <!-- Phase 1 -->
+        <div class="relative reveal fade-left">
+          <!-- Dot anchor -->
+          <div class="absolute -left-[9px] top-1 w-4 h-4 rounded-full bg-blue-600 border-4 border-white dark:border-slate-950"></div>
+          <!-- Label offset -->
+          <div class="sm:absolute sm:right-full sm:mr-8 sm:top-0 text-left sm:text-right w-24 hidden sm:block">
+            <span class="text-xs font-bold text-blue-600 dark:text-blue-400 uppercase tracking-wider">Month 1 - 3</span>
+          </div>
+          <!-- Content Card -->
+          <div class="ml-8 glass-panel p-6 rounded-2xl shadow-sm border border-slate-100 dark:border-slate-800/80">
+            <span class="text-xs font-bold text-blue-600 dark:text-blue-400 sm:hidden block mb-2">Month 1 - 3</span>
+            <h3 class="text-lg font-bold text-slate-900 dark:text-white">Core Fundamentals</h3>
+            <p class="text-xs sm:text-sm text-slate-500 dark:text-slate-400 leading-relaxed mt-2">
+              Focus is entirely on core conceptual clarity. All static and foundational parts of the syllabus are dissected by experienced subject teachers.
+            </p>
+          </div>
+        </div>
+
+        <!-- Phase 2 -->
+        <div class="relative reveal fade-left">
+          <div class="absolute -left-[9px] top-1 w-4 h-4 rounded-full bg-amber-500 border-4 border-white dark:border-slate-950"></div>
+          <div class="sm:absolute sm:right-full sm:mr-8 sm:top-0 text-left sm:text-right w-24 hidden sm:block">
+            <span class="text-xs font-bold text-amber-500 uppercase tracking-wider">Month 4 - 6</span>
+          </div>
+          <div class="ml-8 glass-panel p-6 rounded-2xl shadow-sm border border-slate-100 dark:border-slate-800/80">
+            <span class="text-xs font-bold text-amber-500 sm:hidden block mb-2">Month 4 - 6</span>
+            <h3 class="text-lg font-bold text-slate-900 dark:text-white">Applied Mock Series</h3>
+            <p class="text-xs sm:text-sm text-slate-500 dark:text-slate-400 leading-relaxed mt-2">
+              Weekly sectional examinations. Students apply core concepts to dynamic pattern equations under structured exam conditions.
+            </p>
+          </div>
+        </div>
+
+        <!-- Phase 3 -->
+        <div class="relative reveal fade-left">
+          <div class="absolute -left-[9px] top-1 w-4 h-4 rounded-full bg-emerald-500 border-4 border-white dark:border-slate-950"></div>
+          <div class="sm:absolute sm:right-full sm:mr-8 sm:top-0 text-left sm:text-right w-24 hidden sm:block">
+            <span class="text-xs font-bold text-emerald-500 uppercase tracking-wider">Month 7 - 9</span>
+          </div>
+          <div class="ml-8 glass-panel p-6 rounded-2xl shadow-sm border border-slate-100 dark:border-slate-800/80">
+            <span class="text-xs font-bold text-emerald-500 sm:hidden block mb-2">Month 7 - 9</span>
+            <h3 class="text-lg font-bold text-slate-900 dark:text-white">Personalized Weak Area Analysis</h3>
+            <p class="text-xs sm:text-sm text-slate-500 dark:text-slate-400 leading-relaxed mt-2">
+              Detailed performance dashboard reports. Dedicated faculty mentors resolve student weaknesses through customized worksheets and doubt modules.
+            </p>
+          </div>
+        </div>
+
+        <!-- Phase 4 -->
+        <div class="relative reveal fade-left">
+          <div class="absolute -left-[9px] top-1 w-4 h-4 rounded-full bg-purple-500 border-4 border-white dark:border-slate-950"></div>
+          <div class="sm:absolute sm:right-full sm:mr-8 sm:top-0 text-left sm:text-right w-24 hidden sm:block">
+            <span class="text-xs font-bold text-purple-500 uppercase tracking-wider">Month 10+</span>
+          </div>
+          <div class="ml-8 glass-panel p-6 rounded-2xl shadow-sm border border-slate-100 dark:border-slate-800/80">
+            <span class="text-xs font-bold text-purple-500 sm:hidden block mb-2">Month 10+</span>
+            <h3 class="text-lg font-bold text-slate-900 dark:text-white">Mock Interview & Revision</h3>
+            <p class="text-xs sm:text-sm text-slate-500 dark:text-slate-400 leading-relaxed mt-2">
+              National rank-level simulated exam simulations, interview panel prep sessions, and final revisions ensuring complete mental selection readiness.
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Roadmap Banner -->
+  <section class="py-16 lg:py-24 bg-gradient-glow border-t border-slate-100 dark:border-slate-800 text-center">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 space-y-6">
+      <h2 class="text-3xl font-bold tracking-tight text-slate-900 dark:text-white">Ready to start your roadmap?</h2>
+      <p class="text-sm text-slate-500 dark:text-slate-400 max-w-xl mx-auto leading-relaxed">
+        Reserve your batch slot now. Our senior admissions directors will guide you through the ideal program mapping.
+      </p>
+      <div class="flex justify-center gap-4">
+        <a href="book-now.html" class="gradient-btn px-8 py-3.5 rounded-xl font-medium text-white shadow-md">
+          Enroll Online Now
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Why Choose Achieve Section -->
+  <section class="py-16 lg:py-24 bg-slate-50 dark:bg-slate-900">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center max-w-2xl mx-auto mb-16 reveal fade-up">
+        <span class="text-xs font-bold text-blue-600 dark:text-blue-400 uppercase tracking-widest">Our Difference</span>
+        <h2 class="text-3xl font-bold tracking-tight text-slate-900 dark:text-white mt-1">Why Students Choose Achieve</h2>
+        <p class="text-sm text-slate-500 dark:text-slate-400 mt-2">We combine the best of technology, expert guidance, and proven methodology.</p>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <!-- Feature 1 -->
+        <div class="glass-panel p-8 rounded-3xl border border-slate-100 dark:border-slate-800 shadow-sm hover:shadow-xl transition-all duration-300 hover:-translate-y-1 reveal fade-up">
+          <div class="w-12 h-12 bg-blue-100 dark:bg-blue-950/30 text-blue-600 dark:text-blue-400 rounded-xl flex items-center justify-center mb-5">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9.75 3.104v5.714a2.25 2.25 0 01-.659 1.591L5 14.5M9.75 3.104c-.251.023-.501.05-.75.082m.75-.082a24.301 24.301 0 014.5 0m0 0v5.714c0 .597.237 1.17.659 1.591L19.8 15.3M14.25 3.104c.251.023.501.05.75.082M19.8 15.3l-1.57.393A9.065 9.065 0 0112 15a9.065 9.065 0 00-6.23-.693L5 14.5m14.8.8l1.402 1.402c1.232 1.232.65 3.318-1.067 3.611A48.309 48.309 0 0112 21c-2.773 0-5.491-.235-8.135-.687-1.718-.293-2.3-2.379-1.067-3.61L5 14.5" /></svg>
+          </div>
+          <h3 class="text-base font-bold text-slate-900 dark:text-white mb-2">Expert Faculty</h3>
+          <p class="text-xs text-slate-500 dark:text-slate-400 leading-relaxed">Our panel includes ex-IAS officers, IIT alumni, and senior doctors who have cracked these exams themselves.</p>
+        </div>
+        <!-- Feature 2 -->
+        <div class="glass-panel p-8 rounded-3xl border border-slate-100 dark:border-slate-800 shadow-sm hover:shadow-xl transition-all duration-300 hover:-translate-y-1 reveal fade-up">
+          <div class="w-12 h-12 bg-amber-100 dark:bg-amber-950/30 text-amber-600 dark:text-amber-400 rounded-xl flex items-center justify-center mb-5">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M3 13.125C3 12.504 3.504 12 4.125 12h2.25c.621 0 1.125.504 1.125 1.125v6.75C7.5 20.496 6.996 21 6.375 21h-2.25A1.125 1.125 0 013 19.875v-6.75zM9.75 8.625c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125v11.25c0 .621-.504 1.125-1.125 1.125h-2.25a1.125 1.125 0 01-1.125-1.125V8.625zM16.5 4.125c0-.621.504-1.125 1.125-1.125h2.25C20.496 3 21 3.504 21 4.125v15.75c0 .621-.504 1.125-1.125 1.125h-2.25a1.125 1.125 0 01-1.125-1.125V4.125z" /></svg>
+          </div>
+          <h3 class="text-base font-bold text-slate-900 dark:text-white mb-2">AI-Powered Analytics</h3>
+          <p class="text-xs text-slate-500 dark:text-slate-400 leading-relaxed">Real-time performance dashboards track your weak areas and recommend personalized study plans daily.</p>
+        </div>
+        <!-- Feature 3 -->
+        <div class="glass-panel p-8 rounded-3xl border border-slate-100 dark:border-slate-800 shadow-sm hover:shadow-xl transition-all duration-300 hover:-translate-y-1 reveal fade-up">
+          <div class="w-12 h-12 bg-emerald-100 dark:bg-emerald-950/30 text-emerald-600 dark:text-emerald-400 rounded-xl flex items-center justify-center mb-5">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75M21 12c0 1.268-.63 2.39-1.593 3.068a3.745 3.745 0 01-1.043 3.296" /></svg>
+          </div>
+          <h3 class="text-base font-bold text-slate-900 dark:text-white mb-2">Guaranteed Results</h3>
+          <p class="text-xs text-slate-500 dark:text-slate-400 leading-relaxed">98% of our Elite program students clear their target exam in the first attempt. We stand by our methodology.</p>
+        </div>
+        <!-- Feature 4 -->
+        <div class="glass-panel p-8 rounded-3xl border border-slate-100 dark:border-slate-800 shadow-sm hover:shadow-xl transition-all duration-300 hover:-translate-y-1 reveal fade-up">
+          <div class="w-12 h-12 bg-purple-100 dark:bg-purple-950/30 text-purple-600 dark:text-purple-400 rounded-xl flex items-center justify-center mb-5">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M15 19.128a9.38 9.38 0 002.625.372 9.337 9.337 0 004.121-.952 4.125 4.125 0 00-7.533-2.493M15 19.128v-.003c0-1.113-.285-2.16-.786-3.07M15 19.128v.106A12.318 12.318 0 018.624 21c-2.331 0-4.512-.645-6.374-1.766l-.001-.109a6.375 6.375 0 0111.964-3.07M12 6.375a3.375 3.375 0 11-6.75 0 3.375 3.375 0 016.75 0zm8.25 2.25a2.625 2.625 0 11-5.25 0 2.625 2.625 0 015.25 0z" /></svg>
+          </div>
+          <h3 class="text-base font-bold text-slate-900 dark:text-white mb-2">Community of Toppers</h3>
+          <p class="text-xs text-slate-500 dark:text-slate-400 leading-relaxed">Join a community of 15,000+ ambitious achievers. Peer learning, study groups, and alumni networks await.</p>
+        </div>
+        <!-- Feature 5 -->
+        <div class="glass-panel p-8 rounded-3xl border border-slate-100 dark:border-slate-800 shadow-sm hover:shadow-xl transition-all duration-300 hover:-translate-y-1 reveal fade-up">
+          <div class="w-12 h-12 bg-rose-100 dark:bg-rose-950/30 text-rose-600 dark:text-rose-400 rounded-xl flex items-center justify-center mb-5">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M12 6v6h4.5m4.5 0a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
+          </div>
+          <h3 class="text-base font-bold text-slate-900 dark:text-white mb-2">Flexible Schedules</h3>
+          <p class="text-xs text-slate-500 dark:text-slate-400 leading-relaxed">Morning, afternoon, and weekend batches. Study at your own pace with 24/7 recorded lecture access.</p>
+        </div>
+        <!-- Feature 6 -->
+        <div class="glass-panel p-8 rounded-3xl border border-slate-100 dark:border-slate-800 shadow-sm hover:shadow-xl transition-all duration-300 hover:-translate-y-1 reveal fade-up">
+          <div class="w-12 h-12 bg-cyan-100 dark:bg-cyan-950/30 text-cyan-600 dark:text-cyan-400 rounded-xl flex items-center justify-center mb-5">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M8.625 12a.375.375 0 11-.75 0 .375.375 0 01.75 0zm0 0H8.25m4.125 0a.375.375 0 11-.75 0 .375.375 0 01.75 0zm0 0H12m4.125 0a.375.375 0 11-.75 0 .375.375 0 01.75 0zm0 0h-.375M21 12c0 4.556-4.03 8.25-9 8.25a9.764 9.764 0 01-2.555-.337A5.972 5.972 0 015.41 20.97a5.969 5.969 0 01-.474-.065 4.48 4.48 0 00.978-2.025c.09-.457-.133-.901-.467-1.226C3.93 16.178 3 14.189 3 12c0-4.556 4.03-8.25 9-8.25s9 3.694 9 8.25z" /></svg>
+          </div>
+          <h3 class="text-base font-bold text-slate-900 dark:text-white mb-2">24/7 Doubt Support</h3>
+          <p class="text-xs text-slate-500 dark:text-slate-400 leading-relaxed">Our academic support team is available round the clock via chat, video call, and dedicated WhatsApp groups.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Student Testimonials -->
+  <section class="py-16 bg-white dark:bg-slate-950">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-12 reveal fade-up">
+        <span class="text-xs font-bold text-blue-600 dark:text-blue-400 uppercase tracking-widest">Success Stories</span>
+        <h2 class="text-3xl font-bold tracking-tight text-slate-900 dark:text-white mt-1">Words From Our Toppers</h2>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div class="glass-panel p-8 rounded-3xl border border-slate-100 dark:border-slate-800 shadow-sm reveal fade-up">
+          <div class="flex items-center gap-1 mb-4">
+            <span class="text-amber-400 text-sm">★★★★★</span>
+          </div>
+          <p class="text-xs text-slate-600 dark:text-slate-400 leading-relaxed italic mb-6">"Achieve Academy's structured roadmap completely transformed my approach to UPSC. I cleared Prelims and Mains in my very first attempt after joining. The faculty is incredibly knowledgeable."</p>
+          <div class="flex items-center gap-3">
+            <div class="w-10 h-10 rounded-full bg-blue-600 flex items-center justify-center text-white text-xs font-bold">RS</div>
+            <div>
+              <h5 class="text-sm font-bold text-slate-900 dark:text-white">Rohit Singh</h5>
+              <p class="text-[10px] text-slate-400">IAS 2024 | AIR 23</p>
+            </div>
+          </div>
+        </div>
+        <div class="glass-panel p-8 rounded-3xl border border-slate-100 dark:border-slate-800 shadow-sm reveal fade-up">
+          <div class="flex items-center gap-1 mb-4">
+            <span class="text-amber-400 text-sm">★★★★★</span>
+          </div>
+          <p class="text-xs text-slate-600 dark:text-slate-400 leading-relaxed italic mb-6">"The JEE Advanced course at Achieve is unmatched. Prof. Sen's problem-solving techniques helped me crack Physics with 95+ marks. I got into IIT Bombay — a dream that felt impossible before."</p>
+          <div class="flex items-center gap-3">
+            <div class="w-10 h-10 rounded-full bg-amber-600 flex items-center justify-center text-white text-xs font-bold">PK</div>
+            <div>
+              <h5 class="text-sm font-bold text-slate-900 dark:text-white">Priya Khatri</h5>
+              <p class="text-[10px] text-slate-400">IIT Bombay | JEE AIR 47</p>
+            </div>
+          </div>
+        </div>
+        <div class="glass-panel p-8 rounded-3xl border border-slate-100 dark:border-slate-800 shadow-sm reveal fade-up">
+          <div class="flex items-center gap-1 mb-4">
+            <span class="text-amber-400 text-sm">★★★★★</span>
+          </div>
+          <p class="text-xs text-slate-600 dark:text-slate-400 leading-relaxed italic mb-6">"After failing NEET twice, I enrolled at Achieve Academy. Dr. Nair's biology classes are extraordinary. I cleared NEET with 680/720 and secured a seat at AIIMS Delhi. Truly life-changing!"</p>
+          <div class="flex items-center gap-3">
+            <div class="w-10 h-10 rounded-full bg-emerald-600 flex items-center justify-center text-white text-xs font-bold">AM</div>
+            <div>
+              <h5 class="text-sm font-bold text-slate-900 dark:text-white">Anika Menon</h5>
+              <p class="text-[10px] text-slate-400">AIIMS Delhi | NEET 680/720</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Student Analytics Dashboard Preview Section -->
+  <section class="py-16 bg-white dark:bg-slate-950 border-t border-slate-100 dark:border-slate-800">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+        <div class="reveal fade-left space-y-6">
+          <span class="text-xs font-bold text-blue-600 dark:text-blue-400 uppercase tracking-widest">Real-time stats</span>
+          <h2 class="text-3xl font-bold text-slate-900 dark:text-white">AI-Powered Student Portal</h2>
+          <p class="text-xs text-slate-500 dark:text-slate-400 leading-relaxed">
+            Every enrolled student gets a personalized dashboard dashboard key. Track syllabus completion percentages, compare mock test scores with rank percentiles, and request live 1-on-1 counselor slots.
+          </p>
+          <div class="space-y-3">
+            <div class="flex items-center gap-3">
+              <div class="w-8 h-8 rounded-full bg-blue-100 dark:bg-blue-950/30 text-blue-650 dark:text-blue-400 flex items-center justify-center font-bold text-xs">✓</div>
+              <p class="text-xs font-semibold text-slate-700 dark:text-slate-300">Live rank projection metrics</p>
+            </div>
+            <div class="flex items-center gap-3">
+              <div class="w-8 h-8 rounded-full bg-blue-100 dark:bg-blue-950/30 text-blue-650 dark:text-blue-400 flex items-center justify-center font-bold text-xs">✓</div>
+              <p class="text-xs font-semibold text-slate-700 dark:text-slate-300">Detailed question-wise analytics dashboards</p>
+            </div>
+          </div>
+          <a href="user-portal.html" class="inline-flex items-center gap-2 text-sm font-semibold text-blue-600 dark:text-blue-400 hover:underline">
+            View Portal Sandbox
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" /></svg>
+          </a>
+        </div>
+        <div class="reveal fade-right">
+          <img src="assets/homeimg2" alt="Student portal analytics preview" class="w-full h-80 object-cover rounded-3xl shadow-xl border border-slate-200 dark:border-slate-800">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Doubt Buster Engine Section -->
+  <section class="py-16 bg-slate-50 dark:bg-slate-900 border-t border-slate-100 dark:border-slate-800">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+        <div class="reveal fade-left order-2 lg:order-1">
+          <img src="assets/homeimg3" alt="Students in group discussion" class="w-full h-80 object-cover rounded-3xl shadow-xl">
+        </div>
+        <div class="reveal fade-right space-y-6 order-1 lg:order-2">
+          <span class="text-xs font-bold text-blue-600 dark:text-blue-400 uppercase tracking-widest">Interactive Support</span>
+          <h2 class="text-3xl font-bold text-slate-900 dark:text-white">Active Doubt-Buster Grid</h2>
+          <p class="text-xs text-slate-500 dark:text-slate-400 leading-relaxed">
+            Never let a difficult question stop your momentum. Our online doubt cells allow you to take a photo of any numerical, equation, or answer prompt, and upload it to receive custom recorded video solutions.
+          </p>
+          <div class="grid grid-cols-2 gap-4">
+            <div class="p-4 bg-white dark:bg-slate-950 rounded-2xl border border-slate-100 dark:border-slate-850 shadow-sm text-center">
+              <p class="text-2xl font-extrabold text-blue-600 dark:text-blue-400">< 15m</p>
+              <p class="text-[10px] text-slate-400 font-semibold uppercase mt-0.5">Response Time</p>
+            </div>
+            <div class="p-4 bg-white dark:bg-slate-950 rounded-2xl border border-slate-100 dark:border-slate-850 shadow-sm text-center">
+              <p class="text-2xl font-extrabold text-amber-500">24/7</p>
+              <p class="text-[10px] text-slate-400 font-semibold uppercase mt-0.5">Doubt coverage</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <!-- Pricing Grid -->
+  <section class="py-16 bg-white dark:bg-slate-950">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8 items-stretch">
+        
+        <!-- Starter Plan -->
+        <div class="glass-panel p-8 rounded-3xl border border-slate-200 dark:border-slate-800 shadow-sm flex flex-col justify-between relative h-full">
+          <div class="space-y-6">
+            <div>
+              <h3 class="text-lg font-bold text-slate-900 dark:text-white">Starter Program</h3>
+              <p class="text-xs text-slate-400 mt-1">Ideal for syllabus self-study check</p>
+            </div>
+            
+            <div class="flex items-baseline gap-1">
+              <span class="text-4xl font-extrabold text-slate-900 dark:text-white">$49</span>
+              <span class="text-xs text-slate-500 dark:text-slate-400">/ month</span>
+            </div>
+
+            <hr class="border-slate-100 dark:border-slate-800">
+
+            <ul class="space-y-3 text-xs text-slate-600 dark:text-slate-400">
+              <li class="flex items-center gap-2">✓ Course Duration: 3 Months</li>
+              <li class="flex items-center gap-2">✓ Printed Study Materials</li>
+              <li class="flex items-center gap-2">✓ 25 Sectional Mock Tests</li>
+              <li class="flex items-center gap-2 text-slate-400 dark:text-slate-600">✗ Recorded Video Classes</li>
+              <li class="flex items-center gap-2 text-slate-400 dark:text-slate-600">✗ Live Interactive Sessions</li>
+              <li class="flex items-center gap-2 text-slate-400 dark:text-slate-600">✗ Personal Mentor Support</li>
+            </ul>
+          </div>
+
+          <a href="book-now.html" class="w-full text-center py-3 rounded-xl border border-slate-350 dark:border-slate-700 text-slate-850 dark:text-white hover:bg-slate-50 dark:hover:bg-slate-800 font-semibold text-xs transition-colors mt-8">
+            Get Started
+          </a>
+        </div>
+
+        <!-- Advanced Plan (Featured) -->
+        <div class="glass-panel p-8 rounded-3xl border-2 border-blue-600 dark:border-blue-500 shadow-xl flex flex-col justify-between relative h-full transform lg:-translate-y-2">
+          <!-- Featured Badge -->
+          <span class="absolute -top-3 left-1/2 transform -translate-x-1/2 bg-blue-600 dark:bg-blue-500 text-white text-[9px] font-bold uppercase tracking-widest px-3 py-1 rounded-full shadow-sm">
+            Most Popular
+          </span>
+
+          <div class="space-y-6">
+            <div>
+              <h3 class="text-lg font-bold text-slate-900 dark:text-white">Advanced Program</h3>
+              <p class="text-xs text-slate-400 mt-1">Complete classroom & review guidance</p>
+            </div>
+            
+            <div class="flex items-baseline gap-1">
+              <span class="text-4xl font-extrabold text-slate-900 dark:text-white">$99</span>
+              <span class="text-xs text-slate-500 dark:text-slate-400">/ month</span>
+            </div>
+
+            <hr class="border-slate-100 dark:border-slate-800">
+
+            <ul class="space-y-3 text-xs text-slate-600 dark:text-slate-400">
+              <li class="flex items-center gap-2">✓ Course Duration: 6 Months</li>
+              <li class="flex items-center gap-2">✓ Complete Printed & PDF Manuals</li>
+              <li class="flex items-center gap-2">✓ 80 Sectional & Full Mock Tests</li>
+              <li class="flex items-center gap-2">✓ HD Recorded Classes archive</li>
+              <li class="flex items-center gap-2">✓ Live Interactive Stream Access</li>
+              <li class="flex items-center gap-2 text-slate-400 dark:text-slate-600">✗ Personal Mentor Support</li>
+            </ul>
+          </div>
+
+          <a href="book-now.html" class="w-full text-center py-3 rounded-xl gradient-btn text-white font-semibold text-xs shadow-md mt-8">
+            Subscribe Now
+          </a>
+        </div>
+
+        <!-- Elite Plan -->
+        <div class="glass-panel p-8 rounded-3xl border border-slate-200 dark:border-slate-800 shadow-sm flex flex-col justify-between relative h-full">
+          <div class="space-y-6">
+            <div>
+              <h3 class="text-lg font-bold text-slate-900 dark:text-white">Elite Program</h3>
+              <p class="text-xs text-slate-400 mt-1">1-on-1 intensive advisory track</p>
+            </div>
+            
+            <div class="flex items-baseline gap-1">
+              <span class="text-4xl font-extrabold text-slate-900 dark:text-white">$149</span>
+              <span class="text-xs text-slate-500 dark:text-slate-400">/ month</span>
+            </div>
+
+            <hr class="border-slate-100 dark:border-slate-800">
+
+            <ul class="space-y-3 text-xs text-slate-600 dark:text-slate-400">
+              <li class="flex items-center gap-2">✓ Course Duration: 12 Months</li>
+              <li class="flex items-center gap-2">✓ All-inclusive Study kits at home</li>
+              <li class="flex items-center gap-2">✓ Unlimited Mock Tests & Analytics</li>
+              <li class="flex items-center gap-2">✓ HD Recorded Classes Archive</li>
+              <li class="flex items-center gap-2">✓ Live Interactive Stream Access</li>
+              <li class="flex items-center gap-2">✓ 1-on-1 Faculty Mentor Support</li>
+            </ul>
+          </div>
+
+          <a href="book-now.html" class="w-full text-center py-3 rounded-xl border border-slate-350 dark:border-slate-700 text-slate-850 dark:text-white hover:bg-slate-50 dark:hover:bg-slate-800 font-semibold text-xs transition-colors mt-8">
+            Request Custom Pitch
+          </a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+    <!-- Client Testimonials Slider -->
+<section class="py-16 lg:py-24 bg-slate-50 dark:bg-slate-900 overflow-hidden border-t border-slate-100 dark:border-slate-800">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 relative">
+      <div class="text-center mb-16">
+        <h2 class="text-3xl font-bold tracking-tight text-slate-900 dark:text-white">Voices of Success</h2>
+        <p class="text-sm text-slate-500 dark:text-slate-400 mt-2">Hear directly from the aspirants who trained under our modules.</p>
+      </div>
+
+      <div class="relative glass-panel rounded-3xl p-8 sm:p-12 border border-slate-200/50 dark:border-slate-800/80 shadow-lg min-h-[280px] flex flex-col justify-between">
+        <span class="absolute top-6 left-8 text-blue-600/10 dark:text-blue-400/5 text-8xl font-serif select-none">“</span>
+
+        <div id="testimonials-container">
+          <div class="testimonial-slide space-y-4">
+            <img src="assets/t1" alt="Alex Morgan" class="w-16 h-16 rounded-full object-cover mb-4">
+            <p class="text-base sm:text-lg text-slate-700 dark:text-slate-300 font-medium italic leading-relaxed">
+              "The faculty support at Achieve Academy is unmatched. Whenever I struggled with complex calculus problems, my mentor sat down with me after hours. Their analytics portal predicted my exam score with 95% accuracy!"
+            </p>
+            <div>
+              <h4 class="text-sm font-bold text-slate-900 dark:text-white">Alex Morgan</h4>
+              <p class="text-xs text-slate-500 dark:text-slate-400">IIT JEE Scholar, Batch of 2025</p>
+            </div>
+          </div>
+
+          <div class="testimonial-slide space-y-4 hidden">
+            <img src="assets/gt" alt="Ananya Iyer" class="w-16 h-16 rounded-full object-cover mb-4">
+            <p class="text-base sm:text-lg text-slate-700 dark:text-slate-300 font-medium italic leading-relaxed">
+              "Achieve Academy's UPSC foundation course is exceptionally structured. The daily mock tests, weekly current affairs analysis, and mock interviews helped me build real confidence to ace the examination."
+            </p>
+            <div>
+              <h4 class="text-sm font-bold text-slate-900 dark:text-white">Ananya Iyer</h4>
+              <p class="text-xs text-slate-500 dark:text-slate-400">IPS Officer (AIR 48), UPSC 2024</p>
+            </div>
+          </div>
+
+          <div class="testimonial-slide space-y-4 hidden">
+            <img src="assets/t3" alt="Kabir Malhotra" class="w-16 h-16 rounded-full object-cover mb-4">
+            <p class="text-base sm:text-lg text-slate-700 dark:text-slate-300 font-medium italic leading-relaxed">
+              "The mock simulator and personal mentorship program are the highlights of their teaching engine. Being able to access recorded lectures from my room made learning flexible and highly efficient."
+            </p>
+            <div>
+              <h4 class="text-sm font-bold text-slate-900 dark:text-white">Kabir Malhotra</h4>
+              <p class="text-xs text-slate-500 dark:text-slate-400">Medical Student, NEET topper 2025</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="flex items-center justify-between mt-8 pt-6 border-t border-slate-100 dark:border-slate-800">
+          <div id="test-indicators" class="flex gap-2">
+            </div>
+          <div class="flex gap-3">
+            <button id="test-prev-btn" class="w-10 h-10 rounded-full border border-slate-300 dark:border-slate-700 hover:bg-slate-100 dark:hover:bg-slate-800 flex items-center justify-center text-slate-600 dark:text-slate-300 transition-colors" aria-label="Previous Testimonial">
+              <svg class="w-4 h-4 rtl-flip" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5L8.25 12l7.5-7.5" /></svg>
+            </button>
+            <button id="test-next-btn" class="w-10 h-10 rounded-full border border-slate-300 dark:border-slate-700 hover:bg-slate-100 dark:hover:bg-slate-800 flex items-center justify-center text-slate-600 dark:text-slate-300 transition-colors" aria-label="Next Testimonial">
+              <svg class="w-4 h-4 rtl-flip" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" /></svg>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Bottom CTA Section -->
+  <section class="py-16 bg-slate-100/50 dark:bg-slate-950 border-t border-slate-150 dark:border-slate-800">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="relative rounded-3xl overflow-hidden bg-gradient-premium shadow-2xl">
+        <div class="absolute inset-0 bg-[radial-gradient(#ffffff08_1px,transparent_1px)] [background-size:16px_16px]"></div>
+        <div class="relative z-10 grid grid-cols-1 lg:grid-cols-2 gap-8 items-center p-10 sm:p-16">
+          <div class="text-white space-y-6">
+            <span class="text-xs font-bold text-amber-400 uppercase tracking-widest">Registration Open</span>
+            <h2 class="text-3xl sm:text-4xl font-bold">Secure your Seat at Achieve Academy</h2>
+            <p class="text-sm text-blue-200 leading-relaxed">Early registrations get 15% batch discount plus custom syllabus roadmap diagnostics. Book your counseling slot now.</p>
+            <div class="flex flex-wrap gap-4">
+              <a href="book-now.html" class="px-8 py-3.5 rounded-xl bg-white text-blue-700 font-semibold text-sm shadow-lg hover:bg-blue-50 transition-colors">Book Free Demo</a>
+              <a href="contact.html" class="px-8 py-3.5 rounded-xl border border-white/40 text-white font-semibold text-sm hover:bg-white/10 transition-colors">Find a Campus</a>
+            </div>
+          </div>
+          <div class="hidden lg:flex justify-end">
+            <img src="assets/home2cta" alt="Students studying together" class="w-full max-w-sm rounded-2xl opacity-90 object-cover h-64 shadow-lg border border-white/20">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Sticky Mobile CTA -->
+  <div class="lg:hidden fixed bottom-0 left-0 w-full bg-white dark:bg-slate-900 border-t border-slate-200 dark:border-slate-800 p-3.5 z-40 flex items-center justify-between shadow-lg">
+    <div class="flex flex-col">
+      <span class="text-[10px] text-slate-400 font-semibold uppercase">Enroll Today</span>
+      <span class="text-sm font-bold text-blue-600 dark:text-blue-400">Classrooms Open</span>
+    </div>
+    <a href="book-now.html" class="gradient-btn px-6 py-2.5 rounded-lg text-xs font-semibold text-white shadow-md">Book Demo Class</a>
+  </div>
+
+  <!-- Shared Footer Hydration -->
+  <footer id="global-footer"></footer>
+
+  <!-- Back to Top Button -->
+  <button id="back-to-top" class="fixed bottom-6 right-6 z-40 bg-blue-600 text-white p-3 rounded-full shadow-lg opacity-0 pointer-events-none translate-y-4 transition-all duration-300 hover:bg-blue-700 hover:scale-110" aria-label="Back to Top">
+    <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M4.5 15.75l7.5-7.5 7.5 7.5" /></svg>
+  </button>
+
+  <!-- Shared JS Modules -->
+  <script src="assets/js/main.js"></script>
+  <script src="assets/js/home.js"></script>
+</body>
+</html>

@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="data:image/svg+xml;base64,PHN2ZyB2aWV3Qm94PSIwIDAgMTAwIDEwMCIgZmlsbD0ibm9uZSIgc3Ryb2tlPSJjdXJyZW50Q29sb3IiIHN0cm9rZS13aWR0aD0iNCIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgogIDxjaXJjbGUgY3g9IjUwIiBjeT0iNTAiIHI9IjQ0IiBzdHJva2U9ImN1cnJlbnRDb2xvciIgc3Ryb2tlLXdpZHRoPSI1IiBmaWxsPSJub25lIiBjbGFzcz0idGV4dC1ibHVlLTgwMCIgLz4KICA8cGF0aCBkPSJNMzUgNTJ2OGMwIDggMTUgMTAgMTUgMTBzMTUtMiAxNS0xMHYtOCIgZmlsbD0iY3VycmVudENvbG9yIiBjbGFzcz0idGV4dC1ibHVlLTYwMCIgLz4KICA8cG9seWdvbiBwb2ludHM9IjUwLDMwIDgwLDQ1IDUwLDYwIDIwLDQ1IiBmaWxsPSJjdXJyZW50Q29sb3IiIGNsYXNzPSJ0ZXh0LWJsdWUtODAwIiBzdHJva2U9ImN1cnJlbnRDb2xvciIgc3Ryb2tlLXdpZHRoPSIyIiAvPgogIDxwYXRoIGQ9Ik01MCw0NSBMMjUsNTIgTDI1LDYyIiBzdHJva2U9ImN1cnJlbnRDb2xvciIgc3Ryb2tlLXdpZHRoPSIzIiAvPgogIDxjaXJjbGUgY3g9IjI1IiBjeT0iNjQiIHI9IjIuNSIgZmlsbD0iY3VycmVudENvbG9yIiAvPgogIDxwYXRoIGQ9Ik01MCw4MCBMNTAsMTgiIHN0cm9rZT0iI0Y1OUUwQiIgc3Ryb2tlLXdpZHRoPSI2IiAvPgogIDxwYXRoIGQ9Ik00MiwyNiBMNTAsMTYgTDU4LDI2IiBzdHJva2U9IiNGNUFFMEIiIHN0cm9rZS13aWR0aD0iNiIgLz4KPC9zdmc+">
+  <title>Student Login Portal | Achieve Academy</title>
+  <meta name="description" content="Sign in to your student dashboard to review courses, mock scores, and class timetables.">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          colors: {
+            primary: '#1E40AF',
+            secondary: '#2563EB',
+            accent: '#F59E0B',
+            success: '#10B981',
+            background: '#F8FAFC',
+            dark: '#0F172A',
+            text: '#334155',
+          },
+          fontFamily: {
+            sans: ['Poppins', 'sans-serif'],
+          }
+        }
+      }
+    }
+  </script>
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body class="bg-slate-50 dark:bg-slate-900 text-slate-700 dark:text-slate-300 flex flex-col min-h-screen">
+
+  <!-- Minimal Header -->
+  <header id="global-header" class="w-full transition-all duration-300 glass-nav shadow-sm relative z-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-20">
+        <!-- Logo & Brand Name -->
+        <a href="index.html" class="flex items-center gap-3">
+          <!-- Embedded academic logo SVG (same as main.js) -->
+          <svg class="h-8 w-8 sm:h-10 sm:w-10 flex-shrink-0" viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="50" cy="50" r="44" stroke="currentColor" stroke-width="5" fill="none" class="text-blue-800 dark:text-blue-500" />
+            <path d="M35 52v8c0 8 15 10 15 10s15-2 15-10v-8" fill="currentColor" class="text-blue-600 opacity-20 dark:text-blue-800" />
+            <polygon points="50,30 80,45 50,60 20,45" fill="currentColor" class="text-blue-800 dark:text-blue-500" stroke="currentColor" stroke-width="2" />
+            <path d="M50,45 L25,52 L25,62" stroke="currentColor" stroke-width="3" />
+            <circle cx="25" cy="64" r="2.5" fill="currentColor" />
+            <path d="M50,80 L50,18" stroke="#F59E0B" stroke-width="6" />
+            <path d="M42,26 L50,16 L58,26" stroke="#F59E0B" stroke-width="6" />
+          </svg>
+          <div class="flex flex-col">
+            <span class="text-base sm:text-lg font-bold tracking-tight text-slate-900 dark:text-white leading-none">Achieve Academy</span>
+            <span class="text-[9px] sm:text-[10px] text-slate-500 dark:text-slate-400 font-medium tracking-wider uppercase mt-1">Your Success Begins Here</span>
+          </div>
+        </a>
+
+        <!-- Minimal Controls -->
+        <div class="flex items-center gap-2 sm:gap-3">
+          <!-- Direction Toggle -->
+          <button onclick="toggleDirection()" class="p-2 rounded-lg text-slate-600 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors flex items-center gap-1 text-xs font-semibold" title="Toggle Language Direction">
+            <span class="dir-toggle-text">LTR</span>
+          </button>
+
+          <!-- Theme Toggle -->
+          <button onclick="toggleTheme()" class="p-2 rounded-lg text-slate-600 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors" title="Toggle Dark/Light Mode">
+            <!-- Sun -->
+            <svg class="w-5 h-5 block dark:hidden" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M12 3v2.25m0 13.5V21M4.22 4.22l1.58 1.58m12.42 12.42l1.58 1.58M3 12h2.25m13.5 0H21M4.22 19.78l1.58-1.58M18.22 5.75l1.58-1.58M12 7.5a4.5 4.5 0 100 9 4.5 4.5 0 000-9z" /></svg>
+            <!-- Moon -->
+            <svg class="w-5 h-5 hidden dark:block" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M21.752 15.002A9.718 9.718 0 0118 15.75c-5.385 0-9.75-4.365-9.75-9.75 0-1.33.266-2.597.748-3.752A9.753 9.753 0 003 11.25C3 16.635 7.365 21 12.75 21a9.753 9.753 0 009.002-5.998z" /></svg>
+          </button>
+
+          <!-- Home Link -->
+          <!-- <a href="index.html" class="hidden sm:inline-flex px-3.5 py-1.5 rounded-lg border border-slate-200 dark:border-slate-700 text-xs font-semibold hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors">Home</a> -->
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Preloader -->
+  <div id="preloader">
+    <div class="animate-spin rounded-full h-12 w-12 border-t-2 border-b-2 border-blue-600"></div>
+  </div>
+
+  <!-- Scroll Progress Bar -->
+  <div id="scroll-progress"></div>
+
+  <!-- Login Form Area -->
+  <main class="flex-grow flex items-center justify-center py-12 px-4 sm:px-6 lg:px-8 bg-gradient-glow relative overflow-hidden">
+    <div class="max-w-md w-full glass-panel p-8 rounded-3xl border border-slate-200/50 dark:border-slate-800/80 shadow-2xl relative z-10 space-y-6 reveal zoom-in">
+      
+      <!-- Card header -->
+      <div class="text-center">
+        <h2 class="text-2xl font-bold tracking-tight text-slate-900 dark:text-white">Welcome Back</h2>
+        <p class="text-xs text-slate-500 dark:text-slate-400 mt-1.5">Enter details below to access your academic dashboard</p>
+      </div>
+
+      <!-- Form Inputs -->
+      <form id="student-login-form" class="space-y-4" onsubmit="event.preventDefault(); window.location.href='user-portal.html';">
+        <div>
+          <label for="l-email" class="block text-xs font-semibold text-slate-500 dark:text-slate-400 mb-1">Email Address</label>
+          <input type="email" id="l-email" required placeholder="name@domain.com" class="w-full px-4 py-2.5 text-sm bg-slate-50 dark:bg-slate-950 border border-slate-200 dark:border-slate-800 text-slate-900 dark:text-white rounded-xl focus:outline-none focus:border-blue-500 focus:bg-white dark:focus:bg-slate-900 transition-colors">
+        </div>
+
+        <div>
+          <div class="flex justify-between items-center mb-1">
+            <label for="l-pass" class="block text-xs font-semibold text-slate-500 dark:text-slate-400">Password</label>
+            <a href="#" class="text-[10px] text-blue-600 dark:text-blue-450 hover:underline">Forgot password?</a>
+          </div>
+          <input type="password" id="l-pass" required placeholder="••••••••" class="w-full px-4 py-2.5 text-sm bg-slate-50 dark:bg-slate-950 border border-slate-200 dark:border-slate-800 text-slate-900 dark:text-white rounded-xl focus:outline-none focus:border-blue-500 focus:bg-white dark:focus:bg-slate-900 transition-colors">
+        </div>
+
+        <!-- Remember Me Checkbox -->
+        <div class="flex items-center">
+          <input type="checkbox" id="remember-me" class="w-4 h-4 text-blue-600 border-slate-350 rounded focus:ring-blue-500">
+          <label for="remember-me" class="ml-2 text-xs text-slate-500 dark:text-slate-400 select-none">Remember this device</label>
+        </div>
+
+        <button type="submit" class="gradient-btn w-full py-3 rounded-xl text-sm font-semibold text-white shadow-sm mt-2">
+          Sign In
+        </button>
+      </form>
+
+      <!-- Separator line -->
+      <div class="flex items-center my-4">
+        <hr class="flex-grow border-slate-200 dark:border-slate-800">
+        <span class="px-3 text-[10px] uppercase font-bold text-slate-400">Or continue with</span>
+        <hr class="flex-grow border-slate-200 dark:border-slate-800">
+      </div>
+
+      <!-- Social Logins Mock Buttons -->
+      <div class="grid grid-cols-3 gap-2">
+        <button class="px-2 py-2.5 rounded-xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 hover:bg-slate-50 dark:hover:bg-slate-800 transition-colors text-xs font-medium text-slate-700 dark:text-slate-300 flex items-center justify-center gap-1.5">
+          <!-- Google SVG icon -->
+          <svg class="w-4 h-4 flex-shrink-0 text-red-500" viewBox="0 0 24 24" fill="currentColor"><path d="M12.24 10.285V13.4h6.887c-.648 2.41-2.519 4.13-5.136 4.13A5.86 5.86 0 018.13 11.67a5.86 5.86 0 015.86-5.86c1.478 0 2.825.5 3.896 1.48l2.672-2.672A9.79 9.79 0 0013.99 2C8.47 2 4 6.47 4 12s4.47 10 9.99 10c5.73 0 9.79-4.03 9.79-9.92 0-.61-.06-1.2-.18-1.795H12.24z"/></svg>
+          Google
+        </button>
+        <button class="px-2 py-2.5 rounded-xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 hover:bg-slate-50 dark:hover:bg-slate-800 transition-colors text-xs font-medium text-slate-700 dark:text-slate-300 flex items-center justify-center gap-1.5">
+          <!-- Facebook SVG icon -->
+          <svg class="w-4 h-4 flex-shrink-0 text-blue-600" viewBox="0 0 24 24" fill="currentColor"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+          Facebook
+        </button>
+        <button class="px-2 py-2.5 rounded-xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 hover:bg-slate-50 dark:hover:bg-slate-800 transition-colors text-xs font-medium text-slate-700 dark:text-slate-300 flex items-center justify-center gap-1.5">
+          <!-- Apple SVG icon -->
+          <svg class="w-4 h-4 flex-shrink-0 text-slate-900 dark:text-white" viewBox="0 0 24 24" fill="currentColor"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.81-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M15.97 4.17c.66-.81 1.11-1.93.99-3.06-1 .04-2.21.67-2.93 1.49-.62.69-1.16 1.84-1.01 2.96 1.12.09 2.27-.57 2.95-1.39z"/></svg>
+          Apple
+        </button>
+      </div>
+
+      <!-- Registration link redirect -->
+      <div class="text-center text-xs text-slate-500">
+        New candidate? <a href="signup.html" class="text-blue-600 dark:text-blue-450 hover:underline font-semibold">Create account</a>
+      </div>
+
+    </div>
+  </main>
+
+
+  <!-- Shared JS Modules -->
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

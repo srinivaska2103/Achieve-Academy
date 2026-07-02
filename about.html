@@ -1,0 +1,554 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="data:image/svg+xml;base64,PHN2ZyB2aWV3Qm94PSIwIDAgMTAwIDEwMCIgZmlsbD0ibm9uZSIgc3Ryb2tlPSJjdXJyZW50Q29sb3IiIHN0cm9rZS13aWR0aD0iNCIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgogIDxjaXJjbGUgY3g9IjUwIiBjeT0iNTAiIHI9IjQ0IiBzdHJva2U9ImN1cnJlbnRDb2xvciIgc3Ryb2tlLXdpZHRoPSI1IiBmaWxsPSJub25lIiBjbGFzcz0idGV4dC1ibHVlLTgwMCIgLz4KICA8cGF0aCBkPSJNMzUgNTJ2OGMwIDggMTUgMTAgMTUgMTBzMTUtMiAxNS0xMHYtOCIgZmlsbD0iY3VycmVudENvbG9yIiBjbGFzcz0idGV4dC1ibHVlLTYwMCIgLz4KICA8cG9seWdvbiBwb2ludHM9IjUwLDMwIDgwLDQ1IDUwLDYwIDIwLDQ1IiBmaWxsPSJjdXJyZW50Q29sb3IiIGNsYXNzPSJ0ZXh0LWJsdWUtODAwIiBzdHJva2U9ImN1cnJlbnRDb2xvciIgc3Ryb2tlLXdpZHRoPSIyIiAvPgogIDxwYXRoIGQ9Ik01MCw0NSBMMjUsNTIgTDI1LDYyIiBzdHJva2U9ImN1cnJlbnRDb2xvciIgc3Ryb2tlLXdpZHRoPSIzIiAvPgogIDxjaXJjbGUgY3g9IjI1IiBjeT0iNjQiIHI9IjIuNSIgZmlsbD0iY3VycmVudENvbG9yIiAvPgogIDxwYXRoIGQ9Ik01MCw4MCBMNTAsMTgiIHN0cm9rZT0iI0Y1OUUwQiIgc3Ryb2tlLXdpZHRoPSI2IiAvPgogIDxwYXRoIGQ9Ik00MiwyNiBMNTAsMTYgTDU4LDI2IiBzdHJva2U9IiNGNUFFMEIiIHN0cm9rZS13aWR0aD0iNiIgLz4KPC9zdmc+">
+  <title>About Us | Achieve Academy</title>
+  <meta name="description" content="Discover Achieve Academy's history, mission, vision, values, and meet our senior faculty panel dedicated to competitive exams.">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          colors: {
+            primary: '#1E40AF',
+            secondary: '#2563EB',
+            accent: '#F59E0B',
+            success: '#10B981',
+            background: '#F8FAFC',
+            dark: '#0F172A',
+            text: '#334155',
+          },
+          fontFamily: {
+            sans: ['Poppins', 'sans-serif'],
+          }
+        }
+      }
+    }
+  </script>
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body class="bg-slate-50 dark:bg-slate-900 text-slate-700 dark:text-slate-300 pt-20">
+
+  <!-- Preloader -->
+  <div id="preloader">
+    <div class="animate-spin rounded-full h-12 w-12 border-t-2 border-b-2 border-blue-600"></div>
+  </div>
+
+  <!-- Scroll Progress Bar -->
+  <div id="scroll-progress"></div>
+
+  <!-- Shared Header Hydration -->
+  <header id="global-header"></header>
+
+  <!-- About Hero -->
+  <section class="py-16 sm:py-24 bg-gradient-glow relative overflow-hidden">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+        <div class="space-y-6 reveal fade-left">
+          <span class="text-xs font-bold text-blue-600 dark:text-blue-400 uppercase tracking-widest">Our Legacy Since 2012</span>
+          <h1 class="text-4xl sm:text-5xl font-bold tracking-tight text-slate-900 dark:text-white leading-tight">
+            Shaping Competitive<br>
+            <span class="text-blue-600 dark:text-blue-400">Success Stories</span>
+          </h1>
+          <p class="text-sm sm:text-base text-slate-500 dark:text-slate-400 leading-relaxed">
+            Achieve Academy was founded with one singular purpose — to make elite, structured exam preparation accessible to every ambitious student across the nation. Over a decade of excellence, we have produced thousands of top rankers across UPSC, JEE, NEET, and Banking exams.
+          </p>
+          <div class="flex flex-wrap gap-4">
+            <a href="book-now.html" class="gradient-btn px-6 py-3 rounded-xl text-sm font-semibold text-white shadow-md">Book a Demo Class</a>
+            <a href="contact.html" class="px-6 py-3 rounded-xl border border-slate-300 dark:border-slate-700 bg-white dark:bg-slate-800 text-slate-800 dark:text-white font-medium text-sm hover:bg-slate-50 dark:hover:bg-slate-700 transition-colors">Contact Us</a>
+          </div>
+        </div>
+        <div class="reveal fade-right">
+          <div class="relative rounded-3xl overflow-hidden shadow-2xl border border-white/30 dark:border-slate-700">
+            <img src="assets/abthero" alt="Achieve Academy Faculty Team" class="w-full h-auto object-cover">
+            <!-- Floating stats overlay -->
+            <div class="absolute bottom-4 left-4 right-4 grid grid-cols-3 gap-2">
+              <div class="glass-panel rounded-xl p-3 border border-white/30 text-center">
+                <p class="text-lg font-extrabold text-blue-600 dark:text-blue-400">15K+</p>
+                <p class="text-[10px] text-slate-600 dark:text-slate-300 font-semibold">Students</p>
+              </div>
+              <div class="glass-panel rounded-xl p-3 border border-white/30 text-center">
+                <p class="text-lg font-extrabold text-amber-500">98%</p>
+                <p class="text-[10px] text-slate-600 dark:text-slate-300 font-semibold">Success Rate</p>
+              </div>
+              <div class="glass-panel rounded-xl p-3 border border-white/30 text-center">
+                <p class="text-lg font-extrabold text-emerald-600 dark:text-emerald-400">14+</p>
+                <p class="text-[10px] text-slate-600 dark:text-slate-300 font-semibold">Years Exp.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Our Story, Mission, Vision, and Values -->
+  <section class="py-16 bg-white dark:bg-slate-950">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mb-16">
+        <div class="space-y-6 reveal fade-left">
+          <h2 class="text-3xl font-bold tracking-tight text-slate-900 dark:text-white">Our Story & Mission</h2>
+          <p class="text-sm text-slate-500 dark:text-slate-400 leading-relaxed">
+            What started as a single classroom in 2012 has grown into a premiere academy training over 15,000 students yearly. Our core belief is simple: conceptual clarity joined with rigorous, structured practice always guarantees results.
+          </p>
+          <p class="text-sm text-slate-500 dark:text-slate-400 leading-relaxed">
+            Our mission is to democratize elite mentorship, using advanced online frameworks and expert offline smart-halls to enable students to clear the toughest exams with confidence. We invest deeply in faculty, technology, and student welfare.
+          </p>
+          <p class="text-sm text-slate-500 dark:text-slate-400 leading-relaxed">
+            From our first batch of 40 students, we grew to impact an entire generation of competitive aspirants. Our alumni now serve across IAS, IPS, IIT research wings, AIIMS hospitals, and India's top banks.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-6 reveal fade-right">
+          <!-- Vision -->
+          <div class="glass-panel p-6 rounded-2xl border border-slate-100 dark:border-slate-800">
+            <div class="w-10 h-10 bg-blue-100 dark:bg-blue-950/30 text-blue-600 dark:text-blue-400 rounded-xl flex items-center justify-center mb-4">
+              <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M2.036 12.322a1.012 1.012 0 010-.639C3.423 7.51 7.36 4.5 12 4.5c4.638 0 8.573 3.007 9.963 7.178.07.207.07.431 0 .639C20.577 16.49 16.64 19.5 12 19.5c-4.638 0-8.573-3.007-9.963-7.178z" /><path stroke-linecap="round" stroke-linejoin="round" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" /></svg>
+            </div>
+            <h3 class="text-base font-bold text-slate-900 dark:text-white mb-2">Our Vision</h3>
+            <p class="text-xs text-slate-500 dark:text-slate-400 leading-relaxed">
+              To be the most trustworthy and technologically advanced coaching center in the country, fostering academic honesty and student.
+            </p>
+          </div>
+          
+          <!-- Values -->
+          <div class="glass-panel p-6 rounded-2xl border border-slate-100 dark:border-slate-800">
+            <div class="w-10 h-10 bg-amber-100 dark:bg-amber-950/30 text-amber-600 dark:text-amber-400 rounded-xl flex items-center justify-center mb-4">
+              <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v15m7.5-7.5h-15" /></svg>
+            </div>
+            <h3 class="text-base font-bold text-slate-900 dark:text-white mb-2">Student First</h3>
+            <p class="text-xs text-slate-500 dark:text-slate-400 leading-relaxed">
+              Every curriculum, mock exam schedule, and support shift is engineered with student success as the single focus.
+            </p>
+          </div>
+
+          <!-- Innovation -->
+          <div class="glass-panel p-6 rounded-2xl border border-slate-100 dark:border-slate-800">
+            <div class="w-10 h-10 bg-emerald-100 dark:bg-emerald-950/30 text-emerald-600 dark:text-emerald-400 rounded-xl flex items-center justify-center mb-4">
+              <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9.813 15.904L9 18.75l-.813-2.846a4.5 4.5 0 00-3.09-3.09L2.25 12l2.846-.813a4.5 4.5 0 003.09-3.09L9 5.25l.813 2.846a4.5 4.5 0 003.09 3.09L15.75 12l-2.846.813a4.5 4.5 0 00-3.09 3.09z" /></svg>
+            </div>
+            <h3 class="text-base font-bold text-slate-900 dark:text-white mb-2">Innovation</h3>
+            <p class="text-xs text-slate-500 dark:text-slate-400 leading-relaxed">
+              We constantly evolve our teaching methodologies with AI-powered analytics and personalized learning paths.
+            </p>
+          </div>
+
+          <!-- Integrity -->
+          <div class="glass-panel p-6 rounded-2xl border border-slate-100 dark:border-slate-800">
+            <div class="w-10 h-10 bg-purple-100 dark:bg-purple-950/30 text-purple-600 dark:text-purple-400 rounded-xl flex items-center justify-center mb-4">
+              <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75m-3-7.036A11.959 11.959 0 013.598 6 11.99 11.99 0 003 9.749c0 5.592 3.824 10.29 9 11.623 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.571-.598-3.751h-.152c-3.196 0-6.1-1.248-8.25-3.285z" /></svg>
+            </div>
+            <h3 class="text-base font-bold text-slate-900 dark:text-white mb-2">Integrity</h3>
+            <p class="text-xs text-slate-500 dark:text-slate-400 leading-relaxed">
+              Transparent processes, honest assessments, and ethical academic practices form the foundation of our institute.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Key Milestones / History Timeline -->
+  <section class="py-16 bg-slate-50 dark:bg-slate-900 border-y border-slate-100 dark:border-slate-800">
+    <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-16 reveal fade-up">
+        <span class="text-xs font-bold text-blue-600 dark:text-blue-400 uppercase tracking-widest">Our Journey</span>
+        <h2 class="text-3xl font-bold tracking-tight text-slate-900 dark:text-white mt-1">Key Milestones</h2>
+      </div>
+      <div class="relative border-l-2 border-blue-200 dark:border-blue-900 ml-4 sm:ml-0 sm:border-l-0 space-y-10">
+        <!-- Timeline items -->
+        <div class="reveal fade-left flex flex-col sm:flex-row sm:gap-8 items-start">
+          <div class="flex-shrink-0 w-20 text-right hidden sm:block pt-1">
+            <span class="text-xs font-bold text-blue-600 dark:text-blue-400">2012</span>
+          </div>
+          <div class="flex-shrink-0 relative hidden sm:flex">
+            <div class="w-4 h-4 rounded-full bg-blue-600 border-4 border-white dark:border-slate-900 mt-1"></div>
+            <div class="absolute top-4 left-1.5 w-0.5 h-full bg-blue-200 dark:bg-blue-900"></div>
+          </div>
+          <div class="ml-8 sm:ml-0 glass-panel p-6 rounded-2xl border border-slate-100 dark:border-slate-800 flex-grow">
+            <span class="text-xs font-bold text-blue-600 dark:text-blue-400 sm:hidden">2012</span>
+            <h3 class="text-base font-bold text-slate-900 dark:text-white mt-1 sm:mt-0">Foundation Year</h3>
+            <p class="text-xs text-slate-500 dark:text-slate-400 mt-1 leading-relaxed">Launched with a single batch of 40 UPSC aspirants in a small lecture hall in New Delhi. First batch produced 3 IAS officers.</p>
+          </div>
+        </div>
+        <div class="reveal fade-left flex flex-col sm:flex-row sm:gap-8 items-start">
+          <div class="flex-shrink-0 w-20 text-right hidden sm:block pt-1">
+            <span class="text-xs font-bold text-amber-500">2015</span>
+          </div>
+          <div class="flex-shrink-0 relative hidden sm:flex">
+            <div class="w-4 h-4 rounded-full bg-amber-500 border-4 border-white dark:border-slate-900 mt-1"></div>
+            <div class="absolute top-4 left-1.5 w-0.5 h-full bg-blue-200 dark:bg-blue-900"></div>
+          </div>
+          <div class="ml-8 sm:ml-0 glass-panel p-6 rounded-2xl border border-slate-100 dark:border-slate-800 flex-grow">
+            <span class="text-xs font-bold text-amber-500 sm:hidden">2015</span>
+            <h3 class="text-base font-bold text-slate-900 dark:text-white mt-1 sm:mt-0">JEE & NEET Expansion</h3>
+            <p class="text-xs text-slate-500 dark:text-slate-400 mt-1 leading-relaxed">Expanded programs to include IIT-JEE and NEET prep. Enrollment crossed 2,000 students. Launched our first digital test portal.</p>
+          </div>
+        </div>
+        <div class="reveal fade-left flex flex-col sm:flex-row sm:gap-8 items-start">
+          <div class="flex-shrink-0 w-20 text-right hidden sm:block pt-1">
+            <span class="text-xs font-bold text-emerald-500">2019</span>
+          </div>
+          <div class="flex-shrink-0 relative hidden sm:flex">
+            <div class="w-4 h-4 rounded-full bg-emerald-500 border-4 border-white dark:border-slate-900 mt-1"></div>
+            <div class="absolute top-4 left-1.5 w-0.5 h-full bg-blue-200 dark:bg-blue-900"></div>
+          </div>
+          <div class="ml-8 sm:ml-0 glass-panel p-6 rounded-2xl border border-slate-100 dark:border-slate-800 flex-grow">
+            <span class="text-xs font-bold text-emerald-500 sm:hidden">2019</span>
+            <h3 class="text-base font-bold text-slate-900 dark:text-white mt-1 sm:mt-0">National Recognition</h3>
+            <p class="text-xs text-slate-500 dark:text-slate-400 mt-1 leading-relaxed">Awarded "Best Coaching Institute" by the National Education Excellence Board. Crossed 10,000 cumulative student enrollments.</p>
+          </div>
+        </div>
+        <div class="reveal fade-left flex flex-col sm:flex-row sm:gap-8 items-start">
+          <div class="flex-shrink-0 w-20 text-right hidden sm:block pt-1">
+            <span class="text-xs font-bold text-purple-500">2024</span>
+          </div>
+          <div class="flex-shrink-0 relative hidden sm:flex">
+            <div class="w-4 h-4 rounded-full bg-purple-500 border-4 border-white dark:border-slate-900 mt-1"></div>
+          </div>
+          <div class="ml-8 sm:ml-0 glass-panel p-6 rounded-2xl border border-slate-100 dark:border-slate-800 flex-grow">
+            <span class="text-xs font-bold text-purple-500 sm:hidden">2024</span>
+            <h3 class="text-base font-bold text-slate-900 dark:text-white mt-1 sm:mt-0">Hybrid Digital Platform</h3>
+            <p class="text-xs text-slate-500 dark:text-slate-400 mt-1 leading-relaxed">Launched AI-powered analytics, live-streaming classrooms, and a full digital student portal serving 15,000+ active learners.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Director's Message -->
+  <section class="py-16 bg-white dark:bg-slate-950">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="glass-panel rounded-3xl p-8 sm:p-12 border border-slate-200/50 dark:border-slate-800/85 shadow-md flex flex-col md:flex-row gap-8 items-center reveal fade-up">
+        <div class="w-36 h-36 rounded-2xl bg-gradient-to-br from-blue-600 to-indigo-700 flex-shrink-0 flex items-center justify-center border-2 border-blue-500/20 overflow-hidden shadow-lg">
+          <svg class="w-20 h-20 text-white/60" fill="none" stroke="currentColor" stroke-width="1" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M15.75 6a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0zM4.501 20.118a7.5 7.5 0 0114.998 0A17.933 17.933 0 0112 21.75c-2.676 0-5.216-.584-7.499-1.632z" /></svg>
+        </div>
+        <div class="space-y-4">
+          <div class="flex items-center gap-2 mb-2">
+            <div class="w-8 h-0.5 bg-blue-600"></div>
+            <span class="text-xs font-bold text-blue-600 dark:text-blue-400 uppercase tracking-widest">Director's Message</span>
+          </div>
+          <h3 class="text-xl font-bold text-slate-900 dark:text-white">A Word from the Founder</h3>
+          <p class="text-xs sm:text-sm text-slate-500 dark:text-slate-400 leading-relaxed italic">
+            "Dear Aspirants, competitive exams do not just test your knowledge—they test your temperament, consistency, and strategy. At Achieve Academy, we prepare you for all three. We do not believe in shortcuts; we believe in systematic effort. Every student who walks through our doors carries tremendous potential. Our job is to refine that potential into a top rank."
+          </p>
+          <div>
+            <h4 class="text-sm font-semibold text-slate-900 dark:text-white">Dr. Rajeev Malhotra</h4>
+            <p class="text-[10px] text-slate-400 uppercase tracking-widest font-semibold mt-1">Founder & Director, Achieve Academy</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Faculty Panel -->
+  <section id="faculty" class="py-16 lg:py-24 bg-slate-50 dark:bg-slate-900 border-t border-slate-100 dark:border-slate-800">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center max-w-2xl mx-auto mb-16 reveal fade-up">
+        <span class="text-xs font-bold text-blue-600 dark:text-blue-400 uppercase tracking-widest">Expert Educators</span>
+        <h2 class="text-3xl font-bold tracking-tight text-slate-900 dark:text-white mt-1">Our Faculty Panel</h2>
+        <p class="text-sm text-slate-500 dark:text-slate-400 mt-2">Learn from senior educators with decades of combined teaching credentials and real-world exam expertise.</p>
+      </div>
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+        <!-- Faculty 1 -->
+        <div class="glass-panel p-6 rounded-2xl text-center border border-slate-100 dark:border-slate-800 shadow-sm hover:shadow-lg transition-all duration-300 hover:-translate-y-1">
+          <img src="assets/Kabir Malhotra" alt="Dr. Rajeev Malhotra" class="w-24 h-24 rounded-full mx-auto mb-4 border-4 border-white dark:border-slate-850 shadow-md object-cover">
+          <h4 class="text-base font-bold text-slate-900 dark:text-white">Dr. Rajeev Malhotra</h4>
+          <p class="text-xs text-blue-600 dark:text-blue-400 font-semibold mt-1">UPSC General Studies</p>
+          <p class="text-[11px] text-slate-400 mt-2 leading-relaxed">Ex-Civil Servant, PhD in Public Policy with 15+ years of UPSC prep instruction.</p>
+          <div class="flex justify-center gap-2 mt-4">
+            <span class="px-2 py-1 bg-blue-100 dark:bg-blue-950/30 text-blue-600 dark:text-blue-400 rounded-full text-[10px] font-semibold">IAS Alumni</span>
+            <span class="px-2 py-1 bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-400 rounded-full text-[10px] font-semibold">PhD</span>
+          </div>
+        </div>
+
+        <!-- Faculty 2 -->
+        <div class="glass-panel p-6 rounded-2xl text-center border border-slate-100 dark:border-slate-800 shadow-sm hover:shadow-lg transition-all duration-300 hover:-translate-y-1">
+          <img src="assets/Prof. S. Sen" alt="Prof. S. Sen" class="w-24 h-24 rounded-full mx-auto mb-4 border-4 border-white dark:border-slate-850 shadow-md object-cover">
+          <h4 class="text-base font-bold text-slate-900 dark:text-white">Prof. S. Sen</h4>
+          <p class="text-xs text-blue-600 dark:text-blue-400 font-semibold mt-1">IIT JEE Physics</p>
+          <p class="text-[11px] text-slate-400 mt-2 leading-relaxed">M.Tech from IIT Kharagpur, author of premium Physics concept papers with 3000+ JEE qualifiers.</p>
+          <div class="flex justify-center gap-2 mt-4">
+            <span class="px-2 py-1 bg-amber-100 dark:bg-amber-950/30 text-amber-600 dark:text-amber-400 rounded-full text-[10px] font-semibold">IIT Kharagpur</span>
+          </div>
+        </div>
+
+        <!-- Faculty 3 -->
+        <div class="glass-panel p-6 rounded-2xl text-center border border-slate-100 dark:border-slate-800 shadow-sm hover:shadow-lg transition-all duration-300 hover:-translate-y-1">
+          <img src="assets/Dr. Namrata Nair" alt="Dr. Namrata Nair" class="w-24 h-24 rounded-full mx-auto mb-4 border-4 border-white dark:border-slate-850 shadow-md object-cover">
+          <h4 class="text-base font-bold text-slate-900 dark:text-white">Dr. Namrata Nair</h4>
+          <p class="text-xs text-blue-600 dark:text-blue-400 font-semibold mt-1">NEET Biology</p>
+          <p class="text-[11px] text-slate-400 mt-2 leading-relaxed">MD in Physiology, researcher with 12+ years mentoring medical qualifiers at AIIMS level.</p>
+          <div class="flex justify-center gap-2 mt-4">
+            <span class="px-2 py-1 bg-emerald-100 dark:bg-emerald-950/30 text-emerald-650 dark:text-emerald-400 rounded-full text-[10px] font-semibold">AIIMS MD</span>
+          </div>
+        </div>
+
+        <!-- Faculty 4 -->
+        <div class="glass-panel p-6 rounded-2xl text-center border border-slate-100 dark:border-slate-800 shadow-sm hover:shadow-lg transition-all duration-300 hover:-translate-y-1">
+          <img src="assets/Prof. Joshi" alt="Prof. Joshi" class="w-24 h-24 rounded-full mx-auto mb-4 border-4 border-white dark:border-slate-855 shadow-md object-cover">
+          <h4 class="text-base font-bold text-slate-900 dark:text-white">Prof. Joshi</h4>
+          <p class="text-xs text-blue-600 dark:text-blue-400 font-semibold mt-1">Quantitative Math</p>
+          <p class="text-[11px] text-slate-400 mt-2 leading-relaxed">Expert trainer for SSC and Bank Exams, holder of speed-solving methods with 95%+ success rate.</p>
+          <div class="flex justify-center gap-2 mt-4">
+            <span class="px-2 py-1 bg-purple-100 dark:bg-purple-950/30 text-purple-650 dark:text-purple-400 rounded-full text-[10px] font-semibold">SSC Expert</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Additional Faculty Row -->
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 mt-8">
+        <!-- Faculty 5 -->
+        <div class="glass-panel p-6 rounded-2xl border border-slate-100 dark:border-slate-800 shadow-sm flex items-center gap-4 hover:shadow-lg transition-all duration-300">
+          <img src="assets/Ananya Krishnan" alt="Ananya Krishnan" class="w-16 h-16 rounded-xl flex-shrink-0 object-cover shadow-sm border border-slate-200 dark:border-slate-800">
+          <div>
+            <h4 class="text-sm font-bold text-slate-900 dark:text-white">Ananya Krishnan</h4>
+            <p class="text-xs text-blue-600 dark:text-blue-400 font-semibold mt-0.5">English & GK</p>
+            <p class="text-[11px] text-slate-400 mt-1">Former journalist, specialist in verbal ability and current affairs modules.</p>
+          </div>
+        </div>
+        <!-- Faculty 6 -->
+        <div class="glass-panel p-6 rounded-2xl border border-slate-100 dark:border-slate-800 shadow-sm flex items-center gap-4 hover:shadow-lg transition-all duration-300">
+          <img src="assets/Vikram Rao" alt="Vikram Rao" class="w-16 h-16 rounded-xl flex-shrink-0 object-cover shadow-sm border border-slate-200 dark:border-slate-800">
+          <div>
+            <h4 class="text-sm font-bold text-slate-900 dark:text-white">Vikram Rao</h4>
+            <p class="text-xs text-blue-600 dark:text-blue-400 font-semibold mt-0.5">JEE Advanced Chemistry</p>
+            <p class="text-[11px] text-slate-400 mt-1">IIT Bombay graduate, known for innovative organic chemistry teaching techniques.</p>
+          </div>
+        </div>
+        <!-- Faculty 7 -->
+        <div class="glass-panel p-6 rounded-2xl border border-slate-100 dark:border-slate-800 shadow-sm flex items-center gap-4 hover:shadow-lg transition-all duration-300">
+          <img src="assets/Sunita Pillai" alt="Sunita Pillai" class="w-16 h-16 rounded-xl flex-shrink-0 object-cover shadow-sm border border-slate-200 dark:border-slate-800">
+          <div>
+            <h4 class="text-sm font-bold text-slate-900 dark:text-white">Sunita Pillai</h4>
+            <p class="text-xs text-blue-600 dark:text-blue-400 font-semibold mt-0.5">Reasoning & Banking</p>
+            <p class="text-[11px] text-slate-400 mt-1">15 years in RBI, specialized in quantitative reasoning and aptitude training.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Campus Infrastructure Info -->
+  <section class="py-16 lg:py-24 bg-white dark:bg-slate-950 border-t border-slate-100 dark:border-slate-800">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+        <div class="relative reveal flex justify-center">
+          <div class="w-full max-w-[450px] aspect-[4/3] bg-gradient-premium rounded-3xl p-8 flex flex-col justify-between text-white shadow-xl relative overflow-hidden">
+            <div class="absolute inset-0 bg-white/5 backdrop-blur-[2px]"></div>
+            <!-- Decorative patterns -->
+            <div class="absolute -right-10 -top-10 w-48 h-48 bg-white/5 rounded-full blur-2xl"></div>
+            <div class="absolute -left-5 -bottom-5 w-36 h-36 bg-amber-400/10 rounded-full blur-xl"></div>
+            <div class="relative z-10 space-y-4">
+              <span class="text-xs uppercase tracking-widest text-amber-400 font-bold">Premium Infrastructure</span>
+              <h3 class="text-2xl font-bold">Digital Reference Libraries</h3>
+              <p class="text-xs text-slate-200 leading-relaxed">
+                Open 14 hours a day. Includes digital reference desks, high-speed Wi-Fi, silent cabins, and thousands of competitive curriculum guides.
+              </p>
+            </div>
+            <div class="relative z-10 grid grid-cols-3 gap-3">
+              <div class="bg-white/10 rounded-xl p-3 text-center">
+                <p class="text-lg font-extrabold text-amber-400">50K+</p>
+                <p class="text-[10px] text-white/70">Digital Books</p>
+              </div>
+              <div class="bg-white/10 rounded-xl p-3 text-center">
+                <p class="text-lg font-extrabold text-emerald-400">300+</p>
+                <p class="text-[10px] text-white/70">Study Cabins</p>
+              </div>
+              <div class="bg-white/10 rounded-xl p-3 text-center">
+                <p class="text-lg font-extrabold text-blue-400">14hrs</p>
+                <p class="text-[10px] text-white/70">Daily Access</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="space-y-6 reveal fade-right">
+          <span class="text-xs font-bold text-blue-600 dark:text-blue-400 uppercase tracking-widest">Infrastructure</span>
+          <h2 class="text-3xl font-bold tracking-tight text-slate-900 dark:text-white">Campus & Study Environment</h2>
+          <p class="text-sm text-slate-500 dark:text-slate-400 leading-relaxed">
+            Our study centers are designed to minimize distractions and promote intense, focused preparation sessions. Every detail, from lighting to acoustic panels, is optimized for learning.
+          </p>
+          <ul class="space-y-4 text-sm text-slate-600 dark:text-slate-400">
+            <li class="flex items-start gap-3">
+              <span class="w-6 h-6 rounded-full bg-blue-100 dark:bg-blue-950/30 text-blue-600 dark:text-blue-400 flex items-center justify-center flex-shrink-0 mt-0.5">
+                <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5" /></svg>
+              </span>
+              <span>Fully air-conditioned hybrid auditoriums with 4K projectors and acoustic panels</span>
+            </li>
+            <li class="flex items-start gap-3">
+              <span class="w-6 h-6 rounded-full bg-blue-100 dark:bg-blue-950/30 text-blue-600 dark:text-blue-400 flex items-center justify-center flex-shrink-0 mt-0.5">
+                <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5" /></svg>
+              </span>
+              <span>Live streaming production rooms with multi-camera setups for web learners</span>
+            </li>
+            <li class="flex items-start gap-3">
+              <span class="w-6 h-6 rounded-full bg-blue-100 dark:bg-blue-950/30 text-blue-600 dark:text-blue-400 flex items-center justify-center flex-shrink-0 mt-0.5">
+                <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5" /></svg>
+              </span>
+              <span>Dedicated cabins for 1-on-1 faculty guidance and doubt resolution sessions</span>
+            </li>
+            <li class="flex items-start gap-3">
+              <span class="w-6 h-6 rounded-full bg-blue-100 dark:bg-blue-950/30 text-blue-600 dark:text-blue-400 flex items-center justify-center flex-shrink-0 mt-0.5">
+                <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5" /></svg>
+              </span>
+              <span>High-speed 1Gbps Wi-Fi throughout the campus with device management systems</span>
+            </li>
+            <li class="flex items-start gap-3">
+              <span class="w-6 h-6 rounded-full bg-blue-100 dark:bg-blue-950/30 text-blue-600 dark:text-blue-400 flex items-center justify-center flex-shrink-0 mt-0.5">
+                <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5" /></svg>
+              </span>
+              <span>Biometric attendance and 24×7 CCTV monitored secure campus environment</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Awards & Recognition -->
+  <section class="py-16 bg-gradient-glow border-t border-slate-100 dark:border-slate-800">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-12 reveal fade-up">
+        <span class="text-xs font-bold text-blue-600 dark:text-blue-400 uppercase tracking-widest">Recognitions</span>
+        <h2 class="text-3xl font-bold tracking-tight text-slate-900 dark:text-white mt-1">Awards & Certifications</h2>
+      </div>
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+        <div class="glass-panel p-6 rounded-2xl border border-slate-100 dark:border-slate-800 text-center reveal fade-up hover:shadow-lg transition-all">
+          <div class="w-14 h-14 bg-amber-100 dark:bg-amber-950/30 text-amber-600 dark:text-amber-400 rounded-2xl flex items-center justify-center mx-auto mb-4">
+            <svg class="w-7 h-7" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M16.5 18.75h-9m9 0a3 3 0 013 3h-15a3 3 0 013-3m9 0v-3.375c0-.621-.503-1.125-1.125-1.125h-.871M7.5 18.75v-3.375c0-.621.504-1.125 1.125-1.125h.872m5.007 0H9.497m5.007 0a7.454 7.454 0 01-.982-3.172M9.497 14.25a7.454 7.454 0 00.981-3.172M5.25 4.236c-.982.143-1.954.317-2.916.52A6.003 6.003 0 007.73 9.728M5.25 4.236V4.5c0 2.108.966 3.99 2.48 5.228M5.25 4.236V2.721C7.456 2.41 9.71 2.25 12 2.25c2.291 0 4.545.16 6.75.47v1.516M7.73 9.728a6.726 6.726 0 002.748 1.35m8.272-6.842V4.5c0 2.108-.966 3.99-2.48 5.228m2.48-5.492a46.32 46.32 0 012.916.52 6.003 6.003 0 01-5.395 4.972m0 0a6.726 6.726 0 01-2.749 1.35m0 0a6.772 6.772 0 01-3.044 0" /></svg>
+          </div>
+          <h4 class="text-sm font-bold text-slate-900 dark:text-white">Best Institute Award</h4>
+          <p class="text-[11px] text-slate-400 mt-1">National Education Board 2019 & 2023</p>
+        </div>
+        <div class="glass-panel p-6 rounded-2xl border border-slate-100 dark:border-slate-800 text-center reveal fade-up hover:shadow-lg transition-all">
+          <div class="w-14 h-14 bg-blue-100 dark:bg-blue-950/30 text-blue-600 dark:text-blue-400 rounded-2xl flex items-center justify-center mx-auto mb-4">
+            <svg class="w-7 h-7" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75M21 12c0 1.268-.63 2.39-1.593 3.068a3.745 3.745 0 01-1.043 3.296 3.745 3.745 0 01-3.296 1.043A3.745 3.745 0 0112 21c-1.268 0-2.39-.63-3.068-1.593a3.746 3.746 0 01-3.296-1.043 3.745 3.745 0 01-1.043-3.296A3.745 3.745 0 013 12c0-1.268.63-2.39 1.593-3.068a3.745 3.745 0 011.043-3.296 3.746 3.746 0 013.296-1.043A3.746 3.746 0 0112 3c1.268 0 2.39.63 3.068 1.593a3.746 3.746 0 013.296 1.043 3.746 3.746 0 011.043 3.296A3.745 3.745 0 0121 12z" /></svg>
+          </div>
+          <h4 class="text-sm font-bold text-slate-900 dark:text-white">ISO 21001 Certified</h4>
+          <p class="text-[11px] text-slate-400 mt-1">Educational Management Systems</p>
+        </div>
+        <div class="glass-panel p-6 rounded-2xl border border-slate-100 dark:border-slate-800 text-center reveal fade-up hover:shadow-lg transition-all">
+          <div class="w-14 h-14 bg-emerald-100 dark:bg-emerald-950/30 text-emerald-600 dark:text-emerald-400 rounded-2xl flex items-center justify-center mx-auto mb-4">
+            <svg class="w-7 h-7" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M11.48 3.499a.562.562 0 011.04 0l2.125 5.111a.563.563 0 00.475.345l5.518.442c.499.04.701.663.321.988l-4.204 3.602a.563.563 0 00-.182.557l1.285 5.385a.562.562 0 01-.84.61l-4.725-2.885a.563.563 0 00-.586 0L6.982 20.54a.562.562 0 01-.84-.61l1.285-5.386a.562.562 0 00-.182-.557l-4.204-3.602a.563.563 0 01.321-.988l5.518-.442a.563.563 0 00.475-.345L11.48 3.5z" /></svg>
+          </div>
+          <h4 class="text-sm font-bold text-slate-900 dark:text-white">Top Rated 2024</h4>
+          <p class="text-[11px] text-slate-400 mt-1">4.9/5 on Education Portals</p>
+        </div>
+        <div class="glass-panel p-6 rounded-2xl border border-slate-100 dark:border-slate-800 text-center reveal fade-up hover:shadow-lg transition-all">
+          <div class="w-14 h-14 bg-purple-100 dark:bg-purple-950/30 text-purple-600 dark:text-purple-400 rounded-2xl flex items-center justify-center mx-auto mb-4">
+            <svg class="w-7 h-7" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M3.75 21h16.5M4.5 3h15M5.25 3v18m13.5-18v18M9 6.75h1.5m-1.5 3h1.5m-1.5 3h1.5m3-6H15m-1.5 3H15m-1.5 3H15M9 21v-3.375c0-.621.504-1.125 1.125-1.125h3.75c.621 0 1.125.504 1.125 1.125V21" /></svg>
+          </div>
+          <h4 class="text-sm font-bold text-slate-900 dark:text-white">NAAC Accredited</h4>
+          <p class="text-[11px] text-slate-400 mt-1">Grade A+ Academic Standards</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Founders Message Section -->
+  <section class="py-16 bg-white dark:bg-slate-950 border-t border-slate-100 dark:border-slate-800">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+        <div class="reveal fade-left space-y-6">
+          <span class="text-xs font-bold text-blue-600 dark:text-blue-400 uppercase tracking-widest">Leadership Note</span>
+          <h2 class="text-3xl font-bold text-slate-900 dark:text-white">A Message From Our Founders</h2>
+          <p class="text-xs text-slate-550 dark:text-slate-400 leading-relaxed font-serif italic">
+            "Over the last decade, we have watched thousands of students walk through our halls with fear and leave with selection orders. Our teaching methodology is not about simple memorization; it is about building clean conceptual foundations, rigorous self-evaluation, and strategic exam temperament. We stand committed to guiding every ambitious student to their top rank potential."
+          </p>
+          <div>
+            <h5 class="text-sm font-bold text-slate-900 dark:text-white">Prof. S. Sen & Dr. R. Nair</h5>
+            <p class="text-[10px] text-slate-400 font-semibold uppercase">Founders & Directors, Achieve Academy</p>
+          </div>
+        </div>
+        <div class="reveal fade-right">
+          <img src="assets/founder" alt="Founders of Achieve Academy" class="w-full h-80 object-cover rounded-3xl shadow-xl">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Core Values Board -->
+  <section class="py-16 bg-slate-50 dark:bg-slate-900 border-t border-slate-100 dark:border-slate-800">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center max-w-2xl mx-auto mb-16 reveal fade-up">
+        <span class="text-xs font-bold text-blue-600 dark:text-blue-400 uppercase tracking-widest">Our Foundation</span>
+        <h2 class="text-3xl font-bold tracking-tight text-slate-900 dark:text-white mt-1">Our Core Values</h2>
+        <p class="text-sm text-slate-500 dark:text-slate-400 mt-2">The principles that guide our academic board and student counseling cells daily.</p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+        <!-- Value 1 -->
+        <div class="glass-panel p-6 rounded-3xl border border-slate-100 dark:border-slate-850 shadow-sm text-center space-y-3 reveal fade-up">
+          <div class="w-10 h-10 bg-blue-100 dark:bg-blue-950/30 text-blue-650 dark:text-blue-400 rounded-xl flex items-center justify-center mx-auto">1</div>
+          <h3 class="text-sm font-bold text-slate-900 dark:text-white">Academic Integrity</h3>
+          <p class="text-[11px] text-slate-500 dark:text-slate-400 leading-relaxed">
+            Honest counseling, accurate test score diagnostics, and transparent rank records.
+          </p>
+        </div>
+        <!-- Value 2 -->
+        <div class="glass-panel p-6 rounded-3xl border border-slate-100 dark:border-slate-850 shadow-sm text-center space-y-3 reveal fade-up">
+          <div class="w-10 h-10 bg-amber-100 dark:bg-amber-950/30 text-amber-600 dark:text-amber-400 rounded-xl flex items-center justify-center mx-auto">2</div>
+          <h3 class="text-sm font-bold text-slate-900 dark:text-white">Student First</h3>
+          <p class="text-[11px] text-slate-500 dark:text-slate-400 leading-relaxed">
+            Individual doubt clearance hours and strategic batch flexibility centered on students.
+          </p>
+        </div>
+        <!-- Value 3 -->
+        <div class="glass-panel p-6 rounded-3xl border border-slate-100 dark:border-slate-850 shadow-sm text-center space-y-3 reveal fade-up">
+          <div class="w-10 h-10 bg-emerald-100 dark:bg-emerald-950/30 text-emerald-650 dark:text-emerald-400 rounded-xl flex items-center justify-center mx-auto">3</div>
+          <h3 class="text-sm font-bold text-slate-900 dark:text-white">Constant Innovation</h3>
+          <p class="text-[11px] text-slate-500 dark:text-slate-400 leading-relaxed">
+            AI-driven score diagnostics, digital hybrid lecture feeds, and active doubt tools.
+          </p>
+        </div>
+        <!-- Value 4 -->
+        <div class="glass-panel p-6 rounded-3xl border border-slate-100 dark:border-slate-850 shadow-sm text-center space-y-3 reveal fade-up">
+          <div class="w-10 h-10 bg-purple-100 dark:bg-purple-950/30 text-purple-655 dark:text-purple-400 rounded-xl flex items-center justify-center mx-auto">4</div>
+          <h3 class="text-sm font-bold text-slate-900 dark:text-white">Proven Excellence</h3>
+          <p class="text-[11px] text-slate-500 dark:text-slate-400 leading-relaxed">
+            Aiming only for Top AIR selections. Continuous syllabus revision drills.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Bottom CTA Section -->
+  <section class="py-16 bg-white dark:bg-slate-950 border-t border-slate-100 dark:border-slate-800">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="relative rounded-3xl overflow-hidden bg-gradient-premium shadow-2xl">
+        <div class="absolute inset-0 bg-[radial-gradient(#ffffff08_1px,transparent_1px)] [background-size:16px_16px]"></div>
+        <div class="relative z-10 grid grid-cols-1 lg:grid-cols-2 gap-8 items-center p-10 sm:p-16">
+          <div class="text-white space-y-6">
+            <span class="text-xs font-bold text-amber-400 uppercase tracking-widest">Join our legacy</span>
+            <h2 class="text-3xl sm:text-4xl font-bold">Secure your Seat at Achieve Academy</h2>
+            <p class="text-sm text-blue-200 leading-relaxed">Join 15,000+ top competitive aspirants. Schedule a diagnostic counselor call or visit our Delhi campuses today.</p>
+            <div class="flex flex-wrap gap-4">
+              <a href="book-now.html" class="px-8 py-3.5 rounded-xl bg-white text-blue-700 font-semibold text-sm shadow-lg hover:bg-blue-50 transition-colors">Book a Demo Class</a>
+              <a href="contact.html" class="px-8 py-3.5 rounded-xl border border-white/40 text-white font-semibold text-sm hover:bg-white/10 transition-colors">Talk to Advisor</a>
+            </div>
+          </div>
+          <div class="hidden lg:flex justify-end">
+            <img src="assets/Students celebrating success1" alt="Students celebrating success" class="w-full max-w-sm rounded-2xl opacity-90 object-cover h-64 shadow-lg border border-white/20">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Shared Footer Hydration -->
+  <footer id="global-footer"></footer>
+
+  <!-- Back to Top Button -->
+  <button id="back-to-top" class="fixed bottom-6 right-6 z-40 bg-blue-600 text-white p-3 rounded-full shadow-lg opacity-0 pointer-events-none translate-y-4 transition-all duration-300 hover:bg-blue-700 hover:scale-110" aria-label="Back to Top">
+    <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M4.5 15.75l7.5-7.5 7.5 7.5" /></svg>
+  </button>
+
+  <!-- Shared JS Modules -->
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

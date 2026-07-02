@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="data:image/svg+xml;base64,PHN2ZyB2aWV3Qm94PSIwIDAgMTAwIDEwMCIgZmlsbD0ibm9uZSIgc3Ryb2tlPSJjdXJyZW50Q29sb3IiIHN0cm9rZS13aWR0aD0iNCIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgogIDxjaXJjbGUgY3g9IjUwIiBjeT0iNTAiIHI9IjQ0IiBzdHJva2U9ImN1cnJlbnRDb2xvciIgc3Ryb2tlLXdpZHRoPSI1IiBmaWxsPSJub25lIiBjbGFzcz0idGV4dC1ibHVlLTgwMCIgLz4KICA8cGF0aCBkPSJNMzUgNTJ2OGMwIDggMTUgMTAgMTUgMTBzMTUtMiAxNS0xMHYtOCIgZmlsbD0iY3VycmVudENvbG9yIiBjbGFzcz0idGV4dC1ibHVlLTYwMCIgLz4KICA8cG9seWdvbiBwb2ludHM9IjUwLDMwIDgwLDQ1IDUwLDYwIDIwLDQ1IiBmaWxsPSJjdXJyZW50Q29sb3IiIGNsYXNzPSJ0ZXh0LWJsdWUtODAwIiBzdHJva2U9ImN1cnJlbnRDb2xvciIgc3Ryb2tlLXdpZHRoPSIyIiAvPgogIDxwYXRoIGQ9Ik01MCw0NSBMMjUsNTIgTDI1LDYyIiBzdHJva2U9ImN1cnJlbnRDb2xvciIgc3Ryb2tlLXdpZHRoPSIzIiAvPgogIDxjaXJjbGUgY3g9IjI1IiBjeT0iNjQiIHI9IjIuNSIgZmlsbD0iY3VycmVudENvbG9yIiAvPgogIDxwYXRoIGQ9Ik01MCw4MCBMNTAsMTgiIHN0cm9rZT0iI0Y1OUUwQiIgc3Ryb2tlLXdpZHRoPSI2IiAvPgogIDxwYXRoIGQ9Ik00MiwyNiBMNTAsMTYgTDU4LDI2IiBzdHJva2U9IiNGNUFFMEIiIHN0cm9rZS13aWR0aD0iNiIgLz4KPC9zdmc+">
+  <title>New Batches Launching Soon | Achieve Academy</title>
+  <meta name="description" content="We are launching new online batch classes and digital mock simulators shortly. Subscribe to receive launch notifications.">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          colors: {
+            primary: '#1E40AF',
+            secondary: '#2563EB',
+            accent: '#F59E0B',
+            success: '#10B981',
+            background: '#F8FAFC',
+            dark: '#0F172A',
+            text: '#334155',
+          },
+          fontFamily: {
+            sans: ['Poppins', 'sans-serif'],
+          }
+        }
+      }
+    }
+  </script>
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body class="bg-slate-50 dark:bg-slate-900 text-slate-700 dark:text-slate-300 flex flex-col min-h-screen">
+
+  <!-- Minimal Header -->
+  <header id="global-header" class="w-full transition-all duration-300 glass-nav shadow-sm relative z-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-20">
+        <!-- Logo & Brand Name -->
+        <a href="index.html" class="flex items-center gap-3">
+          <!-- Embedded academic logo SVG (same as main.js) -->
+          <svg class="h-8 w-8 sm:h-10 sm:w-10 flex-shrink-0" viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="50" cy="50" r="44" stroke="currentColor" stroke-width="5" fill="none" class="text-blue-800 dark:text-blue-500" />
+            <path d="M35 52v8c0 8 15 10 15 10s15-2 15-10v-8" fill="currentColor" class="text-blue-600 opacity-20 dark:text-blue-800" />
+            <polygon points="50,30 80,45 50,60 20,45" fill="currentColor" class="text-blue-800 dark:text-blue-500" stroke="currentColor" stroke-width="2" />
+            <path d="M50,45 L25,52 L25,62" stroke="currentColor" stroke-width="3" />
+            <circle cx="25" cy="64" r="2.5" fill="currentColor" />
+            <path d="M50,80 L50,18" stroke="#F59E0B" stroke-width="6" />
+            <path d="M42,26 L50,16 L58,26" stroke="#F59E0B" stroke-width="6" />
+          </svg>
+          <div class="flex flex-col">
+            <span class="text-base sm:text-lg font-bold tracking-tight text-slate-900 dark:text-white leading-none">Achieve Academy</span>
+            <span class="text-[9px] sm:text-[10px] text-slate-500 dark:text-slate-400 font-medium tracking-wider uppercase mt-1">Your Success Begins Here</span>
+          </div>
+        </a>
+
+        <!-- Minimal Controls -->
+        <div class="flex items-center gap-2 sm:gap-3">
+          <!-- Direction Toggle -->
+          <button onclick="toggleDirection()" class="p-2 rounded-lg text-slate-600 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors flex items-center gap-1 text-xs font-semibold" title="Toggle Language Direction">
+            <!-- <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-15 5.25h15" /></svg> -->
+            <span class="dir-toggle-text">LTR</span>
+          </button>
+
+          <!-- Theme Toggle -->
+          <button onclick="toggleTheme()" class="p-2 rounded-lg text-slate-600 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors" title="Toggle Dark/Light Mode">
+            <!-- Sun -->
+            <svg class="w-5 h-5 block dark:hidden" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M12 3v2.25m0 13.5V21M4.22 4.22l1.58 1.58m12.42 12.42l1.58 1.58M3 12h2.25m13.5 0H21M4.22 19.78l1.58-1.58M18.22 5.75l1.58-1.58M12 7.5a4.5 4.5 0 100 9 4.5 4.5 0 000-9z" /></svg>
+            <!-- Moon -->
+            <svg class="w-5 h-5 hidden dark:block" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M21.752 15.002A9.718 9.718 0 0118 15.75c-5.385 0-9.75-4.365-9.75-9.75 0-1.33.266-2.597.748-3.752A9.753 9.753 0 003 11.25C3 16.635 7.365 21 12.75 21a9.753 9.753 0 009.002-5.998z" /></svg>
+          </button>
+
+          <!-- Home Link -->
+          <!-- <a href="index.html" class="hidden sm:inline-flex px-3.5 py-1.5 rounded-lg border border-slate-200 dark:border-slate-700 text-xs font-semibold hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors">Home</a> -->
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Preloader -->
+  <div id="preloader">
+    <div class="animate-spin rounded-full h-12 w-12 border-t-2 border-b-2 border-blue-600"></div>
+  </div>
+
+  <!-- Scroll Progress Bar -->
+  <div id="scroll-progress"></div>
+
+  <!-- Coming Soon Content -->
+  <main class="flex-grow flex items-center justify-center py-16 px-4 sm:px-6 lg:px-8 bg-gradient-glow relative overflow-hidden">
+    <div class="max-w-2xl w-full text-center space-y-8 relative z-10 reveal zoom-in">
+      
+      <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-semibold bg-blue-100 text-blue-800 dark:bg-blue-900/30 dark:text-blue-400">
+        Launch Preview
+      </span>
+
+      <div class="space-y-3">
+        <h2 class="text-3xl sm:text-5xl font-bold tracking-tight text-slate-900 dark:text-white leading-tight">
+          Achieve Online Live Portal <br>
+          <span class="text-blue-600 dark:text-blue-400">Launching Soon</span>
+        </h2>
+        <p class="text-xs sm:text-sm text-slate-500 dark:text-slate-400 max-w-md mx-auto leading-relaxed">
+          We are upgrading our student dashboard experience with high-fidelity live classroom feeds and customized mentorship notes.
+        </p>
+      </div>
+
+      <!-- Realtime JS Countdown Grid -->
+      <div class="grid grid-cols-4 gap-4 max-w-md mx-auto text-center">
+        <div class="glass-panel p-4 rounded-2xl border border-slate-200 dark:border-slate-800 shadow-md">
+          <span id="c-days" class="block text-2xl sm:text-3xl font-extrabold text-blue-600 dark:text-blue-450">00</span>
+          <span class="text-[9px] uppercase tracking-wider text-slate-400 font-semibold">Days</span>
+        </div>
+        <div class="glass-panel p-4 rounded-2xl border border-slate-200 dark:border-slate-800 shadow-md">
+          <span id="c-hours" class="block text-2xl sm:text-3xl font-extrabold text-blue-600 dark:text-blue-450">00</span>
+          <span class="text-[9px] uppercase tracking-wider text-slate-400 font-semibold">Hours</span>
+        </div>
+        <div class="glass-panel p-4 rounded-2xl border border-slate-200 dark:border-slate-800 shadow-md">
+          <span id="c-minutes" class="block text-2xl sm:text-3xl font-extrabold text-blue-600 dark:text-blue-450">00</span>
+          <span class="text-[9px] uppercase tracking-wider text-slate-400 font-semibold">Mins</span>
+        </div>
+        <div class="glass-panel p-4 rounded-2xl border border-slate-200 dark:border-slate-800 shadow-md">
+          <span id="c-seconds" class="block text-2xl sm:text-3xl font-extrabold text-blue-600 dark:text-blue-450">00</span>
+          <span class="text-[9px] uppercase tracking-wider text-slate-400 font-semibold">Secs</span>
+        </div>
+      </div>
+
+      <!-- Subscription form -->
+      <form class="flex flex-col sm:flex-row gap-2 max-w-md mx-auto" onsubmit="event.preventDefault(); alert('Subscribed successfully! You will be notified on launch day.'); this.reset();">
+        <input type="email" required placeholder="Enter email address" class="flex-grow px-4 py-3 text-xs sm:text-sm bg-white dark:bg-slate-950 border border-slate-200 dark:border-slate-800 text-slate-900 dark:text-white rounded-xl focus:outline-none focus:border-blue-500 transition-colors">
+        <button type="submit" class="gradient-btn px-6 py-3 rounded-xl text-xs sm:text-sm font-semibold text-white shadow-md">
+          Notify Me
+        </button>
+      </form>
+
+    </div>
+  </main>
+
+  <!-- Countdown Timer script -->
+  <script>
+    // Countdown Target: 45 days from current date
+    const targetDate = new Date();
+    targetDate.setDate(targetDate.getDate() + 45);
+
+    const updateTimer = () => {
+      const now = new Date().getTime();
+      const diff = targetDate.getTime() - now;
+
+      if (diff <= 0) {
+        clearInterval(timerInterval);
+        return;
+      }
+
+      const days = Math.floor(diff / (1000 * 60 * 60 * 24));
+      const hours = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      const minutes = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
+      const seconds = Math.floor((diff % (1000 * 60)) / 1000);
+
+      document.getElementById('c-days').textContent = days.toString().padStart(2, '0');
+      document.getElementById('c-hours').textContent = hours.toString().padStart(2, '0');
+      document.getElementById('c-minutes').textContent = minutes.toString().padStart(2, '0');
+      document.getElementById('c-seconds').textContent = seconds.toString().padStart(2, '0');
+    };
+
+    updateTimer();
+    const timerInterval = setInterval(updateTimer, 1000);
+  </script>
+
+  <!-- Shared JS Modules -->
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

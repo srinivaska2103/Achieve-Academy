@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="data:image/svg+xml;base64,PHN2ZyB2aWV3Qm94PSIwIDAgMTAwIDEwMCIgZmlsbD0ibm9uZSIgc3Ryb2tlPSJjdXJyZW50Q29sb3IiIHN0cm9rZS13aWR0aD0iNCIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgogIDxjaXJjbGUgY3g9IjUwIiBjeT0iNTAiIHI9IjQ0IiBzdHJva2U9ImN1cnJlbnRDb2xvciIgc3Ryb2tlLXdpZHRoPSI1IiBmaWxsPSJub25lIiBjbGFzcz0idGV4dC1ibHVlLTgwMCIgLz4KICA8cGF0aCBkPSJNMzUgNTJ2OGMwIDggMTUgMTAgMTUgMTBzMTUtMiAxNS0xMHYtOCIgZmlsbD0iY3VycmVudENvbG9yIiBjbGFzcz0idGV4dC1ibHVlLTYwMCIgLz4KICA8cG9seWdvbiBwb2ludHM9IjUwLDMwIDgwLDQ1IDUwLDYwIDIwLDQ1IiBmaWxsPSJjdXJyZW50Q29sb3IiIGNsYXNzPSJ0ZXh0LWJsdWUtODAwIiBzdHJva2U9ImN1cnJlbnRDb2xvciIgc3Ryb2tlLXdpZHRoPSIyIiAvPgogIDxwYXRoIGQ9Ik01MCw0NSBMMjUsNTIgTDI1LDYyIiBzdHJva2U9ImN1cnJlbnRDb2xvciIgc3Ryb2tlLXdpZHRoPSIzIiAvPgogIDxjaXJjbGUgY3g9IjI1IiBjeT0iNjQiIHI9IjIuNSIgZmlsbD0iY3VycmVudENvbG9yIiAvPgogIDxwYXRoIGQ9Ik01MCw4MCBMNTAsMTgiIHN0cm9rZT0iI0Y1OUUwQiIgc3Ryb2tlLXdpZHRoPSI2IiAvPgogIDxwYXRoIGQ9Ik00MiwyNiBMNTAsMTYgTDU4LDI2IiBzdHJva2U9IiNGNUFFMEIiIHN0cm9rZS13aWR0aD0iNiIgLz4KPC9zdmc+">
+  <title>Student Dashboard Portal | Achieve Academy</title>
+  <meta name="description" content="Access your courses, mock test analysis, assignments, leaderboard rank, and download study resources.">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          colors: {
+            primary: '#1E40AF',
+            secondary: '#2563EB',
+            accent: '#F59E0B',
+            success: '#10B981',
+            background: '#F8FAFC',
+            dark: '#0F172A',
+            text: '#334155',
+          },
+          fontFamily: {
+            sans: ['Poppins', 'sans-serif'],
+          }
+        }
+      }
+    }
+  </script>
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body class="bg-slate-50 dark:bg-slate-900 text-slate-700 dark:text-slate-300">
+
+  <!-- Minimal Header -->
+  <header id="global-header" class="w-full transition-all duration-300 glass-nav shadow-sm relative z-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-20">
+        <!-- Logo & Brand Name -->
+        <a href="index.html" class="flex items-center gap-3">
+          <!-- Embedded academic logo SVG (same as main.js) -->
+          <svg class="h-8 w-8 sm:h-10 sm:w-10 flex-shrink-0" viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="50" cy="50" r="44" stroke="currentColor" stroke-width="5" fill="none" class="text-blue-800 dark:text-blue-500" />
+            <path d="M35 52v8c0 8 15 10 15 10s15-2 15-10v-8" fill="currentColor" class="text-blue-600 opacity-20 dark:text-blue-800" />
+            <polygon points="50,30 80,45 50,60 20,45" fill="currentColor" class="text-blue-800 dark:text-blue-500" stroke="currentColor" stroke-width="2" />
+            <path d="M50,45 L25,52 L25,62" stroke="currentColor" stroke-width="3" />
+            <circle cx="25" cy="64" r="2.5" fill="currentColor" />
+            <path d="M50,80 L50,18" stroke="#F59E0B" stroke-width="6" />
+            <path d="M42,26 L50,16 L58,26" stroke="#F59E0B" stroke-width="6" />
+          </svg>
+          <div class="flex flex-col">
+            <span class="text-base sm:text-lg font-bold tracking-tight text-slate-900 dark:text-white leading-none">Achieve Academy</span>
+            <span class="text-[9px] sm:text-[10px] text-slate-500 dark:text-slate-400 font-medium tracking-wider uppercase mt-1">Your Success Begins Here</span>
+          </div>
+        </a>
+
+        <!-- Minimal Controls -->
+        <div class="flex items-center gap-2 sm:gap-3">
+          <!-- Portal Menu Toggle (Mobile/Tablet Only) -->
+          <div class="lg:hidden relative">
+            <button id="portal-menu-toggle" class="p-2 rounded-lg text-slate-600 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors flex items-center gap-1.5 text-xs font-semibold" title="Portal Menu">
+              <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" /></svg>
+              <span id="portal-active-label" class="hidden sm:inline">Dashboard</span>
+              <svg class="w-3 h-3 chevron-icon transition-transform duration-300" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" /></svg>
+            </button>
+
+            <!-- Dropdown Panel -->
+            <div id="portal-dropdown" class="hidden absolute right-0 top-full mt-2 w-56 bg-white dark:bg-slate-900 rounded-2xl border border-slate-200 dark:border-slate-800 shadow-xl py-2 z-50">
+              <a href="#" class="portal-nav-tab flex items-center gap-3 px-4 py-2.5 text-sm font-semibold bg-blue-50 dark:bg-blue-950/20 text-blue-600 dark:text-blue-400 transition-colors" data-section="dashboard-sec" data-label="Dashboard">
+                <svg class="w-5 h-5 flex-shrink-0" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M2.25 12l8.954-8.955c.44-.439 1.152-.439 1.591 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125H9.75v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21h4.125c.621 0 1.125-.504 1.125-1.125V9.75M8.25 21h8.25" /></svg>
+                Dashboard
+              </a>
+              <a href="#" class="portal-nav-tab flex items-center gap-3 px-4 py-2.5 text-sm text-slate-600 dark:text-slate-400 hover:bg-slate-50 dark:hover:bg-slate-800 transition-colors" data-section="courses-sec" data-label="My Courses">
+                <svg class="w-5 h-5 flex-shrink-0" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M12 6.042A8.967 8.967 0 006 3.75c-1.052 0-2.062.18-3 .512v14.25A8.987 8.987 0 016 18c2.305 0 4.408.867 6 2.292m0-14.25a8.966 8.966 0 016-2.292c1.052 0 2.062.18 3 .512v14.25A8.987 8.987 0 0018 18a8.967 8.967 0 00-6 2.292m0-14.25v14.25" /></svg>
+                My Courses
+              </a>
+              <a href="#" class="portal-nav-tab flex items-center gap-3 px-4 py-2.5 text-sm text-slate-600 dark:text-slate-400 hover:bg-slate-50 dark:hover:bg-slate-800 transition-colors" data-section="tests-sec" data-label="My Tests">
+                <svg class="w-5 h-5 flex-shrink-0" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12h3.75M9 15h3.75M9 18h3.75m3 .75H18a2.25 2.25 0 002.25-2.25V6.108c0-1.135-.845-2.098-1.976-2.192a48.424 48.424 0 00-1.123-.08m-5.801 0c-.065.21-.1.433-.1.664 0 .414.336.75.75.75h4.5a.75.75 0 00.75-.75 2.25 2.25 0 00-.1-.664m-5.8 0A2.251 2.251 0 0113.5 2.25H15c1.03 0 1.9.693 2.166 1.638m-7.377 2.24a48.11 48.11 0 013.42 0M3.75 18V6.108c0-1.135.845-2.098 1.976-2.192a48.424 48.424 0 011.123-.08" /></svg>
+                My Tests
+              </a>
+              <a href="#" class="portal-nav-tab flex items-center gap-3 px-4 py-2.5 text-sm text-slate-600 dark:text-slate-400 hover:bg-slate-50 dark:hover:bg-slate-800 transition-colors" data-section="leaderboard-sec" data-label="Leaderboard">
+                <svg class="w-5 h-5 flex-shrink-0" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M16.5 18.75h-9m9 0a3 3 0 013 3h-15a3 3 0 013-3m9 0v-3.375c0-.621-.504-1.125-1.125-1.125h-2.25a1.125 1.125 0 00-1.125 1.125V18.75m9 0a9 9 0 11-18 0M15 12a3 3 0 11-6 0 3 3 0 016 0z" /></svg>
+                Leaderboard
+              </a>
+              <a href="#" class="portal-nav-tab flex items-center gap-3 px-4 py-2.5 text-sm text-slate-600 dark:text-slate-400 hover:bg-slate-50 dark:hover:bg-slate-800 transition-colors" data-section="certificates-sec" data-label="Certificates">
+                <svg class="w-5 h-5 flex-shrink-0" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75M21 12c0 1.268-.63 2.39-1.593 3.068" /></svg>
+                Certificates
+              </a>
+              <a href="#" class="portal-nav-tab flex items-center gap-3 px-4 py-2.5 text-sm text-slate-600 dark:text-slate-400 hover:bg-slate-50 dark:hover:bg-slate-800 transition-colors" data-section="downloads-sec" data-label="Downloads">
+                <svg class="w-5 h-5 flex-shrink-0" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M3 16.5v2.25A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75V16.5M16.5 12L12 16.5m0 0L7.5 12m4.5 4.5V3" /></svg>
+                Downloads
+                <span id="download-badge-count-mobile" class="ml-auto bg-blue-600 text-white font-bold text-[10px] w-5 h-5 rounded-full flex items-center justify-center">3</span>
+              </a>
+              <div class="border-t border-slate-100 dark:border-slate-800 mt-1 pt-1">
+                <a href="login.html" onclick="alert('You have successfully logged out.');" class="flex items-center gap-3 px-4 py-2.5 text-sm font-medium text-rose-600 hover:bg-rose-50 dark:hover:bg-rose-950/20 transition-colors">
+                  <svg class="w-5 h-5 flex-shrink-0" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M15.75 9V5.25A2.25 2.25 0 0013.5 3h-6a2.25 2.25 0 00-2.25 2.25v13.5A2.25 2.25 0 007.5 21h6a2.25 2.25 0 002.25-2.25V15m3 0l3-3m0 0l-3-3m3 3H9" /></svg>
+                  Logout
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Direction Toggle -->
+          <button onclick="toggleDirection()" class="p-2 rounded-lg text-slate-600 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors flex items-center gap-1 text-xs font-semibold" title="Toggle Language Direction">
+            <!-- <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-15 5.25h15" /></svg> -->
+            <span class="dir-toggle-text">LTR</span>
+          </button>
+
+          <!-- Theme Toggle -->
+          <button onclick="toggleTheme()" class="p-2 rounded-lg text-slate-600 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors" title="Toggle Dark/Light Mode">
+            <svg class="w-5 h-5 block dark:hidden" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M12 3v2.25m0 13.5V21M4.22 4.22l1.58 1.58m12.42 12.42l1.58 1.58M3 12h2.25m13.5 0H21M4.22 19.78l1.58-1.58M18.22 5.75l1.58-1.58M12 7.5a4.5 4.5 0 100 9 4.5 4.5 0 000-9z" /></svg>
+            <svg class="w-5 h-5 hidden dark:block" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M21.752 15.002A9.718 9.718 0 0118 15.75c-5.385 0-9.75-4.365-9.75-9.75 0-1.33.266-2.597.748-3.752A9.753 9.753 0 003 11.25C3 16.635 7.365 21 12.75 21a9.753 9.753 0 009.002-5.998z" /></svg>
+          </button>
+
+          <!-- Home Link -->
+          <!-- <a href="index.html" class="hidden sm:inline-flex px-3.5 py-1.5 rounded-lg border border-slate-200 dark:border-slate-700 text-xs font-semibold hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors">Home</a> -->
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Preloader -->
+  <div id="preloader">
+    <div class="animate-spin rounded-full h-12 w-12 border-t-2 border-b-2 border-blue-600"></div>
+  </div>
+
+  <!-- Scroll Progress Bar -->
+  <div id="scroll-progress"></div>
+
+  <!-- Portal Container -->
+  <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
+    <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+      
+      <!-- Sidebar (Desktop Only) -->
+      <aside class="hidden lg:block lg:col-span-3 glass-panel p-6 rounded-3xl border border-slate-200 dark:border-slate-800 shadow-sm space-y-6">
+
+        <!-- Student Brief -->
+        <div class="flex items-center gap-4 border-b border-slate-100 dark:border-slate-800 pb-6 w-full">
+          <div class="w-12 h-12 rounded-full bg-blue-100 dark:bg-blue-950/20 text-blue-600 dark:text-blue-400 flex items-center justify-center font-bold text-base flex-shrink-0">AM</div>
+          <div>
+            <h4 class="text-sm font-bold text-slate-900 dark:text-white">Alex Morgan</h4>
+            <p class="text-[10px] text-slate-400 font-semibold tracking-wider uppercase mt-1">UPSC Roll: 98440</p>
+          </div>
+        </div>
+
+        <!-- Desktop Sidebar Navigation -->
+        <nav class="w-full">
+          <ul class="flex flex-col gap-2">
+            <li>
+              <a href="#" class="portal-nav-tab flex items-center gap-3 px-4 py-2.5 rounded-xl text-sm font-semibold bg-blue-50 dark:bg-blue-950/20 text-blue-600 dark:text-blue-400 transition-colors" data-section="dashboard-sec" data-label="Dashboard">
+                <svg class="w-5 h-5 flex-shrink-0" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M2.25 12l8.954-8.955c.44-.439 1.152-.439 1.591 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125H9.75v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21h4.125c.621 0 1.125-.504 1.125-1.125V9.75M8.25 21h8.25" /></svg>
+                Dashboard
+              </a>
+            </li>
+            <li>
+              <a href="#" class="portal-nav-tab flex items-center gap-3 px-4 py-2.5 rounded-xl text-sm text-slate-600 dark:text-slate-400 hover:bg-slate-50 dark:hover:bg-slate-800 transition-colors" data-section="courses-sec" data-label="My Courses">
+                <svg class="w-5 h-5 flex-shrink-0" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M12 6.042A8.967 8.967 0 006 3.75c-1.052 0-2.062.18-3 .512v14.25A8.987 8.987 0 016 18c2.305 0 4.408.867 6 2.292m0-14.25a8.966 8.966 0 016-2.292c1.052 0 2.062.18 3 .512v14.25A8.987 8.987 0 0018 18a8.967 8.967 0 00-6 2.292m0-14.25v14.25" /></svg>
+                My Courses
+              </a>
+            </li>
+            <li>
+              <a href="#" class="portal-nav-tab flex items-center gap-3 px-4 py-2.5 rounded-xl text-sm text-slate-600 dark:text-slate-400 hover:bg-slate-50 dark:hover:bg-slate-800 transition-colors" data-section="tests-sec" data-label="My Tests">
+                <svg class="w-5 h-5 flex-shrink-0" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12h3.75M9 15h3.75M9 18h3.75m3 .75H18a2.25 2.25 0 002.25-2.25V6.108c0-1.135-.845-2.098-1.976-2.192a48.424 48.424 0 00-1.123-.08m-5.801 0c-.065.21-.1.433-.1.664 0 .414.336.75.75.75h4.5a.75.75 0 00.75-.75 2.25 2.25 0 00-.1-.664m-5.8 0A2.251 2.251 0 0113.5 2.25H15c1.03 0 1.9.693 2.166 1.638m-7.377 2.24a48.11 48.11 0 013.42 0M3.75 18V6.108c0-1.135.845-2.098 1.976-2.192a48.424 48.424 0 011.123-.08" /></svg>
+                My Tests
+              </a>
+            </li>
+            <li>
+              <a href="#" class="portal-nav-tab flex items-center gap-3 px-4 py-2.5 rounded-xl text-sm text-slate-600 dark:text-slate-400 hover:bg-slate-50 dark:hover:bg-slate-800 transition-colors" data-section="leaderboard-sec" data-label="Leaderboard">
+                <svg class="w-5 h-5 flex-shrink-0" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M16.5 18.75h-9m9 0a3 3 0 013 3h-15a3 3 0 013-3m9 0v-3.375c0-.621-.504-1.125-1.125-1.125h-2.25a1.125 1.125 0 00-1.125 1.125V18.75m9 0a9 9 0 11-18 0M15 12a3 3 0 11-6 0 3 3 0 016 0z" /></svg>
+                Leaderboard
+              </a>
+            </li>
+            <li>
+              <a href="#" class="portal-nav-tab flex items-center gap-3 px-4 py-2.5 rounded-xl text-sm text-slate-600 dark:text-slate-400 hover:bg-slate-50 dark:hover:bg-slate-800 transition-colors" data-section="certificates-sec" data-label="Certificates">
+                <svg class="w-5 h-5 flex-shrink-0" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75M21 12c0 1.268-.63 2.39-1.593 3.068" /></svg>
+                Certificates
+              </a>
+            </li>
+            <li>
+              <a href="#" class="portal-nav-tab flex items-center gap-3 px-4 py-2.5 rounded-xl text-sm text-slate-600 dark:text-slate-400 hover:bg-slate-50 dark:hover:bg-slate-800 transition-colors" data-section="downloads-sec" data-label="Downloads">
+                <svg class="w-5 h-5 flex-shrink-0" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M3 16.5v2.25A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75V16.5M16.5 12L12 16.5m0 0L7.5 12m4.5 4.5V3" /></svg>
+                Downloads
+                <span id="download-badge-count" class="ml-auto bg-blue-600 text-white font-bold text-[10px] w-5 h-5 rounded-full flex items-center justify-center">3</span>
+              </a>
+            </li>
+            <li class="border-t border-slate-100 dark:border-slate-800 pt-2 mt-2">
+              <a href="login.html" onclick="alert('You have successfully logged out.');" class="flex items-center gap-3 px-4 py-2.5 rounded-xl text-sm font-medium text-rose-600 hover:bg-rose-50 dark:hover:bg-rose-950/20 transition-colors">
+                <svg class="w-5 h-5 flex-shrink-0" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M15.75 9V5.25A2.25 2.25 0 0013.5 3h-6a2.25 2.25 0 00-2.25 2.25v13.5A2.25 2.25 0 007.5 21h6a2.25 2.25 0 002.25-2.25V15m3 0l3-3m0 0l-3-3m3 3H9" /></svg>
+                Logout
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </aside>
+
+      <!-- Main Dashboard View Panel -->
+      <main class="lg:col-span-9 space-y-6">
+        
+        <!-- Mobile Student Profile Header -->
+        <div class="lg:hidden glass-panel p-4 rounded-3xl border border-slate-200 dark:border-slate-800 shadow-sm flex items-center gap-4 bg-white dark:bg-slate-950">
+          <div class="w-12 h-12 rounded-full bg-blue-100 dark:bg-blue-950/20 text-blue-650 dark:text-blue-400 flex items-center justify-center font-bold text-base flex-shrink-0">
+            AM
+          </div>
+          <div>
+            <h4 class="text-sm font-bold text-slate-900 dark:text-white">Alex Morgan</h4>
+            <p class="text-[10px] text-slate-400 font-semibold tracking-wider uppercase mt-1">UPSC Roll: 98440</p>
+          </div>
+        </div>
+        
+        <!-- SECTION 1: DASHBOARD -->
+        <section id="dashboard-sec" class="portal-section space-y-6">
+          <!-- Greetings Banner -->
+          <div class="glass-panel p-6 rounded-3xl border border-slate-200 dark:border-slate-800 shadow-sm flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4 bg-gradient-glow relative overflow-hidden">
+            <div class="space-y-1 z-10">
+              <h2 class="text-xl sm:text-2xl font-bold tracking-tight text-slate-900 dark:text-white">Good day, Alex Morgan!</h2>
+              <p class="text-xs text-slate-500 dark:text-slate-400">Welcome back to your academic board. You are on an 18-day streak — keep it going!</p>
+            </div>
+            <span class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full text-[10px] font-bold bg-emerald-100 text-emerald-800 dark:bg-emerald-950/20 dark:text-emerald-400 z-10 flex-shrink-0">
+              <span class="w-1.5 h-1.5 rounded-full bg-emerald-500 animate-ping"></span>
+              Live Batch Active
+            </span>
+          </div>
+
+          <!-- Stats Summary -->
+          <div class="grid grid-cols-1 sm:grid-cols-3 gap-6">
+            <div class="glass-panel p-6 rounded-3xl border border-slate-200 dark:border-slate-800 flex flex-col justify-between h-36">
+              <span class="text-xs font-bold text-slate-400 uppercase tracking-widest">Active Course</span>
+              <h3 class="text-lg font-bold text-slate-900 dark:text-white mt-2">UPSC CSE GS Foundation</h3>
+              <div class="w-full bg-slate-100 dark:bg-slate-800 h-2 rounded-full mt-4 overflow-hidden">
+                <div class="bg-blue-600 h-full w-[64%] rounded-full"></div>
+              </div>
+            </div>
+
+            <div class="glass-panel p-6 rounded-3xl border border-slate-200 dark:border-slate-800 flex flex-col justify-between h-36">
+              <span class="text-xs font-bold text-slate-400 uppercase tracking-widest">Mock Tests Solved</span>
+              <h3 class="text-3xl font-extrabold text-slate-900 dark:text-white mt-2">12 / 15</h3>
+              <p class="text-[10px] text-emerald-500 font-semibold mt-2">✓ Accuracy Score: 88% average</p>
+            </div>
+
+            <div class="glass-panel p-6 rounded-3xl border border-slate-200 dark:border-slate-800 flex flex-col justify-between h-36">
+              <span class="text-xs font-bold text-slate-400 uppercase tracking-widest">Daily Study Streak</span>
+              <h3 class="text-3xl font-extrabold text-slate-900 dark:text-white mt-2">18 Days</h3>
+              <p class="text-[10px] text-slate-400 mt-2">Next reward: current affairs capsule</p>
+            </div>
+          </div>
+
+          <!-- Dynamic SVG Performance Line Chart -->
+          <div class="glass-panel p-8 rounded-3xl border border-slate-200 dark:border-slate-800 shadow-sm space-y-6">
+            <div class="flex items-center justify-between">
+              <h3 class="text-base font-bold text-slate-900 dark:text-white">Mock Exam Performance History</h3>
+              <span class="text-xs font-semibold text-blue-600 dark:text-blue-400">GS Mock Series 2026</span>
+            </div>
+            <!-- Custom SVG Wrapper -->
+            <div id="perf-chart-wrapper" class="w-full flex items-center justify-center bg-slate-50 dark:bg-slate-950 p-4 rounded-2xl overflow-x-auto min-h-[240px]">
+              <!-- Custom rendered SVG chart goes here -->
+            </div>
+          </div>
+        </section>
+
+        <!-- SECTION 2: MY COURSES -->
+        <section id="courses-sec" class="portal-section space-y-6 hidden">
+          <h3 class="text-lg font-bold text-slate-900 dark:text-white">My Active Courses</h3>
+          
+          <div class="space-y-4">
+            <!-- Course 1 -->
+            <div class="glass-panel p-6 rounded-3xl border border-slate-150 dark:border-slate-800/80 flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4">
+              <div>
+                <h4 class="text-base font-bold text-slate-900 dark:text-white">UPSC CSE GS Foundation Module</h4>
+                <p class="text-xs text-slate-400 mt-1">Mentor: Dr. Rajeev Malhotra | 180 Classes</p>
+              </div>
+              <div class="w-full sm:w-48">
+                <span class="text-xs font-bold text-blue-600 dark:text-blue-400">64% Completed</span>
+                <div class="w-full bg-slate-100 dark:bg-slate-800 h-2 rounded-full mt-1.5 overflow-hidden">
+                  <div class="bg-blue-600 h-full w-[64%] rounded-full"></div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Course 2 -->
+            <div class="glass-panel p-6 rounded-3xl border border-slate-150 dark:border-slate-800/80 flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4">
+              <div>
+                <h4 class="text-base font-bold text-slate-900 dark:text-white">UPSC Essay Writing & CSAT Masterclass</h4>
+                <p class="text-xs text-slate-400 mt-1">Mentor: Prof. Sen | 45 Classes</p>
+              </div>
+              <div class="w-full sm:w-48">
+                <span class="text-xs font-bold text-amber-500">20% Completed</span>
+                <div class="w-full bg-slate-100 dark:bg-slate-800 h-2 rounded-full mt-1.5 overflow-hidden">
+                  <div class="bg-amber-500 h-full w-[20%] rounded-full"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- SECTION 3: MOCK TESTS -->
+        <section id="tests-sec" class="portal-section space-y-6 hidden">
+          <h3 class="text-lg font-bold text-slate-900 dark:text-white">Mock Test History</h3>
+          
+          <div class="glass-panel rounded-3xl border border-slate-200 dark:border-slate-800 overflow-hidden">
+            <table class="w-full text-left text-xs sm:text-sm border-collapse">
+              <thead class="bg-slate-50 dark:bg-slate-900 text-slate-500 dark:text-slate-400 border-b border-slate-150 dark:border-slate-800">
+                <tr>
+                  <th class="p-4 font-bold">Exam Code</th>
+                  <th class="p-4 font-bold">Test Name</th>
+                  <th class="p-4 font-bold">Score</th>
+                  <th class="p-4 font-bold">Accuracy</th>
+                  <th class="p-4 font-bold">Status</th>
+                </tr>
+              </thead>
+              <tbody class="divide-y divide-slate-150 dark:divide-slate-800">
+                <tr>
+                  <td class="p-4 font-semibold text-slate-900 dark:text-white">UPSC-M4</td>
+                  <td class="p-4">GS Mini Mock Test 4</td>
+                  <td class="p-4 font-bold">92 / 100</td>
+                  <td class="p-4 text-emerald-500 font-semibold">92%</td>
+                  <td class="p-4"><span class="px-2.5 py-1 rounded-full text-[10px] bg-emerald-100 dark:bg-emerald-950/20 text-emerald-600 font-semibold">Passed</span></td>
+                </tr>
+                <tr>
+                  <td class="p-4 font-semibold text-slate-900 dark:text-white">UPSC-M5</td>
+                  <td class="p-4">GS Sectional Mock 5</td>
+                  <td class="p-4 font-bold">88 / 100</td>
+                  <td class="p-4 text-emerald-500 font-semibold">88%</td>
+                  <td class="p-4"><span class="px-2.5 py-1 rounded-full text-[10px] bg-emerald-100 dark:bg-emerald-950/20 text-emerald-600 font-semibold">Passed</span></td>
+                </tr>
+                <tr>
+                  <td class="p-4 font-semibold text-slate-900 dark:text-white">UPSC-M6</td>
+                  <td class="p-4">All-India Prelims Mock 6</td>
+                  <td class="p-4 font-bold">95 / 100</td>
+                  <td class="p-4 text-emerald-500 font-semibold">95%</td>
+                  <td class="p-4"><span class="px-2.5 py-1 rounded-full text-[10px] bg-emerald-100 dark:bg-emerald-950/20 text-emerald-600 font-semibold">Passed</span></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </section>
+
+        <!-- SECTION 4: LEADERBOARD -->
+        <section id="leaderboard-sec" class="portal-section space-y-6 hidden">
+          <div class="flex items-center justify-between">
+            <h3 class="text-lg font-bold text-slate-900 dark:text-white">All India Mock Rank Leaderboard</h3>
+            <span class="text-xs text-slate-400 font-medium">Click headers to sort ↕</span>
+          </div>
+
+          <div class="glass-panel rounded-3xl border border-slate-200 dark:border-slate-800 overflow-hidden">
+            <table id="leaderboard-table" class="w-full text-left text-xs sm:text-sm border-collapse">
+              <thead class="bg-slate-50 dark:bg-slate-900 text-slate-500 dark:text-slate-400 border-b border-slate-150 dark:border-slate-800 select-none">
+                <tr>
+                  <th class="p-4 font-bold" data-sort="rank">Rank <span class="sort-indicator">↕</span></th>
+                  <th class="p-4 font-bold" data-sort="name">Student Name <span class="sort-indicator">↕</span></th>
+                  <th class="p-4 font-bold" data-sort="score">Mock Score (%) <span class="sort-indicator">↕</span></th>
+                  <th class="p-4 font-bold">Category</th>
+                </tr>
+              </thead>
+              <tbody class="divide-y divide-slate-150 dark:divide-slate-800">
+                <tr>
+                  <td class="p-4 font-bold text-slate-900 dark:text-white" data-rank="1">1</td>
+                  <td class="p-4 font-semibold text-slate-800 dark:text-slate-200" data-name="Rohan Deshmukh">Rohan Deshmukh</td>
+                  <td class="p-4 font-bold text-blue-600 dark:text-blue-400" data-score="98">98.2%</td>
+                  <td class="p-4">UPSC CSE</td>
+                </tr>
+                <tr>
+                  <td class="p-4 font-bold text-slate-900 dark:text-white" data-rank="2">2</td>
+                  <td class="p-4 font-semibold text-slate-800 dark:text-slate-200" data-name="Priya Sharma">Priya Sharma</td>
+                  <td class="p-4 font-bold text-blue-600 dark:text-blue-400" data-score="96">96.5%</td>
+                  <td class="p-4">NEET prep</td>
+                </tr>
+                <tr>
+                  <td class="p-4 font-bold text-slate-900 dark:text-white" data-rank="3">3</td>
+                  <td class="p-4 font-semibold text-slate-800 dark:text-slate-200" data-name="Alex Morgan">Alex Morgan (You)</td>
+                  <td class="p-4 font-bold text-blue-600 dark:text-blue-400" data-score="95">95.0%</td>
+                  <td class="p-4">UPSC CSE</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </section>
+
+        <!-- SECTION 5: CERTIFICATES -->
+        <section id="certificates-sec" class="portal-section space-y-6 hidden">
+          <h3 class="text-lg font-bold text-slate-900 dark:text-white">Milestone Certificates</h3>
+          
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+            <!-- Cert 1 -->
+            <div class="glass-panel p-6 rounded-3xl border border-slate-150 dark:border-slate-800 flex flex-col justify-between h-48">
+              <div>
+                <h4 class="text-base font-bold text-slate-900 dark:text-white">UPSC Foundation Stage 1</h4>
+                <p class="text-xs text-slate-500 dark:text-slate-400 mt-1">GS Static Syllabus Concepts</p>
+              </div>
+              <button class="claim-cert-btn gradient-btn w-full text-center py-2.5 rounded-xl text-xs font-semibold text-white shadow-sm mt-4" data-student="Alex Morgan">
+                Claim Certificate
+              </button>
+            </div>
+
+            <!-- Cert 2 (Locked) -->
+            <div class="glass-panel p-6 rounded-3xl border border-slate-150 dark:border-slate-800 flex flex-col justify-between h-48 opacity-60">
+              <div>
+                <h4 class="text-base font-bold text-slate-900 dark:text-white">UPSC CSAT Masterclass</h4>
+                <p class="text-xs text-slate-500 dark:text-slate-400 mt-1">CSAT logical quant sections</p>
+              </div>
+              <button disabled class="w-full text-center py-2.5 rounded-xl text-xs font-semibold bg-slate-100 dark:bg-slate-800 text-slate-400 dark:text-slate-600 mt-4 cursor-not-allowed">
+                Locked (Complete Course)
+              </button>
+            </div>
+          </div>
+        </section>
+
+        <!-- SECTION 6: DOWNLOADS -->
+        <section id="downloads-sec" class="portal-section space-y-6 hidden">
+          <h3 class="text-lg font-bold text-slate-900 dark:text-white">Academic Reference Downloads</h3>
+          
+          <div class="space-y-4">
+            <!-- Down 1 -->
+            <div class="glass-panel p-6 rounded-3xl border border-slate-150 dark:border-slate-800/80 flex justify-between items-center">
+              <div>
+                <h4 class="text-sm font-bold text-slate-900 dark:text-white">UPSC General Studies Answer Writing Handbook</h4>
+                <p class="text-[10px] text-slate-400 mt-1">PDF File | 12.4 MB | Syllabus Index</p>
+              </div>
+              <button class="portal-download-btn px-4 py-2 bg-blue-600 hover:bg-blue-700 text-white rounded-lg text-xs font-semibold transition-colors flex items-center gap-1">
+                Download PDF
+              </button>
+            </div>
+
+            <!-- Down 2 -->
+            <div class="glass-panel p-6 rounded-3xl border border-slate-150 dark:border-slate-800/80 flex justify-between items-center">
+              <div>
+                <h4 class="text-sm font-bold text-slate-900 dark:text-white">Daily Current Affairs Capsule - July 2026</h4>
+                <p class="text-[10px] text-slate-400 mt-1">PDF File | 4.8 MB | Current Issues</p>
+              </div>
+              <button class="portal-download-btn px-4 py-2 bg-blue-600 hover:bg-blue-700 text-white rounded-lg text-xs font-semibold transition-colors flex items-center gap-1">
+                Download PDF
+              </button>
+            </div>
+          </div>
+        </section>
+
+      </main>
+
+    </div>
+  </section>
+
+  <!-- Shared JS Modules -->
+  <script src="assets/js/main.js"></script>
+  <script src="assets/js/portal.js"></script>
+</body>
+</html>
