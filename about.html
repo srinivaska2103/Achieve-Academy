@@ -32,13 +32,7 @@
 </head>
 <body class="bg-slate-50 dark:bg-slate-900 text-slate-700 dark:text-slate-300 pt-20">
 
-  <!-- Preloader -->
-  <div id="preloader">
-    <div class="animate-spin rounded-full h-12 w-12 border-t-2 border-b-2 border-blue-600"></div>
-  </div>
 
-  <!-- Scroll Progress Bar -->
-  <div id="scroll-progress"></div>
 
   <!-- Shared Header Hydration -->
   <header id="global-header"></header>
@@ -247,89 +241,90 @@
   <!-- Faculty Panel -->
   <section id="faculty" class="py-16 lg:py-24 bg-slate-50 dark:bg-slate-900 border-t border-slate-100 dark:border-slate-800">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="text-center max-w-2xl mx-auto mb-16 reveal fade-up">
-        <span class="text-xs font-bold text-blue-600 dark:text-blue-400 uppercase tracking-widest">Expert Educators</span>
-        <h2 class="text-3xl font-bold tracking-tight text-slate-900 dark:text-white mt-1">Our Faculty Panel</h2>
-        <p class="text-sm text-slate-500 dark:text-slate-400 mt-2">Learn from senior educators with decades of combined teaching credentials and real-world exam expertise.</p>
-      </div>
-      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
-        <!-- Faculty 1 -->
-        <div class="glass-panel p-6 rounded-2xl text-center border border-slate-100 dark:border-slate-800 shadow-sm hover:shadow-lg transition-all duration-300 hover:-translate-y-1">
-          <img src="assets/Kabir Malhotra" alt="Dr. Rajeev Malhotra" class="w-24 h-24 rounded-full mx-auto mb-4 border-4 border-white dark:border-slate-850 shadow-md object-cover">
-          <h4 class="text-base font-bold text-slate-900 dark:text-white">Dr. Rajeev Malhotra</h4>
-          <p class="text-xs text-blue-600 dark:text-blue-400 font-semibold mt-1">UPSC General Studies</p>
-          <p class="text-[11px] text-slate-400 mt-2 leading-relaxed">Ex-Civil Servant, PhD in Public Policy with 15+ years of UPSC prep instruction.</p>
-          <div class="flex justify-center gap-2 mt-4">
-            <span class="px-2 py-1 bg-blue-100 dark:bg-blue-950/30 text-blue-600 dark:text-blue-400 rounded-full text-[10px] font-semibold">IAS Alumni</span>
-            <span class="px-2 py-1 bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-400 rounded-full text-[10px] font-semibold">PhD</span>
-          </div>
-        </div>
-
-        <!-- Faculty 2 -->
-        <div class="glass-panel p-6 rounded-2xl text-center border border-slate-100 dark:border-slate-800 shadow-sm hover:shadow-lg transition-all duration-300 hover:-translate-y-1">
-          <img src="assets/Prof. S. Sen" alt="Prof. S. Sen" class="w-24 h-24 rounded-full mx-auto mb-4 border-4 border-white dark:border-slate-850 shadow-md object-cover">
-          <h4 class="text-base font-bold text-slate-900 dark:text-white">Prof. S. Sen</h4>
-          <p class="text-xs text-blue-600 dark:text-blue-400 font-semibold mt-1">IIT JEE Physics</p>
-          <p class="text-[11px] text-slate-400 mt-2 leading-relaxed">M.Tech from IIT Kharagpur, author of premium Physics concept papers with 3000+ JEE qualifiers.</p>
-          <div class="flex justify-center gap-2 mt-4">
-            <span class="px-2 py-1 bg-amber-100 dark:bg-amber-950/30 text-amber-600 dark:text-amber-400 rounded-full text-[10px] font-semibold">IIT Kharagpur</span>
-          </div>
-        </div>
-
-        <!-- Faculty 3 -->
-        <div class="glass-panel p-6 rounded-2xl text-center border border-slate-100 dark:border-slate-800 shadow-sm hover:shadow-lg transition-all duration-300 hover:-translate-y-1">
-          <img src="assets/Dr. Namrata Nair" alt="Dr. Namrata Nair" class="w-24 h-24 rounded-full mx-auto mb-4 border-4 border-white dark:border-slate-850 shadow-md object-cover">
-          <h4 class="text-base font-bold text-slate-900 dark:text-white">Dr. Namrata Nair</h4>
-          <p class="text-xs text-blue-600 dark:text-blue-400 font-semibold mt-1">NEET Biology</p>
-          <p class="text-[11px] text-slate-400 mt-2 leading-relaxed">MD in Physiology, researcher with 12+ years mentoring medical qualifiers at AIIMS level.</p>
-          <div class="flex justify-center gap-2 mt-4">
-            <span class="px-2 py-1 bg-emerald-100 dark:bg-emerald-950/30 text-emerald-650 dark:text-emerald-400 rounded-full text-[10px] font-semibold">AIIMS MD</span>
-          </div>
-        </div>
-
-        <!-- Faculty 4 -->
-        <div class="glass-panel p-6 rounded-2xl text-center border border-slate-100 dark:border-slate-800 shadow-sm hover:shadow-lg transition-all duration-300 hover:-translate-y-1">
-          <img src="assets/Prof. Joshi" alt="Prof. Joshi" class="w-24 h-24 rounded-full mx-auto mb-4 border-4 border-white dark:border-slate-855 shadow-md object-cover">
-          <h4 class="text-base font-bold text-slate-900 dark:text-white">Prof. Joshi</h4>
-          <p class="text-xs text-blue-600 dark:text-blue-400 font-semibold mt-1">Quantitative Math</p>
-          <p class="text-[11px] text-slate-400 mt-2 leading-relaxed">Expert trainer for SSC and Bank Exams, holder of speed-solving methods with 95%+ success rate.</p>
-          <div class="flex justify-center gap-2 mt-4">
-            <span class="px-2 py-1 bg-purple-100 dark:bg-purple-950/30 text-purple-650 dark:text-purple-400 rounded-full text-[10px] font-semibold">SSC Expert</span>
-          </div>
-        </div>
-      </div>
-
-      <!-- Additional Faculty Row -->
-      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 mt-8">
-        <!-- Faculty 5 -->
-        <div class="glass-panel p-6 rounded-2xl border border-slate-100 dark:border-slate-800 shadow-sm flex items-center gap-4 hover:shadow-lg transition-all duration-300">
-          <img src="assets/Ananya Krishnan" alt="Ananya Krishnan" class="w-16 h-16 rounded-xl flex-shrink-0 object-cover shadow-sm border border-slate-200 dark:border-slate-800">
-          <div>
-            <h4 class="text-sm font-bold text-slate-900 dark:text-white">Ananya Krishnan</h4>
-            <p class="text-xs text-blue-600 dark:text-blue-400 font-semibold mt-0.5">English & GK</p>
-            <p class="text-[11px] text-slate-400 mt-1">Former journalist, specialist in verbal ability and current affairs modules.</p>
-          </div>
-        </div>
-        <!-- Faculty 6 -->
-        <div class="glass-panel p-6 rounded-2xl border border-slate-100 dark:border-slate-800 shadow-sm flex items-center gap-4 hover:shadow-lg transition-all duration-300">
-          <img src="assets/Vikram Rao" alt="Vikram Rao" class="w-16 h-16 rounded-xl flex-shrink-0 object-cover shadow-sm border border-slate-200 dark:border-slate-800">
-          <div>
-            <h4 class="text-sm font-bold text-slate-900 dark:text-white">Vikram Rao</h4>
-            <p class="text-xs text-blue-600 dark:text-blue-400 font-semibold mt-0.5">JEE Advanced Chemistry</p>
-            <p class="text-[11px] text-slate-400 mt-1">IIT Bombay graduate, known for innovative organic chemistry teaching techniques.</p>
-          </div>
-        </div>
-        <!-- Faculty 7 -->
-        <div class="glass-panel p-6 rounded-2xl border border-slate-100 dark:border-slate-800 shadow-sm flex items-center gap-4 hover:shadow-lg transition-all duration-300">
-          <img src="assets/Sunita Pillai" alt="Sunita Pillai" class="w-16 h-16 rounded-xl flex-shrink-0 object-cover shadow-sm border border-slate-200 dark:border-slate-800">
-          <div>
-            <h4 class="text-sm font-bold text-slate-900 dark:text-white">Sunita Pillai</h4>
-            <p class="text-xs text-blue-600 dark:text-blue-400 font-semibold mt-0.5">Reasoning & Banking</p>
-            <p class="text-[11px] text-slate-400 mt-1">15 years in RBI, specialized in quantitative reasoning and aptitude training.</p>
-          </div>
-        </div>
+  <div class="text-center max-w-2xl mx-auto mb-16 reveal fade-up">
+    <span class="text-xs font-bold text-blue-600 dark:text-blue-400 uppercase tracking-widest">Expert Educators</span>
+    <h2 class="text-3xl font-bold tracking-tight text-slate-900 dark:text-white mt-1">Our Faculty Panel</h2>
+    <p class="text-sm text-slate-500 dark:text-slate-400 mt-2">Learn from senior educators with decades of combined teaching credentials and real-world exam expertise.</p>
+  </div>
+  
+  <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+    <div class="glass-panel p-6 rounded-2xl text-center border border-slate-100 dark:border-slate-800 shadow-sm hover:shadow-lg transition-all duration-300 hover:-translate-y-1">
+      <img src="assets/Kabir Malhotra" alt="Dr. Rajeev Malhotra" class="w-24 h-24 rounded-full mx-auto mb-4 border-4 border-white dark:border-slate-850 shadow-md object-cover">
+      <h4 class="text-base font-bold text-slate-900 dark:text-white">Dr. Rajeev Malhotra</h4>
+      <p class="text-xs text-blue-600 dark:text-blue-400 font-semibold mt-1">UPSC General Studies</p>
+      <p class="text-[11px] text-slate-400 mt-2 leading-relaxed">Ex-Civil Servant, PhD in Public Policy with 15+ years of UPSC prep instruction.</p>
+      <div class="flex justify-center gap-2 mt-4">
+        <span class="px-2 py-1 bg-blue-100 dark:bg-blue-950/30 text-blue-600 dark:text-blue-400 rounded-full text-[10px] font-semibold">IAS Alumni</span>
+        <span class="px-2 py-1 bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-400 rounded-full text-[10px] font-semibold">PhD</span>
       </div>
     </div>
+
+    <div class="glass-panel p-6 rounded-2xl text-center border border-slate-100 dark:border-slate-800 shadow-sm hover:shadow-lg transition-all duration-300 hover:-translate-y-1">
+      <img src="assets/Prof. S. Sen" alt="Prof. S. Sen" class="w-24 h-24 rounded-full mx-auto mb-4 border-4 border-white dark:border-slate-855 shadow-md object-cover">
+      <h4 class="text-base font-bold text-slate-900 dark:text-white">Prof. S. Sen</h4>
+      <p class="text-xs text-blue-600 dark:text-blue-400 font-semibold mt-1">IIT JEE Physics</p>
+      <p class="text-[11px] text-slate-400 mt-2 leading-relaxed">M.Tech from IIT Kharagpur, author of premium Physics concept papers with 3000+ JEE qualifiers.</p>
+      <div class="flex justify-center gap-2 mt-4">
+        <span class="px-2 py-1 bg-amber-100 dark:bg-amber-950/30 text-amber-600 dark:text-amber-400 rounded-full text-[10px] font-semibold">IIT Kharagpur</span>
+      </div>
+    </div>
+
+    <div class="glass-panel p-6 rounded-2xl text-center border border-slate-100 dark:border-slate-800 shadow-sm hover:shadow-lg transition-all duration-300 hover:-translate-y-1">
+      <img src="assets/Dr. Namrata Nair" alt="Dr. Namrata Nair" class="w-24 h-24 rounded-full mx-auto mb-4 border-4 border-white dark:border-slate-850 shadow-md object-cover">
+      <h4 class="text-base font-bold text-slate-900 dark:text-white">Dr. Namrata Nair</h4>
+      <p class="text-xs text-blue-600 dark:text-blue-400 font-semibold mt-1">NEET Biology</p>
+      <p class="text-[11px] text-slate-400 mt-2 leading-relaxed">MD in Physiology, researcher with 12+ years mentoring medical qualifiers at AIIMS level.</p>
+      <div class="flex justify-center gap-2 mt-4">
+        <span class="px-2 py-1 bg-emerald-100 dark:bg-emerald-950/30 text-emerald-600 dark:text-emerald-400 rounded-full text-[10px] font-semibold">AIIMS MD</span>
+      </div>
+    </div>
+
+    <div class="glass-panel p-6 rounded-2xl text-center border border-slate-100 dark:border-slate-800 shadow-sm hover:shadow-lg transition-all duration-300 hover:-translate-y-1">
+      <img src="assets/Prof. Joshi" alt="Prof. Joshi" class="w-24 h-24 rounded-full mx-auto mb-4 border-4 border-white dark:border-slate-855 shadow-md object-cover">
+      <h4 class="text-base font-bold text-slate-900 dark:text-white">Prof. Joshi</h4>
+      <p class="text-xs text-blue-600 dark:text-blue-400 font-semibold mt-1">Quantitative Math</p>
+      <p class="text-[11px] text-slate-400 mt-2 leading-relaxed">Expert trainer for SSC and Bank Exams, holder of speed-solving methods with 95%+ success rate.</p>
+      <div class="flex justify-center gap-2 mt-4">
+        <span class="px-2 py-1 bg-purple-100 dark:bg-purple-950/30 text-purple-600 dark:text-purple-400 rounded-full text-[10px] font-semibold">SSC Expert</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-8">
+    <div class="glass-panel p-6 rounded-2xl border border-slate-100 dark:border-slate-800 shadow-sm flex items-center gap-4 hover:shadow-lg transition-all duration-300">
+      <img src="assets/Ananya Krishnan" alt="Ananya Krishnan" class="w-16 h-16 rounded-xl flex-shrink-0 object-cover shadow-sm border border-slate-200 dark:border-slate-800">
+      <div>
+        <h4 class="text-sm font-bold text-slate-900 dark:text-white">Ananya Krishnan</h4>
+        <p class="text-xs text-blue-600 dark:text-blue-400 font-semibold mt-0.5">English & GK</p>
+        <p class="text-[11px] text-slate-400 mt-1">Former journalist, specialist in verbal ability and current affairs modules.</p>
+      </div>
+    </div>
+    
+    <div class="glass-panel p-6 rounded-2xl border border-slate-100 dark:border-slate-800 shadow-sm flex items-center gap-4 hover:shadow-lg transition-all duration-300">
+      <img src="assets/Vikram Rao" alt="Vikram Rao" class="w-16 h-16 rounded-xl flex-shrink-0 object-cover shadow-sm border border-slate-200 dark:border-slate-800">
+      <div>
+        <h4 class="text-sm font-bold text-slate-900 dark:text-white">Vikram Rao</h4>
+        <p class="text-xs text-blue-600 dark:text-blue-400 font-semibold mt-0.5">JEE Advanced Chemistry</p>
+        <p class="text-[11px] text-slate-400 mt-1">IIT Bombay graduate, known for innovative organic chemistry teaching techniques.</p>
+      </div>
+    </div>
+    
+    <div class="w-full glass-panel p-6 rounded-2xl border border-slate-100 dark:border-slate-800 shadow-sm flex flex-row items-center justify-center gap-4 hover:shadow-lg transition-all duration-300 md:flex-col md:text-center md:col-span-2 md:justify-self-center md:max-w-md lg:flex-row lg:text-left lg:col-span-1 lg:max-w-none">
+      <img 
+        src="assets/Sunita Pillai" 
+        alt="Sunita Pillai" 
+        class="w-16 h-16 rounded-xl flex-shrink-0 object-cover shadow-sm border border-slate-200 dark:border-slate-800 md:mx-auto lg:mx-0"
+      >
+      <div class="flex flex-col items-center md:items-center lg:items-start w-full">
+        <h4 class="text-sm font-bold text-slate-900 dark:text-white">Sunita Pillai</h4>
+        <p class="text-xs text-blue-600 dark:text-blue-400 font-semibold mt-0.5">Reasoning & Banking</p>
+        <p class="text-[11px] text-slate-400 mt-1 max-w-xs text-center md:text-center lg:text-left">
+          15 years in RBI, specialized in quantitative reasoning and aptitude training.
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
   </section>
 
   <!-- Campus Infrastructure Info -->
@@ -429,14 +424,14 @@
             <svg class="w-7 h-7" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75M21 12c0 1.268-.63 2.39-1.593 3.068a3.745 3.745 0 01-1.043 3.296 3.745 3.745 0 01-3.296 1.043A3.745 3.745 0 0112 21c-1.268 0-2.39-.63-3.068-1.593a3.746 3.746 0 01-3.296-1.043 3.745 3.745 0 01-1.043-3.296A3.745 3.745 0 013 12c0-1.268.63-2.39 1.593-3.068a3.745 3.745 0 011.043-3.296 3.746 3.746 0 013.296-1.043A3.746 3.746 0 0112 3c1.268 0 2.39.63 3.068 1.593a3.746 3.746 0 013.296 1.043 3.746 3.746 0 011.043 3.296A3.745 3.745 0 0121 12z" /></svg>
           </div>
           <h4 class="text-sm font-bold text-slate-900 dark:text-white">ISO 21001 Certified</h4>
-          <p class="text-[11px] text-slate-400 mt-1">Educational Management Systems</p>
+          <p class="text-[11px] text-slate-400 mt-1">Educational Management</p>
         </div>
         <div class="glass-panel p-6 rounded-2xl border border-slate-100 dark:border-slate-800 text-center reveal fade-up hover:shadow-lg transition-all">
           <div class="w-14 h-14 bg-emerald-100 dark:bg-emerald-950/30 text-emerald-600 dark:text-emerald-400 rounded-2xl flex items-center justify-center mx-auto mb-4">
             <svg class="w-7 h-7" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M11.48 3.499a.562.562 0 011.04 0l2.125 5.111a.563.563 0 00.475.345l5.518.442c.499.04.701.663.321.988l-4.204 3.602a.563.563 0 00-.182.557l1.285 5.385a.562.562 0 01-.84.61l-4.725-2.885a.563.563 0 00-.586 0L6.982 20.54a.562.562 0 01-.84-.61l1.285-5.386a.562.562 0 00-.182-.557l-4.204-3.602a.563.563 0 01.321-.988l5.518-.442a.563.563 0 00.475-.345L11.48 3.5z" /></svg>
           </div>
-          <h4 class="text-sm font-bold text-slate-900 dark:text-white">Top Rated 2024</h4>
-          <p class="text-[11px] text-slate-400 mt-1">4.9/5 on Education Portals</p>
+          <h4 class="text-sm font-bold text-slate-900 dark:text-white">Top and  Rated 2024</h4>
+          <p class="text-[11px] text-slate-400 mt-1">4.9/5 on Education and  Portals</p>
         </div>
         <div class="glass-panel p-6 rounded-2xl border border-slate-100 dark:border-slate-800 text-center reveal fade-up hover:shadow-lg transition-all">
           <div class="w-14 h-14 bg-purple-100 dark:bg-purple-950/30 text-purple-600 dark:text-purple-400 rounded-2xl flex items-center justify-center mx-auto mb-4">
@@ -492,7 +487,7 @@
         <!-- Value 2 -->
         <div class="glass-panel p-6 rounded-3xl border border-slate-100 dark:border-slate-850 shadow-sm text-center space-y-3 reveal fade-up">
           <div class="w-10 h-10 bg-amber-100 dark:bg-amber-950/30 text-amber-600 dark:text-amber-400 rounded-xl flex items-center justify-center mx-auto">2</div>
-          <h3 class="text-sm font-bold text-slate-900 dark:text-white">Student First</h3>
+          <h3 class="text-sm font-bold text-slate-900 dark:text-white">Student and  First</h3>
           <p class="text-[11px] text-slate-500 dark:text-slate-400 leading-relaxed">
             Individual doubt clearance hours and strategic batch flexibility centered on students.
           </p>
@@ -502,7 +497,7 @@
           <div class="w-10 h-10 bg-emerald-100 dark:bg-emerald-950/30 text-emerald-650 dark:text-emerald-400 rounded-xl flex items-center justify-center mx-auto">3</div>
           <h3 class="text-sm font-bold text-slate-900 dark:text-white">Constant Innovation</h3>
           <p class="text-[11px] text-slate-500 dark:text-slate-400 leading-relaxed">
-            AI-driven score diagnostics, digital hybrid lecture feeds, and active doubt tools.
+            AI-driven score diagnostics, digital hybrid lecture centered on students feeds.
           </p>
         </div>
         <!-- Value 4 -->
@@ -510,7 +505,7 @@
           <div class="w-10 h-10 bg-purple-100 dark:bg-purple-950/30 text-purple-655 dark:text-purple-400 rounded-xl flex items-center justify-center mx-auto">4</div>
           <h3 class="text-sm font-bold text-slate-900 dark:text-white">Proven Excellence</h3>
           <p class="text-[11px] text-slate-500 dark:text-slate-400 leading-relaxed">
-            Aiming only for Top AIR selections. Continuous syllabus revision drills.
+            Aiming only for Top centered on students AIR selections. Continuous.
           </p>
         </div>
       </div>
