@@ -32,13 +32,13 @@
 </head>
 <body class="bg-slate-50 dark:bg-slate-900 text-slate-700 dark:text-slate-300">
 
-  <!-- Minimal Header -->
-  <header id="global-header" class="w-full transition-all duration-300 glass-nav shadow-sm relative z-50">
+  <!-- Dashboard Top Bar -->
+  <div class="w-full relative z-50 pt-8 pb-4">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="flex items-center justify-between h-20">
+      <div class="flex items-center justify-between">
         <!-- Logo & Brand Name -->
         <a href="index.html" class="flex items-center gap-3">
-          <!-- Embedded academic logo SVG (same as main.js) -->
+          <!-- Embedded academic logo SVG -->
           <svg class="h-8 w-8 sm:h-10 sm:w-10 flex-shrink-0" viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round" stroke-linejoin="round">
             <circle cx="50" cy="50" r="44" stroke="currentColor" stroke-width="5" fill="none" class="text-blue-800 dark:text-blue-500" />
             <path d="M35 52v8c0 8 15 10 15 10s15-2 15-10v-8" fill="currentColor" class="text-blue-600 opacity-20 dark:text-blue-800" />
@@ -54,98 +54,96 @@
           </div>
         </a>
 
-        <!-- Minimal Controls -->
-     <div class="flex items-center gap-2 sm:gap-3">
-  <div class="lg:hidden relative">
-    <button id="portal-menu-toggle" class="p-2 rounded-lg text-slate-600 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors flex items-center gap-1.5 text-xs font-semibold" title="Portal Menu">
-      <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
-        <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h11" />
-      </svg>
-      <span id="portal-active-label" class="hidden sm:inline">Dashboard</span>
-      <svg class="w-3 h-3 chevron-icon transition-transform duration-300" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
-        <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
-      </svg>
-    </button>
+        <!-- Top Right Controls -->
+        <div class="flex items-center gap-4 sm:gap-6">
+          
+          <!-- Mobile Portal Menu Toggle -->
+          <div class="lg:hidden relative">
+            <button id="portal-menu-toggle" class="p-2 rounded-lg text-slate-600 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors flex items-center gap-1.5 text-xs font-semibold" title="Portal Menu">
+              <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h11" />
+              </svg>
+              <span id="portal-active-label" class="hidden sm:inline">Dashboard</span>
+              <svg class="w-3 h-3 chevron-icon transition-transform duration-300" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
+              </svg>
+            </button>
 
-    <div id="portal-dropdown" class="hidden absolute right-0 top-full mt-2 w-56 bg-white dark:bg-slate-900 rounded-2xl border border-slate-200 dark:border-slate-800 shadow-xl py-2 z-50">
-      <a href="#" class="portal-nav-tab flex items-center gap-3 px-4 py-2.5 text-sm font-semibold bg-blue-50 dark:bg-blue-950/20 text-blue-600 dark:text-blue-400 transition-colors" data-section="dashboard-sec" data-label="Dashboard">
-        <svg class="w-5 h-5 flex-shrink-0" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
-          <rect x="3" y="3" width="7" height="9" rx="1" />
-          <rect x="14" y="3" width="7" height="5" rx="1" />
-          <rect x="14" y="12" width="7" height="9" rx="1" />
-          <rect x="3" y="16" width="7" height="5" rx="1" />
-        </svg>
-        Dashboard
-      </a>
-      
-      <a href="#" class="portal-nav-tab flex items-center gap-3 px-4 py-2.5 text-sm text-slate-600 dark:text-slate-400 hover:bg-slate-50 dark:hover:bg-slate-800 transition-colors" data-section="courses-sec" data-label="My Courses">
-        <svg class="w-5 h-5 flex-shrink-0" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
-          <path stroke-linecap="round" stroke-linejoin="round" d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20M4 19.5A2.5 2.5 0 0 0 6.5 22H20M4 19.5V3.5A2.5 2.5 0 0 1 6.5 1H20v16H6.5" />
-        </svg>
-        My Courses
-      </a>
-      
-      <a href="#" class="portal-nav-tab flex items-center gap-3 px-4 py-2.5 text-sm text-slate-600 dark:text-slate-400 hover:bg-slate-50 dark:hover:bg-slate-800 transition-colors" data-section="tests-sec" data-label="My Tests">
-        <svg class="w-5 h-5 flex-shrink-0" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
-          <path stroke-linecap="round" stroke-linejoin="round" d="M9 11l3 3L22 4M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11" />
-        </svg>
-        My Tests
-      </a>
-      
-      <a href="#" class="portal-nav-tab flex items-center gap-3 px-4 py-2.5 text-sm text-slate-600 dark:text-slate-400 hover:bg-slate-50 dark:hover:bg-slate-800 transition-colors" data-section="leaderboard-sec" data-label="Leaderboard">
-        <svg class="w-5 h-5 flex-shrink-0" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
-          <path stroke-linecap="round" stroke-linejoin="round" d="M6 9H4.5a1.5 1.5 0 0 0 0 3H6m12-3h1.5a1.5 1.5 0 0 1 0 3H18M6 18H4a1 1 0 0 1-1-1v-1a4 4 0 0 1 8 0v1a1 1 0 0 1-1 1h-2m10 0h-2a1 1 0 0 1-1-1v-1a4 4 0 0 1 8 0v1a1 1 0 0 1-1 1h-2M12 12a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm-4 9h8a2 2 0 0 0 2-2v-2H6v2a2 2 0 0 0 2 2z" />
-        </svg>
-        Leaderboard
-      </a>
-      
-      <a href="#" class="portal-nav-tab flex items-center gap-3 px-4 py-2.5 text-sm text-slate-600 dark:text-slate-400 hover:bg-slate-50 dark:hover:bg-slate-800 transition-colors" data-section="certificates-sec" data-label="Certificates">
-        <svg class="w-5 h-5 flex-shrink-0" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
-          <path stroke-linecap="round" stroke-linejoin="round" d="M12 15l-2 5 2-1 2 1-2-5zm0 0a5 5 0 1 0 0-10 5 5 0 0 0 0 10zm-7 0h2M4 11h3m-2-4h2m10 8h2m-3-4h3m-2-4h2" />
-        </svg>
-        Certificates
-      </a>
-      
-      <a href="#" class="portal-nav-tab flex items-center gap-3 px-4 py-2.5 text-sm text-slate-600 dark:text-slate-400 hover:bg-slate-50 dark:hover:bg-slate-800 transition-colors" data-section="downloads-sec" data-label="Downloads">
-        <svg class="w-5 h-5 flex-shrink-0" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
-          <path stroke-linecap="round" stroke-linejoin="round" d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4M7 10l5 5 5-5M12 15V3" />
-        </svg>
-        Downloads
-        <span id="download-badge-count-mobile" class="ms-auto bg-blue-600 text-white font-bold text-[10px] w-5 h-5 rounded-full flex items-center justify-center">3</span>
-      </a>
-      
-      <div class="border-t border-slate-100 dark:border-slate-800 mt-1 pt-1">
-        <a href="login.html" onclick="alert('You have successfully logged out.');" class="flex items-center gap-3 px-4 py-2.5 text-sm font-medium text-rose-600 hover:bg-rose-50 dark:hover:bg-rose-950/20 transition-colors">
-          <svg class="w-5 h-5 flex-shrink-0" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
-            <path stroke-linecap="round" stroke-linejoin="round" d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4M16 17l5-5-5-5M21 12H9" />
-          </svg>
-          Logout
-        </a>
+            <div id="portal-dropdown" class="hidden absolute right-0 top-full mt-2 w-56 bg-white dark:bg-slate-900 rounded-2xl border border-slate-200 dark:border-slate-800 shadow-xl py-2 z-50">
+              <a href="#" class="portal-nav-tab flex items-center gap-3 px-4 py-2.5 text-sm font-semibold bg-blue-50 dark:bg-blue-950/20 text-blue-600 dark:text-blue-400 transition-colors" data-section="dashboard-sec" data-label="Dashboard">
+                <svg class="w-5 h-5 flex-shrink-0" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                  <rect x="3" y="3" width="7" height="9" rx="1" />
+                  <rect x="14" y="3" width="7" height="5" rx="1" />
+                  <rect x="14" y="12" width="7" height="9" rx="1" />
+                  <rect x="3" y="16" width="7" height="5" rx="1" />
+                </svg>
+                Dashboard
+              </a>
+              
+              <a href="#" class="portal-nav-tab flex items-center gap-3 px-4 py-2.5 text-sm text-slate-600 dark:text-slate-400 hover:bg-slate-50 dark:hover:bg-slate-800 transition-colors" data-section="courses-sec" data-label="My Courses">
+                <svg class="w-5 h-5 flex-shrink-0" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20M4 19.5A2.5 2.5 0 0 0 6.5 22H20M4 19.5V3.5A2.5 2.5 0 0 1 6.5 1H20v16H6.5" />
+                </svg>
+                My Courses
+              </a>
+              
+              <a href="#" class="portal-nav-tab flex items-center gap-3 px-4 py-2.5 text-sm text-slate-600 dark:text-slate-400 hover:bg-slate-50 dark:hover:bg-slate-800 transition-colors" data-section="tests-sec" data-label="My Tests">
+                <svg class="w-5 h-5 flex-shrink-0" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M9 11l3 3L22 4M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11" />
+                </svg>
+                My Tests
+              </a>
+              
+              <a href="#" class="portal-nav-tab flex items-center gap-3 px-4 py-2.5 text-sm text-slate-600 dark:text-slate-400 hover:bg-slate-50 dark:hover:bg-slate-800 transition-colors" data-section="leaderboard-sec" data-label="Leaderboard">
+                <svg class="w-5 h-5 flex-shrink-0" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M6 9H4.5a1.5 1.5 0 0 0 0 3H6m12-3h1.5a1.5 1.5 0 0 1 0 3H18M6 18H4a1 1 0 0 1-1-1v-1a4 4 0 0 1 8 0v1a1 1 0 0 1-1 1h-2m10 0h-2a1 1 0 0 1-1-1v-1a4 4 0 0 1 8 0v1a1 1 0 0 1-1 1h-2M12 12a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm-4 9h8a2 2 0 0 0 2-2v-2H6v2a2 2 0 0 0 2 2z" />
+                </svg>
+                Leaderboard
+              </a>
+              
+              <a href="#" class="portal-nav-tab flex items-center gap-3 px-4 py-2.5 text-sm text-slate-600 dark:text-slate-400 hover:bg-slate-50 dark:hover:bg-slate-800 transition-colors" data-section="certificates-sec" data-label="Certificates">
+                <svg class="w-5 h-5 flex-shrink-0" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M12 15l-2 5 2-1 2 1-2-5zm0 0a5 5 0 1 0 0-10 5 5 0 0 0 0 10zm-7 0h2M4 11h3m-2-4h2m10 8h2m-3-4h3m-2-4h2" />
+                </svg>
+                Certificates
+              </a>
+              
+              <a href="#" class="portal-nav-tab flex items-center gap-3 px-4 py-2.5 text-sm text-slate-600 dark:text-slate-400 hover:bg-slate-50 dark:hover:bg-slate-800 transition-colors" data-section="downloads-sec" data-label="Downloads">
+                <svg class="w-5 h-5 flex-shrink-0" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4M7 10l5 5 5-5M12 15V3" />
+                </svg>
+                Downloads
+                <span id="download-badge-count-mobile" class="ms-auto bg-blue-600 text-white font-bold text-[10px] w-5 h-5 rounded-full flex items-center justify-center">3</span>
+              </a>
+              
+              <div class="border-t border-slate-100 dark:border-slate-800 mt-1 pt-1">
+                <a href="login.html" onclick="alert('You have successfully logged out.');" class="flex items-center gap-3 px-4 py-2.5 text-sm font-medium text-rose-600 hover:bg-rose-50 dark:hover:bg-rose-950/20 transition-colors">
+                  <svg class="w-5 h-5 flex-shrink-0" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4M16 17l5-5-5-5M21 12H9" />
+                  </svg>
+                  Logout
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <button onclick="toggleDirection()" class="flex items-center gap-1.5 text-slate-600 dark:text-slate-300 hover:text-slate-900 dark:hover:text-white transition-colors" title="Toggle Language Direction">
+           
+            <span class="dir-toggle-text text-sm font-semibold">LTR</span>
+          </button>
+
+          <button onclick="toggleTheme()" class="text-slate-600 dark:text-slate-300 hover:text-slate-900 dark:hover:text-white transition-colors" title="Toggle Dark/Light Mode">
+            <svg class="w-5 h-5 block dark:hidden" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M21.752 15.002A9.718 9.718 0 0118 15.75c-5.385 0-9.75-4.365-9.75-9.75 0-1.33.266-2.597.748-3.752A9.753 9.753 0 003 11.25C3 16.635 7.365 21 12.75 21a9.753 9.753 0 009.002-5.998z" />
+            </svg>
+            <svg class="w-5 h-5 hidden dark:block" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M12 3v2.25m0 13.5V21M4.22 4.22l1.58 1.58m12.42 12.42l1.58 1.58M3 12h2.25m13.5 0H21M4.22 19.78l1.58-1.58M18.22 5.75l1.58-1.58M12 7.5a4.5 4.5 0 100 9 4.5 4.5 0 000-9z" />
+            </svg>
+          </button>
+        </div>
       </div>
     </div>
   </div>
-
-  <button onclick="toggleDirection()" class="p-2 rounded-lg text-slate-600 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors flex items-center gap-1.5 text-xs font-semibold" title="Toggle Language Direction">
-    <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
-      <circle cx="12" cy="12" r="10" />
-      <path stroke-linecap="round" stroke-linejoin="round" d="M12 2a14.5 14.5 0 0 0 0 20M12 2a14.5 14.5 0 0 1 0 20M2 12h20" />
-    </svg>
-    <span class="dir-toggle-text">LTR</span>
-  </button>
-
-  <button onclick="toggleTheme()" class="p-2 rounded-lg text-slate-600 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors" title="Toggle Dark/Light Mode">
-    <svg class="w-5 h-5 block dark:hidden" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
-      <circle cx="12" cy="12" r="4" />
-      <path stroke-linecap="round" d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41" />
-    </svg>
-    <svg class="w-5 h-5 hidden dark:block" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
-      <path stroke-linecap="round" stroke-linejoin="round" d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9z" />
-    </svg>
-  </button>
-</div>
-      </div>
-    </div>
-  </header>
 
   <!-- Preloader -->
  
